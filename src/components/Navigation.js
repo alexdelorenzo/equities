@@ -32,11 +32,13 @@ class Navigation extends React.Component {
     var menuClasses = classNames({'menu': true, 'menu-collapsed': this.state.collapsed});
     return (
       <div className="menu-container">
+      <NavLink to="/" >
         <div className='icon-square' style={{
           position: 'fixed'
         }}>
           <img alt="Melillo Equities Logo" src={logo} className="menu-logo"/>
         </div>
+        </NavLink>
 
         <a
           className='hamburger-square'
