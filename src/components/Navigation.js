@@ -11,7 +11,8 @@ class Navigation extends React.Component {
   state = {
     collapsed: true,
     open: false,
-    openKeys: []
+    openKeys: [],
+    
   };
   handleClick() {
     this.setState({
@@ -29,6 +30,7 @@ class Navigation extends React.Component {
   }
 
   render() {
+
     var menuClasses = classNames({'menu': true, 'menu-collapsed': this.state.collapsed});
     return (
       <div className="menu-container">
@@ -74,9 +76,10 @@ class Navigation extends React.Component {
             theme="light"
             openKeys={this.state.openKeys}
             onOpenChange={(this.onOpenChange)}
-            defaultSelectedKeys={['1']}
+            selectedKeys={[window.location.pathname]}
+            defaultSelectedKeys={[this.state.urlLocation]}
             mode="inline">
-            <Menu.Item key="1">
+            <Menu.Item key="/">
               <NavLink to="/" >
               <span>
               
@@ -100,9 +103,9 @@ class Navigation extends React.Component {
             </SubMenu>
             <SubMenu key="sub1" title={"PORTFOLIO"}>
               <Menu.Item key="3">Bernardsville</Menu.Item>
-              <Menu.Item key="4">
+              <Menu.Item key="/portfolio/peakpack-gladstone">
               <NavLink
-                  to="/maps/peakpack-gladstone"
+                  to="/portfolio/peakpack-gladstone"
                 >
                 Peapack-Gladstone
                 </NavLink>

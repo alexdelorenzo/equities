@@ -1,21 +1,24 @@
 import React from 'react';
-
+import PeapackGladstoneMapLocation from '../assets/images/peapack-gladstone.jpg';
+import PortfolioFooter from '../components/portfolio/PortfolioFooter';
+import MapPin from '../components/portfolio/MapPin';
 
 class PeaPackGladstoneMap extends React.Component {
 
   render() {
 
     return (
-      <div>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <h1>hsdf</h1>    
+     <div>
+        <img 
+            src={PeapackGladstoneMapLocation}
+            alt="Peapack Gladstone Map" 
+            style={{
+                width: 100 + '%'
+            }}
+        />
+        <MapPin />
+       
+        <PortfolioFooter />
       </div>
     );
   }
