@@ -4,25 +4,6 @@ import MapPinLocation from '../../assets/images/map-pin.png'
 
 
 class MapPin extends React.Component {
-constructor(props) {
-    super(props);
-        this.state = {
-            modalVisible: true
-        };
-    }
-    handleOk = (e) => {
-        this.setState({modalVisible: false});
-    }
-    handleCancel = (e) => {
-        this.setState({modalVisible: false});
-    }
-    showMapModal(record) {
-        if (this.state.visible) {
-            this.setState({modalVisible: false});
-        } else {
-            this.setState({modalVisible: true});
-        }
-    }
   render() {
 
     return (
@@ -33,11 +14,11 @@ constructor(props) {
 
         >
         <div
-            onClick={() => this.showMapModal()}
+            onClick={() => this.props.openMapModal()}
             style={{
                 position: 'absolute',
-                top: this.props.top + '%',
-                left: this.props.left + '%',
+                top: this.props.top + 'px',
+                left: this.props.left + 'px',
                 cursor: 'pointer'
             }}
         >
@@ -69,14 +50,14 @@ constructor(props) {
                 width: 95 + '%',
 
             }}
-            visible={this.state.modalVisible}
-            onOk={this.handleOk}
-            onCancel={this.handleCancel}
+            visible={this.props.open}
+            onOk={this.props.closeMapModal}
+            onCancel={this.props.closeMapModal}
             footer={false}
             maskClosable={true}
         >
             <div
-                onClick={() => this.handleCancel()}
+                onClick={this.props.closeMapModal}
                 style={{
                     float: 'right',
                     padding: 20 + 'px',
@@ -93,7 +74,7 @@ constructor(props) {
                 />
             </div>
             <div
-                onClick={() => this.handleCancel()}
+                onClick={() => this.props.nextMapModal()}
                 style={{
                     float: 'right',
                     padding: 20 + 'px',
@@ -110,7 +91,7 @@ constructor(props) {
                 />
             </div>
             <div
-                onClick={() => this.handleCancel()}
+                 onClick={() => this.props.previousMapModal()}
                 style={{
                     float: 'right',
                     padding: 20 + 'px',
