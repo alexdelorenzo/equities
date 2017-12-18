@@ -44,7 +44,7 @@ p {
   height: 100%;
   background: url('http://unsplash.it/1200x800') center center no-repeat;
   background-size: cover;
-  
+
   &:before {
     content: '';
 	position: absolute;
@@ -53,7 +53,7 @@ p {
 	bottom: 0;
 	left: 0;
 	background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
-	opacity: .6; 
+	opacity: .6;
   }
 }
 .hamburger-square {
@@ -412,7 +412,7 @@ html, body {
       -moz-osx-font-smoothing: grayscale;
       -webkit-tap-highlight-color: transparent;
   }
-  
+
 
   .fade-appear,
 .fade-enter {
@@ -644,7 +644,8 @@ svg {
   width: 230px;
   left: calc(50% - 115px);
   z-index: 9999;
-  border: 1px solid darkgrey
+  border: 1px solid lightgrey;
+  border-top: none;
 
 }
 .location-box h3{
@@ -674,19 +675,91 @@ svg {
 
 }
 .location-box span{
-  color: darkgrey;
+  color: lightgrey;
 
 }
 
 @media screen and (min-width: 1200px) {
   .contact-main-header {
-   
+
   }
   .contact-sub-header {
     font-size: 25px;
   }
-  
+
   .contact-sub-info {
     font-size: 20px;
   }
+}
+
+/* Firm Overview Page */
+.firmoverview-environment {
+  padding-top: 25px;
+}
+.firmoverview-leaves {
+  margin-top: 20px;
+}
+@media screen and (min-width: 991px) {
+  .firmoverview-leaves {
+    margin-top: -280px;
+  }
+  .firmoverview-environment {
+    padding-top: 50px;
+  }
+}
+
+.blue-main-header {
+  color: #9fbdcd;
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 17vw;
+  line-height: 13vw; /* 185px; */
+  opacity: 0.9;
+  text-align: center;
+}
+.blue-sub-header {
+  font-family: kepler,  serif;
+  color: #1d4a63;
+  font-size: 50px;
+  letter-spacing: .6px;
+  font-weight: 300;
+  line-height: 1;
+  text-align: center;
+}
+.paragraph-emphasis {
+  font-size: 30px;
+  line-height: 36px;
+  font-family: 'Times New Roman';
+  color: #9fbdcd;
+}
+.paragraph-emphasis span {
+  font-size: 23px;
+  color: #1d4a63;
+  letter-spacing: 6px;
+}
+.paragraph {
+  font-size: 18px;
+  line-height: 25px;
+  font-family: 'Times New Roman';
+  color: darkgrey;
+}
+.paragraph .section-header {
+  font-size: 16px;
+  letter-spacing: 6px;
+  font-family: 'Times New Roman';
+  color: darkgrey;
+}
+
+.img-hor {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+.gutter-row  {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }

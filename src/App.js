@@ -5,6 +5,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './containers/Home';
 import PeaPackGladstoneMap from './containers/PeaPackGladstoneMap';
 import Contact from './containers/Contact';
+import FirmOverview from './containers/FirmOverview';
 import Footer from './components/Footer';
 import ScrollToTop from './containers/ScrollToTop';
 import TransitionGroup from "react-transition-group/TransitionGroup";
@@ -13,13 +14,13 @@ import AnimatedSwitch from "./containers/AnimatedSwitch";
 class App extends React.Component {
   state = {
     newKey: new Date()
-    
+
   };
 
   render() {
     document.getElementById("body").onclick = function(e) {
       this.setState({newKey: new Date()})
-    
+
     }.bind(this)
 
     return (
@@ -36,7 +37,7 @@ class App extends React.Component {
               location={location}
             >
               <Route exact path="/" component={Home} />
- 
+
               <Route
                 path="/contact"
                 render={props => (
@@ -49,7 +50,13 @@ class App extends React.Component {
                   <PeaPackGladstoneMap {...props}  />
                 )}
               />
-            
+              <Route
+                path="/firm/firm-overview"
+                render={props => (
+                  <FirmOverview {...props}  />
+                )}
+              />
+
             </AnimatedSwitch>
           </TransitionGroup>
         )}

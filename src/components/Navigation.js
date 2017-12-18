@@ -12,7 +12,7 @@ class Navigation extends React.Component {
     collapsed: true,
     open: false,
     openKeys: [],
-    
+
   };
   handleClick() {
     this.setState({
@@ -90,14 +90,20 @@ class Navigation extends React.Component {
             <Menu.Item key="/">
               <NavLink to="/" >
               <span>
-              
+
                   HOME
-  
+
               </span>
               </NavLink>
             </Menu.Item>
             <SubMenu key="2" title={"FIRM"}>
-              <Menu.Item key="3">Firm Overview</Menu.Item>
+              <Menu.Item key="/firm/firm-overview">
+                <NavLink
+                    to="/firm/firm-overview"
+                  >
+                  Firm Overview
+                </NavLink>
+              </Menu.Item>
               <Menu.Item key="4">Our Vision</Menu.Item>
               <Menu.Item key="5">Corporate Responsibility</Menu.Item>
             </SubMenu>
