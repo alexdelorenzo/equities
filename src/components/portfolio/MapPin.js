@@ -1,5 +1,5 @@
 import React from 'react';
-import {Tooltip, Modal, Row, Col} from 'antd';
+import {Tooltip, Modal, Row, Col, Icon} from 'antd';
 import MapPinLocation from '../../assets/images/map-pin.png'
 
 
@@ -7,7 +7,7 @@ class MapPin extends React.Component {
 constructor(props) {
     super(props);
         this.state = {
-            modalVisible: false
+            modalVisible: true
         };
     }
     handleOk = (e) => {
@@ -30,6 +30,7 @@ constructor(props) {
         <Tooltip 
             title={this.props.address}
             placement="right"
+
         >
         <div
             onClick={() => this.showMapModal()}
@@ -74,6 +75,57 @@ constructor(props) {
             footer={false}
             maskClosable={true}
         >
+            <div
+                onClick={() => this.handleCancel()}
+                style={{
+                    float: 'right',
+                    padding: 20 + 'px',
+                    borderLeft: '1px solid #b3b3b3',
+                    cursor: 'pointer'
+                }}
+            >
+                <Icon 
+                    type="close"
+                    style={{
+                        fontSize: 30 + 'px',
+                        color: '#b3b3b3'
+                    }} 
+                />
+            </div>
+            <div
+                onClick={() => this.handleCancel()}
+                style={{
+                    float: 'right',
+                    padding: 20 + 'px',
+                    borderLeft: '1px solid #b3b3b3',
+                    cursor: 'pointer'
+                }}
+            >
+                <Icon 
+                    type="arrow-right"
+                    style={{
+                        fontSize: 30 + 'px',
+                        color: '#b3b3b3'
+                    }} 
+                />
+            </div>
+            <div
+                onClick={() => this.handleCancel()}
+                style={{
+                    float: 'right',
+                    padding: 20 + 'px',
+                    borderLeft: '1px solid #b3b3b3',
+                    cursor: 'pointer'
+                }}
+            >
+                <Icon 
+                    type="arrow-left"
+                    style={{
+                        fontSize: 30 + 'px',
+                        color: '#b3b3b3'
+                    }} 
+                />
+            </div>
             <br />
             <img src={this.props.heroImageLocation} className={'modal-photo'} alt="Modal"/>
             <br />

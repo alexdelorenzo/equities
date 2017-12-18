@@ -2,10 +2,9 @@ import React from 'react';
 import './assets/css/App.css';
 import Navigation from './components/Navigation';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
 import Home from './containers/Home';
 import PeaPackGladstoneMap from './containers/PeaPackGladstoneMap';
-
+import ScrollToTop from './containers/ScrollToTop';
 
 class App extends React.Component {
   state = {
@@ -20,14 +19,16 @@ class App extends React.Component {
     }.bind(this)
 
     return (
-      <BrowserRouter >
-        <div>
-         <Navigation  newKey={this.state.newKey} />
-            <Switch id="test">
-              <Route exact path="/" component={Home} />
-              <Route exact path="/portfolio/peakpack-gladstone" component={PeaPackGladstoneMap} />
-            </Switch>
-        </div>
+      <BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
+      <ScrollToTop>
+          <div>
+          <Navigation  newKey={this.state.newKey} />
+              <Switch id="test">
+                <Route exact path="/" component={Home} />
+                <Route exact path="/portfolio/peakpack-gladstone" component={PeaPackGladstoneMap} />
+              </Switch>
+          </div>
+        </ScrollToTop>
       </BrowserRouter>
     );
   }

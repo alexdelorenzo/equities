@@ -216,7 +216,9 @@ p,a,h1,h2,h3,h4,h5 {
   font-family: kepler,  serif;
   color: #1d4a63;
   font-size: 35px;
-  letter-spacing: 2px;
+  letter-spacing: .6px;
+  font-weight: 400;
+  line-height: 1;
 }
 
 .margin-auto-left {
@@ -244,8 +246,7 @@ p,a,h1,h2,h3,h4,h5 {
   right: 0;
   padding-top: 20px;
   height: 30%;
-  margin-top: auto;
-  margin-bottom: auto;
+
 }
 
 .portfolio-block-inner-right {
@@ -272,8 +273,8 @@ p,a,h1,h2,h3,h4,h5 {
 .portfolio-callout-small {
   font-family: kepler,  serif;
   color: #1d4a63;
-  font-size: 24px;
-  letter-spacing: 2px;
+  font-size: 17px;
+  letter-spacing: 3px;
   font-weight: 100;
 }
 
@@ -593,4 +594,23 @@ svg {
 
 .ant-modal-content {
   border-radius: 0px !important;
+}
+.footer-logo {
+  width: 200px;
+  margin: auto
+}
+.footer-text {
+  background-color: #fff !important;
+  color: gray !important;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-top: 30px
+}
+.ant-tooltip-inner {
+  border-radius: 0px !important;
+}
+.ant-modal-close {
+  display: none;
 }

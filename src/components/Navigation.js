@@ -1,5 +1,5 @@
 import React from 'react';
- 
+import {withRouter} from 'react-router-dom';
 import {HamburgerButton} from 'react-hamburger-button';
 import {Menu} from 'antd';
 import logo from '../assets/images/logo.svg'
@@ -27,6 +27,14 @@ class Navigation extends React.Component {
         ? [latestOpenKey]
         : []
     });
+  }
+  componentDidUpdate(prevProps) {
+    if (this.props.location !== prevProps.location) {
+      this.setState({
+        open: false,
+        collapsed: true
+      });
+    }
   }
 
   render() {
@@ -127,4 +135,4 @@ class Navigation extends React.Component {
   }
 }
 
-export default Navigation;
+export default withRouter(Navigation);

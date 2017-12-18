@@ -7,7 +7,6 @@ import PeackPackGladstoneImageLocation from '../assets/images/modal_photo.png'
 class PeaPackGladstoneMap extends React.Component {
 
   render() {
-
     return (
      <div
         style={{
