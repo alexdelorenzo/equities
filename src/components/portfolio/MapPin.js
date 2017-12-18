@@ -17,8 +17,8 @@ class MapPin extends React.Component {
             onClick={() => this.props.openMapModal()}
             style={{
                 position: 'absolute',
-                top: this.props.top + 'px',
-                left: this.props.left + 'px',
+                top: this.props.top + 'vw',
+                left: this.props.left + 'vw',
                 cursor: 'pointer'
             }}
         >
@@ -36,7 +36,8 @@ class MapPin extends React.Component {
                 top: 8 + 'px',
                 width: 83 + '%',
                 marginRight: 20 + 'px',
-                textAlign: 'center'
+                textAlign: 'center',
+                fontFamily: 'serif'
             
             }}>
                 {this.props.number}

@@ -4,6 +4,8 @@ import Navigation from './components/Navigation';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './containers/Home';
 import PeaPackGladstoneMap from './containers/PeaPackGladstoneMap';
+import Contact from './containers/Contact';
+import Footer from './components/Footer';
 import ScrollToTop from './containers/ScrollToTop';
 
 class App extends React.Component {
@@ -20,15 +22,19 @@ class App extends React.Component {
 
     return (
       <BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
-      <ScrollToTop>
-          <div>
-          <Navigation  newKey={this.state.newKey} />
-              <Switch id="test">
-                <Route exact path="/" component={Home} />
-                <Route exact path="/portfolio/peakpack-gladstone" component={PeaPackGladstoneMap} />
-              </Switch>
-          </div>
-        </ScrollToTop>
+      <div>
+        <ScrollToTop>
+            <div>
+            <Navigation  newKey={this.state.newKey} />
+                <Switch id="test">
+                  <Route exact path="/" component={Home} />
+                  <Route exact path="/contact" component={Contact} />
+                  <Route exact path="/portfolio/peakpack-gladstone" component={PeaPackGladstoneMap} />
+                </Switch>
+            </div>
+          </ScrollToTop>
+          <Footer />
+        </div>
       </BrowserRouter>
     );
   }

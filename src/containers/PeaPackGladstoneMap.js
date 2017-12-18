@@ -1,6 +1,5 @@
 import React from 'react';
 import PeapackGladstoneMapLocation from '../assets/images/peapack-gladstone.jpg';
-import PortfolioFooter from '../components/portfolio/PortfolioFooter';
 import MapPin from '../components/portfolio/MapPin';
 import PeackPackGladstoneImageLocation from '../assets/images/modal_photo.png'
 
@@ -65,7 +64,7 @@ class PeaPackGladstoneMap extends React.Component {
      <div
         style={{
           margin: 'auto',
-          maxWidth: 1200 + 'px',
+
           width: 100 + '%',
           position: 'relative'
         }}
@@ -84,8 +83,8 @@ class PeaPackGladstoneMap extends React.Component {
           nextMapModal={() => this.nextMapModal('268DeweyRd')}
           previousMapModal={() => this.previousMapModal('268DeweyRd')}
           address={"268 Dewey Rd"}
-          top={200}
-          left={400}
+          top={20}
+          left={40}
           open={this.state.openDict['268DeweyRd']}
           formalAddress={'268 Dewey Rd.'}
           city={'PeaPack Gladstone'}
@@ -102,8 +101,8 @@ class PeaPackGladstoneMap extends React.Component {
           nextMapModal={() => this.nextMapModal('234Mendham')}
           previousMapModal={() => this.previousMapModal('234Mendham')}
           address={"234 Mendham Rd"}
-          top={130}
-          left={420}
+          top={12}
+          left={42}
           open={this.state.openDict['234Mendham']}
           formalAddress={'234Mendham.'}
           city={'PeaPack Gladstone'}
@@ -120,8 +119,8 @@ class PeaPackGladstoneMap extends React.Component {
           nextMapModal={() => this.nextMapModal('5633ForestStreet')}
           previousMapModal={() => this.previousMapModal('5633ForestStreet')}
           address={"5633 Forest Street"}
-          top={200}
-          left={320}
+          top={20}
+          left={32}
           open={this.state.openDict['5633ForestStreet']}
           formalAddress={'5633ForestStreet.'}
           city={'PeaPack Gladstone'}
@@ -132,7 +131,6 @@ class PeaPackGladstoneMap extends React.Component {
           client={'Cum sociis'}
         />
         </div>
-        <PortfolioFooter />
       </div>
     );
   }
