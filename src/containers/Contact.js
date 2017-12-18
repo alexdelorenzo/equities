@@ -2,6 +2,7 @@ import React from 'react';
 import ContactBackgroundLocation from '../assets/images/contact.jpg';
 import LocationBox from '../components/LocationBox';
 
+
 class Contact extends React.Component {
  
   render() {
@@ -65,5 +66,6 @@ class Contact extends React.Component {
     );
   }
 }
+
 
 export default Contact;

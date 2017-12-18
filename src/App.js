@@ -1,12 +1,14 @@
 import React from 'react';
 import './assets/css/App.css';
 import Navigation from './components/Navigation';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './containers/Home';
 import PeaPackGladstoneMap from './containers/PeaPackGladstoneMap';
 import Contact from './containers/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './containers/ScrollToTop';
+import TransitionGroup from "react-transition-group/TransitionGroup";
+import AnimatedSwitch from "./containers/AnimatedSwitch";
 
 class App extends React.Component {
   state = {
@@ -26,11 +28,32 @@ class App extends React.Component {
         <ScrollToTop>
             <div>
             <Navigation  newKey={this.state.newKey} />
-                <Switch id="test">
-                  <Route exact path="/" component={Home} />
-                  <Route exact path="/contact" component={Contact} />
-                  <Route exact path="/portfolio/peakpack-gladstone" component={PeaPackGladstoneMap} />
-                </Switch>
+            <Route
+					render={({ location }) => (
+            <TransitionGroup component="main">
+            <AnimatedSwitch
+              key={location.key}
+              location={location}
+            >
+              <Route exact path="/" component={Home} />
+ 
+              <Route
+                path="/contact"
+                render={props => (
+                  <Contact {...props}  />
+                )}
+              />
+              <Route
+                path="/portfolio/peakpack-gladstone"
+                render={props => (
+                  <PeaPackGladstoneMap {...props}  />
+                )}
+              />
+            
+            </AnimatedSwitch>
+          </TransitionGroup>
+        )}
+				/>
             </div>
           </ScrollToTop>
           <Footer />
