@@ -114,14 +114,16 @@ class MapPin extends React.Component {
             <h1 style={{
                 color: '#1d4a63',
                 textAlign: 'center',
-                fontSize: 26 + 'px'
+                fontSize: 26 + 'px',
+                fontFamily: 'Times New Roman',
             }}>
                 {this.props.formalAddress}
             </h1>
             <h2 style={{
                 color: 'gray',
                 textAlign: 'center',
-                fontSize: 17 + 'px'
+                fontSize: 17 + 'px',
+                fontFamily: 'Times New Roman',
             }}>
                 <i>{this.props.city}</i>
             </h2>
