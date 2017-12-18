@@ -4,9 +4,9 @@ import {Icon} from 'antd';
 export const LocationBox = (props) => {
     return(
         <div className="location-box">
-            <h3>INVESTOR</h3>
-            <h2>Login</h2>
-            <p><i><span>Home <Icon type="right" style={{fontSize: 10 + 'px'}}/></span> Investor Login</i></p>
+            <h3>{props.mainHeader}</h3>
+            <h2>{props.subHeader}</h2>
+            <p><i><span>{props.start} <Icon type="right" style={{fontSize: 10 + 'px'}}/></span> {props.end}</i></p>
         </div>
     )
 }

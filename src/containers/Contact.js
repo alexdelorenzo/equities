@@ -7,7 +7,12 @@ class Contact extends React.Component {
   render() {
     return (
     <div>
-        <LocationBox />
+        <LocationBox 
+            mainHeader="INVESTOR"
+            subHeader="Login"
+            start="Home"
+            end="Contact"
+        />
         <div style={{
             background: `url(${ContactBackgroundLocation})`,
             height: 90 + 'vh',
