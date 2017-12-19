@@ -8,7 +8,7 @@ class MapPin extends React.Component {
 
     return (
         <div>
-        <Tooltip 
+        <Tooltip
             title={this.props.address}
             placement="right"
 
@@ -17,14 +17,15 @@ class MapPin extends React.Component {
             onClick={() => this.props.openMapModal()}
             style={{
                 position: 'absolute',
-                top: this.props.top + 'vw',
-                left: this.props.left + 'vw',
+                top: this.props.top + '%',
+                left: this.props.left + '%',
+                transform: 'translate(-50%, -100%)',
                 cursor: 'pointer'
             }}
         >
-            <img 
+            <img
                 src={MapPinLocation}
-                alt="Map Pin" 
+                alt="Map Pin"
                 style={{
                     maxWidth: 45 + 'px',
                 }}
@@ -38,7 +39,7 @@ class MapPin extends React.Component {
                 marginRight: 20 + 'px',
                 textAlign: 'center',
                 fontFamily: 'serif'
-            
+
             }}>
                 {this.props.number}
             </p>
@@ -46,7 +47,7 @@ class MapPin extends React.Component {
      </Tooltip>
      <Modal
             closable={true}
-            style={{ 
+            style={{
                 top: 50,
                 width: 95 + '%',
 
@@ -66,12 +67,12 @@ class MapPin extends React.Component {
                     cursor: 'pointer'
                 }}
             >
-                <Icon 
+                <Icon
                     type="close"
                     style={{
                         fontSize: 30 + 'px',
                         color: '#b3b3b3'
-                    }} 
+                    }}
                 />
             </div>
             <div
@@ -83,12 +84,12 @@ class MapPin extends React.Component {
                     cursor: 'pointer'
                 }}
             >
-                <Icon 
+                <Icon
                     type="arrow-right"
                     style={{
                         fontSize: 30 + 'px',
                         color: '#b3b3b3'
-                    }} 
+                    }}
                 />
             </div>
             <div
@@ -100,12 +101,12 @@ class MapPin extends React.Component {
                     cursor: 'pointer'
                 }}
             >
-                <Icon 
+                <Icon
                     type="arrow-left"
                     style={{
                         fontSize: 30 + 'px',
                         color: '#b3b3b3'
-                    }} 
+                    }}
                 />
             </div>
             <br />
@@ -182,7 +183,7 @@ class MapPin extends React.Component {
             </Row>
             </div>
             <br />
-            
+
         </Modal>
      </div>
 

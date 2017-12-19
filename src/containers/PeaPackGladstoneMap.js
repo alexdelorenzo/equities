@@ -11,7 +11,7 @@ class PeaPackGladstoneMap extends React.Component {
             '268DeweyRd': false,
             '234Mendham': false,
             '5633ForestStreet': false,
-          } 
+          }
         };
     }
   closeMapModal(modalKey) {
@@ -69,15 +69,16 @@ class PeaPackGladstoneMap extends React.Component {
           position: 'relative'
         }}
      >
-        <img 
+        <img
             src={PeapackGladstoneMapLocation}
-            alt="Peapack Gladstone Map" 
+            alt="Peapack Gladstone Map"
             style={{
                 width: 100 + '%',
             }}
         />
-        <MapPin 
-          number={268} 
+      <div style={{width: '97%', height: '97.2%', position: 'absolute', top: '1.3%', left: '1.4%'}}>
+        <MapPin
+          number={268}
           closeMapModal={() => this.closeMapModal('268DeweyRd')}
           openMapModal={() => this.openMapModal('268DeweyRd')}
           nextMapModal={() => this.nextMapModal('268DeweyRd')}
@@ -94,8 +95,8 @@ class PeaPackGladstoneMap extends React.Component {
           architect={'Cum sociis'}
           client={'Cum sociis'}
         />
-        <MapPin 
-          number={234} 
+        <MapPin
+          number={234}
           closeMapModal={() => this.closeMapModal('234Mendham')}
           openMapModal={() => this.openMapModal('234Mendham')}
           nextMapModal={() => this.nextMapModal('234Mendham')}
@@ -112,8 +113,8 @@ class PeaPackGladstoneMap extends React.Component {
           architect={'Cum sociis'}
           client={'Cum sociis'}
         />
-        <MapPin 
-          number={564} 
+        <MapPin
+          number={564}
           closeMapModal={() => this.closeMapModal('5633ForestStreet')}
           openMapModal={() => this.openMapModal('5633ForestStreet')}
           nextMapModal={() => this.nextMapModal('5633ForestStreet')}
@@ -130,6 +131,7 @@ class PeaPackGladstoneMap extends React.Component {
           architect={'Cum sociis'}
           client={'Cum sociis'}
         />
+    </div>
         </div>
       </div>
     );
