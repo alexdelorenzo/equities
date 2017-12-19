@@ -48,7 +48,7 @@ class Contact extends React.Component {
                     <h3 className='contact-sub-header'>
                         EMAIL
                     </h3>
-                    <h4 className='contact-sub-info'>
+                    <h4 className='contact-sub-info' style={{paddingBottom: 25}}>
                         info@MelilloEquities.com
                     </h4>
                 </div>

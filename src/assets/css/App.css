@@ -684,12 +684,22 @@ svg {
 @media screen and (max-width: 991px) {
   .map-overlay {
     width: 100%;
-    height: 53vh;
-    margin-top: 37vh;
+    height: auto;
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+    /* Backward compatibility */
+    -webkit-transform: translate(-50%, -100%);
+    -moz-transform: translate(-50%, -100%);
+    -o-transform: translate(-50%, -100%);
+    -ms-transform: translate(-50%, -100%);
   }
   .contact-main-header {
     margin-top: 0px;
     font-size: 70px;
+    padding-left: 30px;
   }
   .contact-sub-header {
     font-size: 18px;
