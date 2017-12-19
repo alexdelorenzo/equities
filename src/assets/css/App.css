@@ -1,5 +1,5 @@
 p {
-  font-family: 'Times New Roman', Times, serif !important
+  font-family: kepler-std-display!important
 }
 
 
@@ -72,7 +72,7 @@ p {
 }
 
 .hero-intro {
-  font-family: kepler,  serif;
+  font-family: kepler-std-display;
   text-align: right;
   color: white;
   font-size: 15px;
@@ -80,7 +80,7 @@ p {
 }
 
 .hero-title {
-  font-family: kepler,  serif;
+  font-family: kepler-std-display;
   text-align: right;
   font-weight: 200;
   color: white;
@@ -109,7 +109,7 @@ p {
 .hero-learn {
   text-align: left !important;
   color: white;
-  font-family: kepler,  serif;
+  font-family: kepler-std-display;
   font-weight: 400;
   letter-spacing: 2px;
   font-size: 14px;
@@ -206,7 +206,7 @@ p {
   right: 39px;
   font-size: 15px;
   font-weight: 100;
-  font-family: kepler,  serif
+  font-family: kepler-std-display
 }
 
 .title-name {
@@ -216,7 +216,7 @@ p {
 .prop-list-title {
   text-align: center;
   color: #1d4a63;
-  font-family: kepler,  serif;
+  font-family: kepler-std-display;
   letter-spacing: 5px;
   font-size: 15px;
   margin: auto;
@@ -246,7 +246,7 @@ p {
 }
 
 .portfolio-callout {
-  font-family: kepler,  serif;
+  font-family: kepler-std-display;
   color: #1d4a63;
   font-size: 35px;
   letter-spacing: .6px;
@@ -292,7 +292,7 @@ p {
 
 .portfolio-learn {
   color: white;
-  font-family: kepler,  serif,  ;
+  font-family: kepler-std-display,  ;
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 13px;
@@ -304,7 +304,7 @@ p {
 }
 
 .portfolio-callout-small {
-  font-family: kepler,  serif;
+  font-family: kepler-std-display;
   color: #1d4a63;
   font-size: 17px;
   letter-spacing: 3px;
@@ -321,7 +321,7 @@ p {
 }
 
 li.ant-menu-item span {
-  font-family:  kepler  !important;
+  font-family:  kepler-std-display !important;;
   color: #a3a098;
   font-size: 16px;
   letter-spacing: 3px;
@@ -329,7 +329,7 @@ li.ant-menu-item span {
 }
 
 .ant-menu-submenu-title {
-  font-family:  kepler  !important;
+  font-family:  kepler-std-display !important;;
   color: #a3a098;
   font-size: 16px !important;
   letter-spacing: 3px;
@@ -353,7 +353,7 @@ li.ant-menu-item span {
   height: 42px !important;
 }
 li.ant-menu-item {
-  font-family:  kepler  !important;
+  font-family:  kepler-std-display !important;;
 }
 .ant-menu-item > a {
   color: #a3a098 !important;
@@ -363,28 +363,28 @@ li.ant-menu-item {
 }
 
 .footer-header {
-  font-family:  kepler  !important;
+  font-family:  kepler-std-display !important;;
   color: #72736e;
   font-size: 15px;
   text-align: left;
 
 }
 .footer-info {
-  font-family:  kepler  !important;
+  font-family:  kepler-std-display !important;;
   color: #72736e;
   font-size: 10px;
   text-align: left;
 
 }
 .footer-links {
-  font-family:  kepler  !important;
+  font-family:  kepler-std-display !important;;
   color: #72736e;
   font-size: 10px;
   text-align: left;
 
 }
 .footer-column p {
-  font-family:  kepler  !important;
+  font-family:  kepler-std-display !important;;
   color: #72736e;
   font-size: 13px;
   line-height: 2;
@@ -404,7 +404,7 @@ li.ant-menu-item {
   padding-top: 80px;
 }
 .icon-tagline {
-  font-family:  kepler  !important;
+  font-family:  kepler-std-display !important;;
   color: #1d4a63;
   font-size: 10px;
   text-align: center;
@@ -418,7 +418,7 @@ li.ant-menu-item {
   transform: rotate(90deg);
 }
 .csr-tagline {
-  font-family: kepler,  serif;
+  font-family: kepler-std-display;
   color: #1d4a63;
   font-size: 13px;
   font-weight: 100;
@@ -429,7 +429,7 @@ li.ant-menu-item {
 
 }
 .csr-headline {
-  font-family: kepler,  serif;
+  font-family: kepler-std-display;
   color: #1d4a63;
   font-size: 100px;
   position: absolute;
@@ -599,7 +599,7 @@ svg {
   background-color: #fff !important;
   border: 1px solid #1d4a63;
   color: #1d4a63 !important;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: kepler-std-display;
   font-weight: 800;
 
 
@@ -620,7 +620,7 @@ svg {
 .modal-data-title {
   background-color: #fff !important;
   color: gray !important;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: kepler-std-display;
   font-weight: 100;
   letter-spacing: 4px;
 }
@@ -635,7 +635,7 @@ svg {
 .footer-text {
   background-color: #fff !important;
   color: gray !important;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: kepler-std-display;
   font-weight: 100;
   letter-spacing: 4px;
   text-align: center;
@@ -660,14 +660,14 @@ svg {
 }
 .contact-sub-header {
   font-size: 1.9vw;
-  font-family: 'Times New Roman';
+  font-family: kepler-std-display;
   letter-spacing: 4px;
   color: #1d4a63;
 }
 
 .contact-sub-info {
   font-size: 1.9vw;
-  font-family: 'Times New Roman';
+  font-family: kepler-std-display;
   color: #fff;
 }
 
@@ -724,7 +724,7 @@ svg {
   margin-top: 17px;
   margin-bottom: 4px;
   text-align: center;
-  font-family: 'Times New Roman';
+  font-family: kepler-std-display;
   letter-spacing: 4px;
   color: #1d4a63;
 
@@ -733,7 +733,7 @@ svg {
   font-size: 35px;
   line-height: 20px;
   text-align: center;
-  font-family: 'Times New Roman';
+  font-family: kepler-std-display;
   color: #1d4a63;
 
 }
@@ -741,7 +741,7 @@ svg {
   margin-top: 10px;
   font-size: 15px;
   text-align: center;
-  font-family: 'Times New Roman';
+  font-family: kepler-std-display;
   color: gray;
 
 }
@@ -789,7 +789,7 @@ svg {
   text-align: center;
 }
 .blue-sub-header {
-  font-family: kepler,  serif;
+  font-family: kepler-std-display;
   color: #1d4a63;
   font-size: 50px;
   letter-spacing: .6px;
@@ -800,7 +800,7 @@ svg {
 .paragraph-emphasis {
   font-size: 30px;
   line-height: 36px;
-  font-family: 'Times New Roman';
+  font-family: kepler-std-display;
   color: #9fbdcd;
 }
 .paragraph-emphasis span {
@@ -811,13 +811,13 @@ svg {
 .paragraph {
   font-size: 18px;
   line-height: 25px;
-  font-family: 'Times New Roman';
+  font-family: kepler-std-display;
   color: darkgrey;
 }
 .paragraph .section-header {
   font-size: 16px;
   letter-spacing: 6px;
-  font-family: 'Times New Roman';
+  font-family: kepler-std-display;
   color: darkgrey;
 }
 
@@ -836,7 +836,7 @@ svg {
 }
 
 .ant-anchor-link-active > .ant-anchor-link-title {
-  font-family: 'Times New Roman', Times, serif !important;
+  font-family: kepler-std-display!important;
   color: #1d4a63 !important;
   line-height: 25px;
   letter-spacing: 2px;
@@ -844,7 +844,7 @@ svg {
 }
 
 .ant-anchor-link-title {
-  font-family: 'Times New Roman', Times, serif !important;
+  font-family: kepler-std-display !important;
   color: gray !important;
   line-height: 25px;
   font-size: 13px;
@@ -855,4 +855,10 @@ svg {
 }
 .ant-anchor-ink:before {
   background-color: white !important;
+}
+.ant-menu-vertical .ant-menu-item, .ant-menu-inline .ant-menu-item, .ant-menu-vertical .ant-menu-submenu-title, .ant-menu-inline .ant-menu-submenu-title {
+  font-family: kepler-std-display!important
+}
+.ant-menu-item > a {
+  font-family: kepler-std-display!important
 }

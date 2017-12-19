@@ -54,6 +54,7 @@ class Navigation extends React.Component {
           className='hamburger-square'
           style={{
           position: 'fixed',
+          fontFamily: 'kepler-std-display'
 
         }}
           onClick={this
@@ -100,6 +101,7 @@ class Navigation extends React.Component {
               <Menu.Item key="/firm/firm-overview">
                 <NavLink
                     to="/firm/firm-overview"
+              
                   >
                   Firm Overview
                 </NavLink>
