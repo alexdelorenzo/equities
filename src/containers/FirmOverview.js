@@ -7,7 +7,7 @@ import OverviewBackground from '../assets/images/firm-overview/firm-overview-her
 import UrbanPlanningBackground from '../assets/images/firm-overview/Urban-Planning-Image.png';
 import LocationBox from '../components/LocationBox';
 
-import { Row, Col, Anchor  } from 'antd';
+import { Row, Col, Anchor, Affix } from 'antd';
 const { Link } = Anchor;
 
 class FirmOverview extends React.Component {
@@ -23,10 +23,10 @@ class FirmOverview extends React.Component {
         />
         <HeroImage height={80} background={OverviewBackground}/>
 
- 
+
 
         <Row className="gutter-row" id="firm-overview" gutter={45} style={{paddingTop: 30}}>
-    
+
           <Col className="paragraph-emphasis" xs={24} md={{ span: 8, offset: 4 }} style={{paddingBottom: 30}}>
             <span>MELILLO EQUITIES</span> is a vertically integrated real estate private equity firm with geographical concentration in some of New Jersey’s most desirable transit-oriented submarkets. With access to a variety of discretionary open-end and closed-end commingled funds, our clients are provided scalable investment opportunities within small cap markets.
           </Col>
@@ -38,14 +38,15 @@ class FirmOverview extends React.Component {
             <p>Here at Melillo Equities, we also stress the importance of corporate social responsibility (CSR) as a core principle when making each strategic decision. With the help of local officials, certified 501(c)(3) land preservation trusts and community groups alike, we ensure that all stakeholders are considered.</p>
           </Col>
           <Col md={{ span: 4}}>
-          <Anchor
-            affix={true}
-            showInkInFixed={true}
-          >
-            <Link href="#firm-overview" title="FIRM OVERVIEW" />
-            <Link href="#our-vision" title="OUR VISION" />
-            <Link href="#corporate-responsibility" title="CORPORATE RESPONSIBILITY" /> 
-          </Anchor>
+              <Anchor
+                affix={true}
+                offsetTop={0}
+                showInkInFixed={true}
+              >
+                <Link href="#firm-overview" title="FIRM OVERVIEW" />
+                <Link href="#our-vision" title="OUR VISION" />
+                <Link href="#corporate-responsibility" title="CORPORATE RESPONSIBILITY" />
+              </Anchor>
           </Col>
         </Row>
         <Row style={{ paddingTop: 120}} id="our-vision">
@@ -56,7 +57,7 @@ class FirmOverview extends React.Component {
             <img src={UrbanPlanningBackground} alt="Urban Planning Background" />
           </Col>
         </Row>
-        <Row id="components-anchor-demo-basic" className="gutter-row" gutter={45} style={{paddingTop: 20}}>
+        <Row className="gutter-row" gutter={45} style={{paddingTop: 20}}>
           <Col className="paragraph-emphasis" xs={24} md={{ span: 16, offset: 4}}>
             <span>RAPID URBANIZATION</span> is bringing about many challenges in the spatial distribution of people and resources, as well as in the use and consumption of land.
           </Col>
@@ -81,7 +82,7 @@ class FirmOverview extends React.Component {
             </h2>
           </Col>
         </Row>
-        <Row id="components-anchor-demo-fixed" className="gutter-row" gutter={30} style={{ paddingTop: 50}}>
+        <Row className="gutter-row" gutter={30} style={{ paddingTop: 50}}>
           <Col xs={{ span: 6 }} md={{ span: 4, offset: 4}}>
             <img src={CommunityLogo} alt="Community Logo" />
           </Col>
