@@ -72,11 +72,13 @@ class PeaPackGladstoneMap extends React.Component {
         <img
             src={PeapackGladstoneMapLocation}
             alt="Peapack Gladstone Map"
+            className="map-img"
             style={{
                 width: 100 + '%',
             }}
         />
-      <div style={{width: '97%', height: '97.2%', position: 'absolute', top: '1.3%', left: '1.4%'}}>
+      <div className="map-actual-size">
+        <h1 className="mobile-heading">PEAPACK-GLADSTONE</h1>
         <MapPin
           number={268}
           closeMapModal={() => this.closeMapModal('268DeweyRd')}

@@ -15,12 +15,10 @@ class MapPin extends React.Component {
         >
         <div
             onClick={() => this.props.openMapModal()}
+            className="map-pin-icon"
             style={{
-                position: 'absolute',
                 top: this.props.top + '%',
                 left: this.props.left + '%',
-                transform: 'translate(-50%, -100%)',
-                cursor: 'pointer'
             }}
         >
             <img
@@ -185,6 +183,55 @@ class MapPin extends React.Component {
             <br />
 
         </Modal>
+        <div className="mobile-modal">
+        <img src={this.props.heroImageLocation} className={'modal-photo'} alt="Modal"/>
+        <br />
+        <h1 style={{
+            color: '#1d4a63',
+            textAlign: 'center',
+            fontSize: 26 + 'px',
+            fontFamily: 'Times New Roman',
+        }}>
+            {this.props.formalAddress}
+        </h1>
+        <h2 style={{
+            color: 'gray',
+            textAlign: 'center',
+            fontSize: 17 + 'px',
+            fontFamily: 'Times New Roman',
+        }}>
+            <i>{this.props.city}</i>
+        </h2>
+        <Row>
+            <Col xs={{span: 18, offset: 3}}>
+                <p style={{
+                    color: 'gray',
+                    textAlign: 'justify',
+                    fontSize: 16 + 'px',
+                    lineHeight: 1.2
+                }}>
+                    {this.props.description}
+                </p>
+            </Col>
+            <Col xs={{span: 18, offset: 3}} style={{textAlign: 'center', paddingTop: 20}}>
+                <b className="modal-data-title">CLIENT</b>
+                <p className="modal-data-text">
+                    <i>{this.props.client}</i>
+                </p>
+                <br />
+                <b className="modal-data-title">ARCHITECT</b>
+                <p className="modal-data-text">
+                    <i>{this.props.architect}</i>
+                </p>
+                <br />
+                <b className="modal-data-title">LOCATION</b>
+                <p className="modal-data-text">
+                    <i>{this.props.location}</i>
+                </p>
+                <br />
+            </Col>
+        </Row>
+      </div>
      </div>
 
     );

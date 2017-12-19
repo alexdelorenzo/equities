@@ -299,6 +299,7 @@ p {
   padding-top: 5px;
 }
 
+
 .ant-menu-submenu>.ant-menu {
   background-color: #fff !important;
 }
@@ -309,6 +310,31 @@ p {
   font-size: 17px;
   letter-spacing: 3px;
   font-weight: 100;
+}
+
+.map-pin-icon {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  -webkit-transform: translate(-50%, -100%);
+  -moz-transform: translate(-50%, -100%);
+  -o-transform: translate(-50%, -100%);
+  -ms-transform: translate(-50%, -100%);
+  cursor: pointer;
+}
+.mobile-modal {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .map-pin-icon {
+    display: none;
+  }
+  .map-img {
+    display: none;
+  }
+  .mobile-modal {
+    display: block;
+  }
 }
 
 .hero-callout-block-outer {
@@ -624,6 +650,11 @@ svg {
   font-weight: 100;
   letter-spacing: 4px;
 }
+.modal-data-text {
+  color: gray;
+  font-size: 14px;
+  line-height: .8;
+}
 
 .ant-modal-content {
   border-radius: 0px !important;
@@ -680,6 +711,16 @@ svg {
   background-origin: center;
   background-size: contain;
 }
+.map-actual-size {
+  width: 97%;
+  height: 97.2%;
+  position: absolute;
+  top: 1.3%;
+  left: 1.4%;
+}
+.mobile-heading {
+  display: none;
+}
 
 @media screen and (max-width: 991px) {
   .map-overlay {
@@ -695,6 +736,22 @@ svg {
     -moz-transform: translate(-50%, -100%);
     -o-transform: translate(-50%, -100%);
     -ms-transform: translate(-50%, -100%);
+  }
+  .map-actual-size {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+  .mobile-heading {
+    display: block;
+    color: #1d4a63;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 6vw;
+    opacity: 0.8;
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: -40px;
   }
   .contact-main-header {
     margin-top: 0px;
