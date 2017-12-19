@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import ScrollToTop from './containers/ScrollToTop';
 import TransitionGroup from "react-transition-group/TransitionGroup";
 import AnimatedSwitch from "./containers/AnimatedSwitch";
+import {BackTop} from 'antd';
 
 class App extends React.Component {
   state = {
@@ -27,6 +28,7 @@ class App extends React.Component {
       <BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
       <div>
         <ScrollToTop>
+        <BackTop />
             <div>
             <Navigation  newKey={this.state.newKey} />
             <Route

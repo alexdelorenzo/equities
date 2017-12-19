@@ -763,3 +763,29 @@ svg {
   margin-left: 0px !important;
   margin-right: 0px !important;
 }
+
+.firm-overview-anchor {
+  position: fixed;
+
+}
+.ant-anchor-link-active > .ant-anchor-link-title {
+  font-family: 'Times New Roman', Times, serif !important;
+  color: #1d4a63 !important;
+  line-height: 25px;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.ant-anchor-link-title {
+  font-family: 'Times New Roman', Times, serif !important;
+  color: gray !important;
+  line-height: 25px;
+  font-size: 13px;
+  letter-spacing: 2px
+}
+.ant-anchor-wrapper {
+  border: 1px solid gray;
+}
+.ant-anchor-ink:before {
+  background-color: white !important;
+}

@@ -7,14 +7,10 @@ import OverviewBackground from '../assets/images/firm-overview/firm-overview-her
 import UrbanPlanningBackground from '../assets/images/firm-overview/Urban-Planning-Image.png';
 import LocationBox from '../components/LocationBox';
 
-import { Row, Col } from 'antd';
-
+import { Row, Col, Anchor  } from 'antd';
+const { Link } = Anchor;
 
 class FirmOverview extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div>
@@ -25,8 +21,12 @@ class FirmOverview extends React.Component {
           middle={'About'}
           end={'Our Firm'}
         />
-        <HeroImage height={100} background={OverviewBackground}/>
-        <Row className="gutter-row" gutter={45} style={{paddingTop: 30}}>
+        <HeroImage height={80} background={OverviewBackground}/>
+
+ 
+
+        <Row className="gutter-row" id="firm-overview" gutter={45} style={{paddingTop: 30}}>
+    
           <Col className="paragraph-emphasis" xs={24} md={{ span: 8, offset: 4 }} style={{paddingBottom: 30}}>
             <span>MELILLO EQUITIES</span> is a vertically integrated real estate private equity firm with geographical concentration in some of New Jersey’s most desirable transit-oriented submarkets. With access to a variety of discretionary open-end and closed-end commingled funds, our clients are provided scalable investment opportunities within small cap markets.
           </Col>
@@ -37,16 +37,26 @@ class FirmOverview extends React.Component {
             <br />
             <p>Here at Melillo Equities, we also stress the importance of corporate social responsibility (CSR) as a core principle when making each strategic decision. With the help of local officials, certified 501(c)(3) land preservation trusts and community groups alike, we ensure that all stakeholders are considered.</p>
           </Col>
+          <Col md={{ span: 4}}>
+          <Anchor
+            affix={true}
+            showInkInFixed={true}
+          >
+            <Link href="#firm-overview" title="FIRM OVERVIEW" />
+            <Link href="#our-vision" title="OUR VISION" />
+            <Link href="#corporate-responsibility" title="CORPORATE RESPONSIBILITY" /> 
+          </Anchor>
+          </Col>
         </Row>
-        <Row style={{ paddingTop: 120}}>
+        <Row style={{ paddingTop: 120}} id="our-vision">
           <Col xs={24} md={{ span: 16, offset: 4}}>
             <h1 className="blue-main-header" style={{marginBottom: -5}}>
                 OUR VISION
             </h1>
-            <img src={UrbanPlanningBackground} />
+            <img src={UrbanPlanningBackground} alt="Urban Planning Background" />
           </Col>
         </Row>
-        <Row className="gutter-row" gutter={45} style={{paddingTop: 20}}>
+        <Row id="components-anchor-demo-basic" className="gutter-row" gutter={45} style={{paddingTop: 20}}>
           <Col className="paragraph-emphasis" xs={24} md={{ span: 16, offset: 4}}>
             <span>RAPID URBANIZATION</span> is bringing about many challenges in the spatial distribution of people and resources, as well as in the use and consumption of land.
           </Col>
@@ -61,7 +71,7 @@ class FirmOverview extends React.Component {
             <p>All can be achieved through effective urban planning strategies and collaboration/coordination with local officials at all levels of government. Melillo Equities encourages a holistic, all-inclusive approach to urban development that not only addresses current supply shortages for housing opportunities and local amenities, but also the integration of pedestrian friendly streetscapes and public infrastructure to promote social connectivity and diversity, thus making neighborhoods more cohesive, lively, and ultimately more attractive to both residents and investors alike.</p>
           </Col>
         </Row>
-        <Row style={{ paddingTop: 120}}>
+        <Row style={{ paddingTop: 120}} id="corporate-responsibility">
           <Col xs={24} md={{ span: 16, offset: 4}}>
             <h1 className="blue-main-header">
               CSR
@@ -71,9 +81,9 @@ class FirmOverview extends React.Component {
             </h2>
           </Col>
         </Row>
-        <Row className="gutter-row" gutter={30} style={{ paddingTop: 50}}>
+        <Row id="components-anchor-demo-fixed" className="gutter-row" gutter={30} style={{ paddingTop: 50}}>
           <Col xs={{ span: 6 }} md={{ span: 4, offset: 4}}>
-            <img src={CommunityLogo} />
+            <img src={CommunityLogo} alt="Community Logo" />
           </Col>
           <Col className="paragraph" xs={24} md={12} style={{paddingTop: 25}}>
             <h3 className="section-header">COMMUNITY INVOLVEMENT</h3>
@@ -83,7 +93,7 @@ class FirmOverview extends React.Component {
         </Row>
         <Row className="gutter-row" gutter={40} style={{ paddingTop: 50}}>
           <Col xs={{ span: 6}} md={{ span: 9, offset: 4}}>
-            <img src={GreenEarth} />
+            <img src={GreenEarth} alt="Green Earth"/>
           </Col>
           <Col className="paragraph firmoverview-environment" xs={24} md={7}>
             <h3 className="section-header">ENVIRONMENTAL ACTION</h3>
@@ -100,7 +110,7 @@ class FirmOverview extends React.Component {
         </Row>
         <Row>
           <Col className="firmoverview-leaves" xs={24}>
-            <img className="img-hor" src={Leaves} />
+            <img className="img-hor" src={Leaves} alt="Leaves" />
           </Col>
         </Row>
       </div>
