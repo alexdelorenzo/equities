@@ -32,7 +32,8 @@ class Navigation extends React.Component {
     if (this.props.location !== prevProps.location) {
       this.setState({
         open: false,
-        collapsed: true
+        collapsed: true,
+        openKeys: []
       });
     }
   }
@@ -101,7 +102,7 @@ class Navigation extends React.Component {
               <Menu.Item key="/firm/firm-overview">
                 <NavLink
                     to="/firm/firm-overview"
-              
+
                   >
                   Firm Overview
                 </NavLink>
