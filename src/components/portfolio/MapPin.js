@@ -1,5 +1,5 @@
 import React from 'react';
-import {Tooltip, Modal, Row, Col, Icon} from 'antd';
+import {Tooltip, Modal, Row, Col, Icon, Badge} from 'antd';
 import MapPinLocation from '../../assets/images/map-pin.png'
 
 
@@ -21,6 +21,7 @@ class MapPin extends React.Component {
                 left: this.props.left + '%',
             }}
         >
+      
             <img
                 src={MapPinLocation}
                 alt="Map Pin"
@@ -39,6 +40,24 @@ class MapPin extends React.Component {
                 fontFamily: 'serif'
 
             }}>
+            <Badge />
+            <span 
+                className="map-marker-icon ant-badge ant-badge-status ant-badge-not-a-wrapper" 
+                style={{
+                    position: 'absolute',
+                    right: '4px',
+                    top: '-2px',
+                }}
+            >
+                <span 
+                className="ant-badge-status-dot ant-badge-status-processing" 
+                style={{
+                    width: '26px',
+                    height: '26px',
+                    backgroundColor: 'none',
+                }}>
+                </span>
+            </span>
                 {this.props.number}
             </p>
         </div>

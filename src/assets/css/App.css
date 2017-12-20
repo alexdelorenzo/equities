@@ -919,3 +919,13 @@ svg {
 .ant-menu-item > a {
   font-family: kepler-std-display!important
 }
+
+.map-marker-icon {
+  position: absolute;
+}
+.ant-badge-status-processing {
+  background-color: transparent !important;
+}
+.ant-badge-status-processing:after {
+
+}

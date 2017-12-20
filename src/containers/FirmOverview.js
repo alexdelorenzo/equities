@@ -7,7 +7,7 @@ import OverviewBackground from '../assets/images/firm-overview/firm-overview-her
 import UrbanPlanningBackground from '../assets/images/firm-overview/Urban-Planning-Image.png';
 import LocationBox from '../components/LocationBox';
 
-import { Row, Col, Anchor, Affix } from 'antd';
+import { Row, Col, Anchor } from 'antd';
 const { Link } = Anchor;
 
 class FirmOverview extends React.Component {
