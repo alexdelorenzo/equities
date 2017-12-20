@@ -37,7 +37,8 @@ class MapPin extends React.Component {
                 width: 83 + '%',
                 marginRight: 20 + 'px',
                 textAlign: 'center',
-                fontFamily: 'serif'
+                fontFamily: 'serif',
+                fontWeight: 800
 
             }}>
             <Badge />
