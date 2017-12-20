@@ -23,8 +23,6 @@ class FirmOverview extends React.Component {
         />
         <HeroImage height={80} background={OverviewBackground}/>
 
-
-
         <Row className="gutter-row" id="firm-overview" gutter={45} style={{paddingTop: 30}}>
 
           <Col className="paragraph-emphasis" xs={24} md={{ span: 8, offset: 4 }} style={{paddingBottom: 30}}>
@@ -37,16 +35,16 @@ class FirmOverview extends React.Component {
             <br />
             <p>Here at Melillo Equities, we also stress the importance of corporate social responsibility (CSR) as a core principle when making each strategic decision. With the help of local officials, certified 501(c)(3) land preservation trusts and community groups alike, we ensure that all stakeholders are considered.</p>
           </Col>
-          <Col md={{ span: 4}}>
-              <Anchor
-                affix={true}
-                offsetTop={0}
-                showInkInFixed={true}
-              >
-                <Link href="#firm-overview" title="FIRM OVERVIEW" />
-                <Link href="#our-vision" title="OUR VISION" />
-                <Link href="#corporate-responsibility" title="CORPORATE RESPONSIBILITY" />
-              </Anchor>
+          <Col md={{ span: 4}} className="anchor-menu">
+            <Anchor
+              affix={true}
+              offsetTop={23}
+              showInkInFixed={true}
+            >
+              <Link href="#firm-overview" title="FIRM OVERVIEW" />
+              <Link href="#our-vision" title="OUR VISION" />
+              <Link href="#corporate-responsibility" title="CORPORATE RESPONSIBILITY" />
+            </Anchor>
           </Col>
         </Row>
         <Row style={{ paddingTop: 120}} id="our-vision">

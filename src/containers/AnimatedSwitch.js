@@ -34,12 +34,12 @@ export default class AnimatedSwitch extends Switch {
 	render() {
 		const style = {
 			opacity: Animated.template`${this.state.animate}`,
-			transform: Animated.template`
-				translate3d(0,${this.state.animate.interpolate({
-				inputRange: [0, 1],
-				outputRange: ["112px", "0px"]
-			})},0)
-			`
+			// transform: Animated.template`
+			// 	translate3d(0,${this.state.animate.interpolate({
+			// 	inputRange: [0, 1],
+			// 	outputRange: ["112px", "0px"]
+			// })},0)
+			// `
 		};
 		return (
 			<Animated.div style={style} className="animated-page-wrapper">

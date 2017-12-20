@@ -17,7 +17,7 @@ class Home extends React.Component {
     return (
       <div>
           <HomeHeroImage/>
-          <PortfolioSection />        
+          <PortfolioSection />
           <HeroImage height={80} background={VistionBackground}/>
           <CallOut />
           <HeroImage

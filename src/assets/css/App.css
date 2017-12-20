@@ -827,6 +827,9 @@ svg {
 .firmoverview-leaves {
   margin-top: 20px;
 }
+.anchor-menu {
+  display: none;
+}
 @media screen and (min-width: 991px) {
   .firmoverview-leaves {
     margin-top: -280px;
@@ -927,5 +930,5 @@ svg {
   background-color: transparent !important;
 }
 .ant-badge-status-processing:after {
-
+  border-width: 6px;
 }
