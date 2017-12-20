@@ -35,10 +35,10 @@ class FirmOverview extends React.Component {
             <br />
             <p>Here at Melillo Equities, we also stress the importance of corporate social responsibility (CSR) as a core principle when making each strategic decision. With the help of local officials, certified 501(c)(3) land preservation trusts and community groups alike, we ensure that all stakeholders are considered.</p>
           </Col>
-          <Col md={{ span: 4}} className="anchor-menu">
+          <Col md={{ span: 4}} style={{zIndex: 9999}} className="anchor-menu">
             <Anchor
               affix={true}
-              offsetTop={23}
+              offsetTop={223}
               showInkInFixed={true}
             >
               <Link href="#firm-overview" title="FIRM OVERVIEW" />
