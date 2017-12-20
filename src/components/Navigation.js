@@ -15,13 +15,18 @@ class Navigation extends React.Component {
 
   };
   handleClick() {
+    const activeOpenKey = `/${this.props.location.pathname.split('/')[1]}`;
     this.setState({
       open: !this.state.open,
-      collapsed: !this.state.collapsed
+      collapsed: !this.state.collapsed,
+      openKeys: [activeOpenKey]
     });
   }
   onOpenChange = (openKeys) => {
     const latestOpenKey = openKeys.find(key => this.state.openKeys.indexOf(key) === -1);
+
+    console.log(this.props.location);
+    console.log(openKeys);
     this.setState({
       openKeys: latestOpenKey
         ? [latestOpenKey]
@@ -98,7 +103,7 @@ class Navigation extends React.Component {
               </span>
               </NavLink>
             </Menu.Item>
-            <SubMenu key="2" title={"FIRM"}>
+            <SubMenu key="/firm" title={"FIRM"}>
               <Menu.Item key="/firm/firm-overview">
                 <NavLink
                     to="/firm/firm-overview"
