@@ -927,5 +927,6 @@ svg {
   background-color: transparent !important;
 }
 .ant-badge-status-processing:after {
-
+border: 2px solid #1d4a63 !important;
+z-index: -1 !important;
 }
