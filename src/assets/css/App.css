@@ -901,6 +901,7 @@ svg {
   line-height: 25px;
   letter-spacing: 2px;
   font-size: 13px;
+  paddng: 14px 0 10px 22px !important;
 }
 
 .ant-anchor-link-title {
@@ -911,7 +912,9 @@ svg {
   letter-spacing: 2px
 }
 .ant-anchor-wrapper {
-  border: 1px solid gray;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 .ant-anchor-ink:before {
   background-color: white !important;
@@ -932,4 +935,7 @@ svg {
 .ant-badge-status-processing:after {
   border: 6px solid #1d4a63 !important;
   z-index: -1 !important;
+}
+.anchor-menu {
+  padding-right: 0px !important;
 }
