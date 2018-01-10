@@ -82,7 +82,7 @@ class FirmOverview extends React.Component {
         </Row>
         <Row className="gutter-row" gutter={30} style={{ paddingTop: 50}}>
           <Col xs={{ span: 6 }} md={{ span: 4, offset: 4}}>
-            <img src={CommunityLogo} alt="Community Logo" />
+            <img src={CommunityLogo} alt="Community Logo" class="company-fancy-icon"/>
           </Col>
           <Col className="paragraph" xs={24} md={12} style={{paddingTop: 25}}>
             <h3 className="section-header">COMMUNITY INVOLVEMENT</h3>

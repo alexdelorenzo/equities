@@ -6,6 +6,7 @@
     "animated": "^0.2.0",
     "antd": "^2.13.4",
     "classnames": "^2.2.5",
+    "contentful": "^5.0.5",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-cookie": "0.4.5",
@@ -15,8 +16,8 @@
     "react-parallax": "^1.4.4",
     "react-router": "4.0.0",
     "react-router-dom": "^4.1.1",
-    "react-transition-group": "^1.2.0",
-    "react-scripts": "1.0.14"
+    "react-scripts": "1.0.14",
+    "react-transition-group": "^1.2.0"
   },
   "scripts": {
     "start": "react-app-rewired start",

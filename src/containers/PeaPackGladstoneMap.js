@@ -2,17 +2,44 @@ import React from 'react';
 import PeapackGladstoneMapLocation from '../assets/images/peapack-gladstone.jpg';
 import MapPin from '../components/portfolio/MapPin';
 import PeackPackGladstoneImageLocation from '../assets/images/modal_photo.png'
+var contentful = require('contentful')
 
 class PeaPackGladstoneMap extends React.Component {
   constructor(props) {
     super(props);
         this.state = {
-          openDict: {
-            '268DeweyRd': false,
-            '234Mendham': false,
-            '5633ForestStreet': false,
-          }
+          entries: [],
+          openDict: {}
         };
+    
+    }
+    client = contentful.createClient({
+      space: 'h6j5qaecf4bi',
+      accessToken: '60b882d2e141112b676c9446202ad4afb29121fab9b9e62ce5efe5ed01a964cf'
+    })
+
+
+    componentWillMount() {
+      var that = this
+      this.client.getEntries(
+        {
+          'content_type': 'mapPin',
+          'fields.map': 'Peapack'
+        }
+      )
+        .then(function (entries) {
+          that.setState({entries: entries.items})
+          var openDict = {}
+          entries.items.forEach(function (entry) {
+            if(entry.fields.id) {
+              openDict[entry.fields.id] = false
+            }
+          })
+          that.setState({openDict: openDict})
+
+        })
+
+
     }
   closeMapModal(modalKey) {
     let newDict = this.state.openDict
@@ -58,6 +85,7 @@ class PeaPackGladstoneMap extends React.Component {
     newDict[newDictArray[currentModalPosition]] = true
     this.setState({openDict: newDict})
   }
+
   render() {
     return (
       <div>
@@ -79,61 +107,33 @@ class PeaPackGladstoneMap extends React.Component {
         />
       <div className="map-actual-size">
         <h1 className="mobile-heading">PEAPACK-GLADSTONE</h1>
-        <MapPin
-          number={268}
-          closeMapModal={() => this.closeMapModal('268DeweyRd')}
-          openMapModal={() => this.openMapModal('268DeweyRd')}
-          nextMapModal={() => this.nextMapModal('268DeweyRd')}
-          previousMapModal={() => this.previousMapModal('268DeweyRd')}
-          address={"268 Dewey Rd"}
-          top={20}
-          left={40}
-          open={this.state.openDict['268DeweyRd']}
-          formalAddress={'268 Dewey Rd.'}
-          city={'PeaPack Gladstone'}
-          description={'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam id dolor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Donec sed odio dui.'}
-          heroImageLocation={PeackPackGladstoneImageLocation}
-          location={'Cum sociis natoque penatibus'}
-          architect={'Cum sociis'}
-          client={'Cum sociis'}
-        />
-        <MapPin
-          number={234}
-          closeMapModal={() => this.closeMapModal('234Mendham')}
-          openMapModal={() => this.openMapModal('234Mendham')}
-          nextMapModal={() => this.nextMapModal('234Mendham')}
-          previousMapModal={() => this.previousMapModal('234Mendham')}
-          address={"234 Mendham Rd"}
-          top={12}
-          left={42}
-          open={this.state.openDict['234Mendham']}
-          formalAddress={'234Mendham.'}
-          city={'PeaPack Gladstone'}
-          description={'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam id dolor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Donec sed odio dui.'}
-          heroImageLocation={PeackPackGladstoneImageLocation}
-          location={'Cum sociis natoque penatibus'}
-          architect={'Cum sociis'}
-          client={'Cum sociis'}
-        />
-        <MapPin
-          number={564}
-          closeMapModal={() => this.closeMapModal('5633ForestStreet')}
-          openMapModal={() => this.openMapModal('5633ForestStreet')}
-          nextMapModal={() => this.nextMapModal('5633ForestStreet')}
-          previousMapModal={() => this.previousMapModal('5633ForestStreet')}
-          address={"5633 Forest Street"}
-          top={20}
-          left={32}
-          open={this.state.openDict['5633ForestStreet']}
-          formalAddress={'5633ForestStreet.'}
-          city={'PeaPack Gladstone'}
-          description={'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam id dolor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Donec sed odio dui.'}
-          heroImageLocation={PeackPackGladstoneImageLocation}
-          location={'Cum sociis natoque penatibus'}
-          architect={'Cum sociis'}
-          client={'Cum sociis'}
-        />
-    </div>
+    
+        {this.state.entries.map((entry) =>  {    
+              return (
+                <MapPin
+                key={entry.fields.id}
+                number={268}
+                closeMapModal={() => this.closeMapModal(entry.fields.id)}
+                openMapModal={() => this.openMapModal(entry.fields.id)}
+                nextMapModal={() => this.nextMapModal(entry.fields.id)}
+                previousMapModal={() => this.previousMapModal(entry.fields.id)}
+                address={entry.fields.addressName}
+                top={entry.fields.top}
+                left={entry.fields.left}
+                open={this.state.openDict[entry.fields.id]}
+                formalAddress={entry.fields.addressName}
+                city={entry.fields.city}
+                description={entry.fields.description}
+                heroImageLocation={entry.fields.heroImage.fields.file.url}
+                location={entry.fields.locationName}
+                architect={entry.fields.architect}
+                client={entry.fields.client}
+              />
+              )
+            }
+          )
+        }
+        </div>
         </div>
       </div>
     );
