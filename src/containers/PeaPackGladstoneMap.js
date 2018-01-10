@@ -112,7 +112,7 @@ class PeaPackGladstoneMap extends React.Component {
               return (
                 <MapPin
                 key={entry.fields.id}
-                number={268}
+                number={entry.fields.number}
                 closeMapModal={() => this.closeMapModal(entry.fields.id)}
                 openMapModal={() => this.openMapModal(entry.fields.id)}
                 nextMapModal={() => this.nextMapModal(entry.fields.id)}
