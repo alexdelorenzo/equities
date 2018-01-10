@@ -9,8 +9,9 @@ class MapPin extends React.Component {
     return (
         <div>
         <Tooltip
+
             title={this.props.address}
-            placement="right"
+            placement="rightTop"
 
         >
         <div
@@ -160,7 +161,7 @@ class MapPin extends React.Component {
                         color: 'gray',
                         textAlign: 'justify',
                         fontSize: 16 + 'px',
-                        lineHeight: 1.2
+                        lineHeight: 1.4
                     }}>
                         {this.props.description}
                     </p>

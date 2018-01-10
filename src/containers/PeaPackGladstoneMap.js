@@ -1,7 +1,7 @@
 import React from 'react';
 import PeapackGladstoneMapLocation from '../assets/images/peapack-gladstone.jpg';
 import MapPin from '../components/portfolio/MapPin';
-import PeackPackGladstoneImageLocation from '../assets/images/modal_photo.png'
+
 var contentful = require('contentful')
 
 class PeaPackGladstoneMap extends React.Component {
@@ -124,7 +124,7 @@ class PeaPackGladstoneMap extends React.Component {
                 formalAddress={entry.fields.addressName}
                 city={entry.fields.city}
                 description={entry.fields.description}
-                heroImageLocation={entry.fields.heroImage.fields.file.url}
+                heroImageLocation={entry.fields.heroImage.fields.file.url + '?fl=progressive'}
                 location={entry.fields.locationName}
                 architect={entry.fields.architect}
                 client={entry.fields.client}

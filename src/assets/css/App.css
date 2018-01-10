@@ -320,6 +320,7 @@ p {
   -o-transform: translate(-50%, -100%);
   -ms-transform: translate(-50%, -100%);
   cursor: pointer;
+  z-index: 100 !important;
 }
 .mobile-modal {
   display: none;
@@ -985,4 +986,21 @@ svg {
   border: 2px solid #1d4a63 !important;
   z-index: 9999999 !important;
   border-radius: 10px !important;
+}
+.ant-tooltip-placement-rightTop .ant-tooltip-arrow {
+  display: none;
+}
+.ant-tooltip-placement-rightTop {
+  z-index: 0 !important;
+}
+.ant-tooltip-content {
+
+  margin-left: -28px !important;
+  margin-top: 2px !important;
+  height: 1px !important;
+  z-index: 0 !important;
+}
+
+.ant-tooltip-inner {
+
 }
