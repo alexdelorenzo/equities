@@ -628,6 +628,8 @@ svg {
   color: #1d4a63 !important;
   font-family: kepler-std-display;
   font-weight: 800;
+  line-height: 19px;
+  padding: 6px 14px 6px 16px !important;
 
 
 }
