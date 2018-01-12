@@ -1,5 +1,5 @@
 import React from 'react'
- 
+
 import {Layout, Icon} from 'antd';
 
 export const HeroImage = (props) => {
@@ -21,15 +21,7 @@ export const HeroImage = (props) => {
           }}>
             {props.smallCall}
           </h3>
-          <h1
-            className="hero-title"
-            style={{
-            fontSize: 50 + 'px'
-          }}>{props.largeCall}</h1>
-        </div>
-        <div className="hero-line" style={{
-          width: 400 + 'px'
-        }}>
+          <h1 className="hero-title">{props.largeCall}</h1>
           <h4 className="hero-learn">
             <a style={{
               color: 'white'

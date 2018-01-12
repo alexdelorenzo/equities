@@ -7,7 +7,8 @@ import LeadershipBackground from '../assets/images/leadership.png'
 import StrategyBackground from '../assets/images/strategy.png'
 import CallOut from '../components/CallOut';
 import DoubleCallOut from '../components/DoubleCallOut';
-import AdditionCallOut from '../components/AdditionCallout'
+import AdditionCallOut from '../components/AdditionCallout';
+import OurSplitSection from '../components/OurSplitSection';
 
 
 class Home extends React.Component {
@@ -18,24 +19,13 @@ class Home extends React.Component {
       <div>
           <HomeHeroImage/>
           <PortfolioSection />
-          <HeroImage height={80} background={VistionBackground}/>
-          <CallOut />
-          <HeroImage
-            smallCall={'OUR EXECUTIVE'}
-            largeCall={'Leadership'}
-            linkText={'LEARN ABOUT OUR LEADERSHIP'}
-            height={60}
-            background={LeadershipBackground}
-          />
-          <AdditionCallOut />
           <HeroImage
             smallCall={'STRAYEGY OVERVIEW'}
             largeCall={'Our Strategy'}
-            linkText={'LEARN ABOUT OUR STRATEGY'}
             height={40}
             background={StrategyBackground}
           />
-          <DoubleCallOut />
+          <OurSplitSection />
       </div>
     );
   }

@@ -2,7 +2,6 @@ p {
   font-family: kepler-std-display!important
 }
 
-
 .logo {
   height: 32px;
   background: #1d4a63;
@@ -23,6 +22,16 @@ p {
 
 .barn-background {
   background: #f9fafa;
+}
+.barn-background img {
+   animation: toColor 4s;
+}
+@keyframes toColor {
+    0%    { -webkit-filter: grayscale(100%); filter: grayscale(100%); }
+    25%   { -webkit-filter: grayscale(75%); filter: grayscale(75%); }
+    50%   { -webkit-filter: grayscale(50%); filter: grayscale(50%); }
+    75%   { -webkit-filter: grayscale(25%); filter: grayscale(25%); }
+    100%  { -webkit-filter: grayscale(0%); filter: grayscale(0%); }
 }
 
 .ant-layout-sider-children {
@@ -73,25 +82,62 @@ p {
 
 .hero-intro {
   font-family: kepler-std-display;
-  text-align: right;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 9px;
+}
+.home-hero-intro {
+  font-family: kepler-std-display;
+  text-align: center;
   color: white;
   font-size: 15px;
   letter-spacing: 9px;
 }
 
-.hero-title {
+.home-hero-title {
   font-family: kepler-std-display;
-  text-align: right;
+  text-align: center;
   font-weight: 200;
   color: white;
   font-size: 60px;
   letter-spacing: .2px;
   line-height: 60px;
 }
+.home-hero-arrow {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
 
 .hero-block {
-  margin-right: 120px;
   margin-top: 70px
+}
+.hero-title {
+  font-family: kepler-std-display;
+  font-weight: 100;
+  font-size: 32px;
+  text-align: center;
+  color: white;
+  line-height: 35px;
+}
+.home-hero-block {
+  margin-top: 40vh;
+}
+.shadow-box {
+  padding: 60px 60px 40px 60px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background: radial-gradient(ellipse, rgba(0,0,0,.5) 30%, rgba(0,0,0,0) 70%);
+  animation: growShadow 2s linear;
+  animation-timing-function: linear;
+}
+
+@keyframes growShadow {
+    0%    { opacity: 0 }
+    100%  { opacity: 1 }
 }
 
 .hero-line {
@@ -262,6 +308,11 @@ p {
   margin-left: right;
 }
 
+.center {
+  text-align: center;
+  margin-top: 150px;
+}
+
 .portfolio-line {
   width: 50%;
   margin-top: 4px;
@@ -295,7 +346,7 @@ p {
   font-family: kepler-std-display,  ;
   font-weight: 400;
   letter-spacing: 1px;
-  font-size: 13px;
+  font-size: 18px;
   padding-top: 5px;
 }
 
@@ -857,7 +908,7 @@ svg {
   -ms-animation-duration: 16000ms;
   -ms-animation-iteration-count: infinite;
   -ms-animation-timing-function: linear;
-  
+
   animation-name: spin;
   animation-duration: 16000ms;
   animation-iteration-count: infinite;
