@@ -110,7 +110,8 @@ to="/firm/firm-overview"
 
 ><span>
 
-FIRM OVERVIEW
+FIRM
+
 
 </span>
 

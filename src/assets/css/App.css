@@ -1057,3 +1057,18 @@ svg {
 .ant-tooltip-inner {
 
 }
+
+.home-hero-block {
+      margin-top: 50vh;
+  }
+  .hero-intro, .home-hero-intro {
+        font-size: 28px;
+        letter-spacing: 9px;
+    }
+
+    .home-hero-title {
+          font-weight: 200;
+          font-size: 100px;
+          letter-spacing: .2px;
+          line-height: 90px;
+      }
