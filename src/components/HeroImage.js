@@ -3,6 +3,7 @@ import React from 'react'
 import {Layout, Icon} from 'antd';
 
 export const HeroImage = (props) => {
+  const arrow = `arrow-${props.arrowDirection}`;
   return (
     <Layout
       className="barn-background "
@@ -26,7 +27,7 @@ export const HeroImage = (props) => {
             <a style={{
               color: 'white'
             }}>{props.linkText}
-              <Icon type="arrow-right"/></a>
+              <Icon type={arrow}/></a>
           </h4>
         </div>
       </div>

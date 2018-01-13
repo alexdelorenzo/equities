@@ -83,7 +83,6 @@ p {
 
 .hero-intro {
   font-family: kepler-std-display;
-  text-align: center;
   color: white;
   font-size: 15px;
   letter-spacing: 9px;
@@ -110,15 +109,19 @@ p {
   color: white;
   font-size: 20px;
 }
+.home-hero-arrow:hover {
+  font-size: 26px;
+  margin-top: -3px;
+  transition-duration: .2s;
+}
 
 .hero-block {
-  margin-top: 70px
+  margin: 0px 100px 0px 100px;
 }
 .hero-title {
   font-family: kepler-std-display;
   font-weight: 100;
   font-size: 32px;
-  text-align: center;
   color: white;
   line-height: 35px;
 }
@@ -154,12 +157,11 @@ p {
 }
 
 .hero-learn {
-  text-align: left !important;
   color: white;
   font-family: kepler-std-display;
   font-weight: 400;
   letter-spacing: 2px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .menu-container {
