@@ -34,7 +34,7 @@ class OurSplitSection extends React.Component {
             xs={24}
             md={12}>
             <div className="portfolio-block-outer center">
-                <h3 className="portfolio-callout">Peapack-Gladstone</h3>
+                <h3 className="portfolio-callout">OUR EXECUTIVE</h3>
                 <h4 className="portfolio-learn">
                   <a style={{
                     color: '#72736e'

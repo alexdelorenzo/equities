@@ -91,8 +91,9 @@ p {
   font-family: kepler-std-display;
   text-align: center;
   color: white;
-  font-size: 15px;
+  font-size: 28px;
   letter-spacing: 9px;
+  line-height: 90px;
 }
 
 .home-hero-title {
@@ -100,19 +101,32 @@ p {
   text-align: center;
   font-weight: 200;
   color: white;
-  font-size: 60px;
+  font-size: 100px;
   letter-spacing: .2px;
-  line-height: 60px;
+  line-height: 90px;
 }
 .home-hero-arrow {
-  text-align: center;
-  color: white;
-  font-size: 20px;
+  width: 35px;
+  margin-top: 10px;
+  transition-duration: 0.2s;
 }
 .home-hero-arrow:hover {
-  font-size: 26px;
-  margin-top: -3px;
-  transition-duration: .2s;
+  margin-top: 8px;
+  width: 45px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.home-hero-arrow-center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.home-hero-arrow-right {
+  margin-left: auto;
+}
+.arrow-left {
+  -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 .hero-block {
@@ -126,13 +140,14 @@ p {
   line-height: 35px;
 }
 .home-hero-block {
-  margin-top: 40vh;
+  margin-top: 30vh;
 }
 .shadow-box {
   padding: 60px 60px 40px 60px;
-  width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 600px;
+  margin-left: 50%;
+  position: fixed;
+  transform: translateX(-300px);
   display: block;
   background: radial-gradient(ellipse, rgba(0,0,0,.5) 30%, rgba(0,0,0,0) 70%);
   animation: growShadow 5s linear;
@@ -1068,10 +1083,3 @@ svg {
         font-size: 28px;
         letter-spacing: 9px;
     }
-
-    .home-hero-title {
-          font-weight: 200;
-          font-size: 100px;
-          letter-spacing: .2px;
-          line-height: 90px;
-      }
