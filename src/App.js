@@ -9,6 +9,7 @@ import MendhamMap from './containers/MendhamMap';
 import FarHillsMap from './containers/FarHillsMap';
 import Contact from './containers/Contact';
 import FirmOverview from './containers/FirmOverview';
+import Leadership from './containers/Leadership';
 import Footer from './components/Footer';
 import ScrollToTop from './containers/ScrollToTop';
 import TransitionGroup from "react-transition-group/TransitionGroup";
@@ -77,6 +78,12 @@ class App extends React.Component {
                 path="/firm/firm-overview"
                 render={props => (
                   <FirmOverview {...props}  />
+                )}
+              />
+              <Route
+                path="/leadership"
+                render={props => (
+                  <Leadership {...props}  />
                 )}
               />
 

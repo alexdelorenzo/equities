@@ -119,8 +119,10 @@ FIRM
 
 </Menu.Item>
 
-            <Menu.Item key="leader">
-              <span>LEADERSHIP</span>
+            <Menu.Item key="/leadership">
+              <NavLink to="/leadership">
+                <span>LEADERSHIP</span>
+              </NavLink>
             </Menu.Item>
             <SubMenu key="sub2" title={"STRATEGY"}>
               <Menu.Item key="6">Strategy Overview</Menu.Item>
