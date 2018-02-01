@@ -128,6 +128,11 @@ p {
   -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
+.modal-arrow {
+  width: 35px;
+  margin-top: 6.5px;
+  margin-bottom: 7px;
+}
 
 .hero-block {
   margin: 0px 100px 0px 100px;

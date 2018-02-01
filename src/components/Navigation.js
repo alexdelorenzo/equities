@@ -128,16 +128,26 @@ FIRM
               <Menu.Item key="81">Vertical Integration</Menu.Item>
             </SubMenu>
             <SubMenu key="sub1" title={"PORTFOLIO"}>
-              <Menu.Item key="3">Bernardsville</Menu.Item>
-              <Menu.Item key="/portfolio/peakpack-gladstone">
-              <NavLink
-                  to="/portfolio/peakpack-gladstone"
-                >
-                Peapack-Gladstone
+              <Menu.Item key="/portfolio/bernardsville">
+                <NavLink to="/portfolio/bernardsville">
+                  Bernardsville
                 </NavLink>
-                </Menu.Item>
-              <Menu.Item key="5">Far Hills</Menu.Item>
-              <Menu.Item key="10">Mendham</Menu.Item>
+              </Menu.Item>
+              <Menu.Item key="/portfolio/peakpack-gladstone">
+                <NavLink to="/portfolio/peakpack-gladstone">
+                  Peapack-Gladstone
+                </NavLink>
+              </Menu.Item>
+              <Menu.Item key="/portfolio/farhills">
+                <NavLink to="/portfolio/farhills">
+                  Far Hills
+                </NavLink>
+              </Menu.Item>
+              <Menu.Item key="/portfolio/mendham">
+                <NavLink to="/portfolio/mendham">
+                  Mendham
+                </NavLink>
+              </Menu.Item>
             </SubMenu>
             <Menu.Item key="9">
               <span>INVESTOR LOGIN</span>

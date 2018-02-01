@@ -4,6 +4,9 @@ import Navigation from './components/Navigation';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './containers/Home';
 import PeaPackGladstoneMap from './containers/PeaPackGladstoneMap';
+import BernardsvilleMap from './containers/BernardsvilleMap';
+import MendhamMap from './containers/MendhamMap';
+import FarHillsMap from './containers/FarHillsMap';
 import Contact from './containers/Contact';
 import FirmOverview from './containers/FirmOverview';
 import Footer from './components/Footer';
@@ -50,6 +53,24 @@ class App extends React.Component {
                 path="/portfolio/peakpack-gladstone"
                 render={props => (
                   <PeaPackGladstoneMap {...props}  />
+                )}
+              />
+              <Route
+                path="/portfolio/bernardsville"
+                render={props => (
+                  <BernardsvilleMap {...props}  />
+                )}
+              />
+              <Route
+                path="/portfolio/mendham"
+                render={props => (
+                  <MendhamMap {...props}  />
+                )}
+              />
+              <Route
+                path="/portfolio/farhills"
+                render={props => (
+                  <FarHillsMap {...props}  />
                 )}
               />
               <Route
