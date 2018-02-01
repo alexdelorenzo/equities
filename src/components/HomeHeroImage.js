@@ -12,11 +12,12 @@ export const HeroImage = (props) => {
     <Layout
       className="barn-background"
       style={{
-      minHeight: '100vh',
-      backgroundColor: '#1d4a63',
+        minHeight:'100vh',
+        backgroundPosition: 'bottom',
+        backgroundSize: 'cover',
+        backgroundImage: `url(${Background})`
+      }}>
 
-    }}>
-    <Parallax bgImage={Background} strength={400}>
       <Content style={{
         margin: '0 0px',
         height: 70 + 'vh'
@@ -37,7 +38,7 @@ export const HeroImage = (props) => {
           </div>
         </div>
       </Content>
-      </Parallax>
+
     </Layout>
 
   )
