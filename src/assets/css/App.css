@@ -23,7 +23,7 @@ p {
 .barn-background {
   background: #f9fafa;
 }
-.barn-background img {
+.barn-background {
   animation: toColor 6s;
 }
 @keyframes toColor {
@@ -105,6 +105,48 @@ p {
   letter-spacing: .2px;
   line-height: 70px;
 }
+div {
+  margin-bottom: 2rem;
+}
+.arrow {
+  position: relative;
+  display: inline-block;
+  padding: 8px 0;
+  left: -10px;
+  top: 10px
+}
+.two-column {
+  left: -20px !important;
+}
+.arrow-before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background-color: #5A5351;
+    top: 50%;
+    transition: width 0.5s ease-out;
+}
+.arrow-after {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 11px;
+  border-top: 1px solid #5A5351;
+  border-right: 1px solid #5A5351;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: calc(50% - 6px);
+  position: absolute;
+  right: 1px;
+}
+.arrow:hover {
+  cursor: pointer;
+}
+.arrow:hover .arrow-before {
+  width: 80px;
+}
 .home-hero-arrow {
   width: 35px;
   margin-top: 10px;
@@ -115,7 +157,7 @@ p {
   cursor: pointer;
   transition-duration: 0.2s;
 
-  
+
 }
 .home-hero-arrow-center {
   margin-left: auto;
@@ -1124,7 +1166,7 @@ svg {
         }
       }
     }
-    
+
     .plus-arrow {
       background-color: #5A5351;
       display: inline-block;
@@ -1186,12 +1228,12 @@ svg {
         }
       }
     }
-    
+
     #arrow-two {
       height: 12px;
       .chevron {
         fill: none;
-        stroke: #5A5351; 
+        stroke: #5A5351;
         stroke-width: 2;
       }
       .line {
@@ -1207,7 +1249,7 @@ svg {
         }
       }
     }
-    
+
     #arrow-three {
       width: 44.4px;
       height: 13.4px;
@@ -1219,7 +1261,7 @@ svg {
         fill: #5A5351;
       }
     }
-    
+
     .right-chevron {
       width: 50px;
       height: 50px;

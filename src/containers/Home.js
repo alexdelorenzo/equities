@@ -42,6 +42,7 @@ class Home extends React.Component {
                 height={50}
                 background={FirmIntro}
                 arrowDirection={'left'}
+                width={'two-column'}
               />
             </Col>
             <Col
@@ -55,6 +56,7 @@ class Home extends React.Component {
                 background={LeadershipIntro}
                 arrowDirection={'right'}
                 textPosition={'right'}
+                width={'two-column'}
               />
             </Col>
           </Row>

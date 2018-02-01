@@ -10,6 +10,7 @@ export const HeroImage = (props) => {
     var textPosition = 'home-hero-arrow-right';
   }
   const arrow = `arrow-${props.arrowDirection}`;
+  const width = ` ${props.width}`;
   return (
     <Layout
       className="barn-background "
@@ -34,11 +35,12 @@ export const HeroImage = (props) => {
               color: 'white'
             }}>{props.linkText}
               <div className={`home-hero-arrow ${textPosition} ${arrow}`}>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                   viewBox="0 0 36 18" style={{ enableBackground:'new 0 0 36 18' }} >
-                   <path d="M27.1,0.1c-0.2-0.2-0.5-0.2-0.7,0c-0.2,0.2-0.2,0.5,0,0.7l7.8,7.7H0.5C0.2,8.5,0,8.7,0,9c0,0.3,0.2,0.5,0.5,0.5h33.6
-                  l-7.8,7.7c-0.2,0.2-0.2,0.5,0,0.7c0.1,0.1,0.2,0.1,0.3,0.1s0.3,0,0.3-0.1L36,9L27.1,0.1z"/>
-                </svg>
+                <span className={`arrow ${width}`}>
+                  <span className="arrow-before" style={{ backgroundColor: 'white'}}>
+                  </span>
+                  <span className="arrow-after" style={{ borderColor: 'white'}}>
+                  </span>
+                </span>
               </div>
             </a>
           </h4>
