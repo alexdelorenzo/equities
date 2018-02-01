@@ -758,8 +758,9 @@ svg {
 /* Contact Page */
 .contact-main-header {
   color: #1d4a63;
-  font-family: 'Montserrat';
-  font-weight: 800;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 900;
   font-size: 9vw;
   opacity: 0.8;
   padding-left: 50px;
@@ -959,8 +960,9 @@ svg {
 }
 .blue-main-header {
   color: #9fbdcd;
-  font-family: 'Montserrat';
-  font-weight: 800;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 900;
   font-size: 17vw;
   line-height: 13vw; /* 185px; */
   opacity: 0.9;

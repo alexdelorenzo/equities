@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactBackgroundLocation from '../assets/images/contact.jpg';
+import ContactBackgroundLocation from '../assets/images/maps/Map-of-Somerset-4-cropped.png';
 import LocationBox from '../components/LocationBox';
 
 
