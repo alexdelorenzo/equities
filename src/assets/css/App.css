@@ -35,6 +35,18 @@ p {
   background: #f9fafa;
   animation: toColor 3.5s;
 }
+.hero-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 11.8vw;
+  text-align: center;
+}
+.hero-bottom-header {
+  color: #fff;
+  font-size: 11vw;
+  font-weight: 600;
+}
 
 @keyframes toColorDelay {
     0%    { -webkit-filter: grayscale(100%); filter: grayscale(100%); }
@@ -674,10 +686,7 @@ body {
 
 main,
 li {
-
   list-style-type: disc !important;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 
 ul,
@@ -769,7 +778,11 @@ svg {
   display: block;
   fill: currentColor;
 }
-
+.ant-anchor-ink-ball {
+  width: 8px !important;
+  height: 8px !important;
+  left: 0% !important;
+}
 .ant-tooltip-inner {
   background-color: #fff !important;
   border: 1px solid #1d4a63;
@@ -778,8 +791,6 @@ svg {
   font-weight: 800;
   line-height: 19px;
   padding: 6px 14px 6px 16px !important;
-
-
 }
 .ant-tooltip-placement-right .ant-tooltip-arrow, .ant-tooltip-placement-rightTop .ant-tooltip-arrow, .ant-tooltip-placement-rightBottom .ant-tooltip-arrow {
   border-right-color: #1d4a63 !important;
@@ -973,12 +984,10 @@ svg {
 }
 
 /* Firm Overview Page */
-.firmoverview-environment {
-  padding-top: 25px;
+.paragraph-padding {
+  padding-top: 30px;
 }
-.firmoverview-leaves {
-  margin-top: 20px;
-}
+
 .anchor-menu {
   display: none;
 }
@@ -1034,26 +1043,26 @@ svg {
 }
 .blue-main-header {
   color: #9fbdcd;
-  font-family: proxima-nova, sans-serif;
+  font-family: Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 17vw;
-  line-height: 13vw; /* 185px; */
+  font-size: 6.5vw;
+  line-height: 6.5vw; /* 185px; */
   opacity: 0.9;
   text-align: center;
 }
 .blue-sub-header {
   font-family: kepler-std-display;
   color: #1d4a63;
-  font-size: 50px;
-  letter-spacing: .6px;
+  font-size: 20px;
+  letter-spacing: 6px;
   font-weight: 300;
   line-height: 1;
   text-align: center;
   letter-spacing: -1 !important;
 }
 .paragraph-emphasis {
-  font-size: 30px;
+  font-size: 28px;
   line-height: 36px;
   font-family: kepler-std-display;
   color: #9fbdcd;
@@ -1070,10 +1079,21 @@ svg {
   color: #434148;
 }
 .paragraph .section-header {
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 6px;
   font-family: kepler-std-display;
   color: darkgrey;
+}
+.paragraph .section-header-blue {
+  font-size: 18px;
+  letter-spacing: 5px;
+  font-family: kepler-std-display;
+  color: #434148;
+}
+
+.bullet-list li {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .img-hor {
@@ -1153,10 +1173,6 @@ svg {
   z-index: 0 !important;
 }
 
-.ant-tooltip-inner {
-
-}
-
 .home-hero-block {
       margin-top: 50vh;
   }
@@ -1164,3 +1180,27 @@ svg {
         font-size: 28px;
         letter-spacing: 9px;
     }
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  padding-left: 16px !important;
+  font-style: italic;
+}
+.ant-collapse > .ant-collapse-item {
+  border-top: 1px solid #d9d9d9;
+}
+.arrow {
+  padding: 0px !important;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .arrow {
+  left: 0px !important;
+}
+
+.large-number {
+  color: #9fbdcd;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 11vw;
+  line-height: 10vw; /* 185px; */
+  opacity: 0.9;
+  text-align: center;
+}

@@ -1,12 +1,12 @@
 import React from 'react'
 
-import {Layout, Icon} from 'antd';
+import {Layout} from 'antd';
 
 export const HeroImage = (props) => {
-  if (props.textPosition == 'center') {
+  if (props.textPosition === 'center') {
     var textPosition = 'home-hero-arrow-center';
   }
-  else if (props.textPosition == 'right') {
+  else if (props.textPosition === 'right') {
     var textPosition = 'home-hero-arrow-right';
   }
   const arrow = `arrow-${props.arrowDirection}`;
@@ -47,6 +47,13 @@ export const HeroImage = (props) => {
         </div>
       </div>
 }
+    {props.bottomHeader
+      ?
+      <div className="hero-bottom">
+        <h1 className="hero-bottom-header">{props.bottomHeader}</h1>
+      </div>
+      : null
+    }
 
     </Layout>
   )

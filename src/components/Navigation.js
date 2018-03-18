@@ -125,7 +125,11 @@ FIRM
               </NavLink>
             </Menu.Item>
             <SubMenu key="sub2" title={"STRATEGY"}>
-              <Menu.Item key="6">Strategy Overview</Menu.Item>
+              <Menu.Item key="/strategy/strategy-overview">
+                <NavLink to="/strategy/strategy-overview">
+                  Strategy Overview
+                </NavLink>
+              </Menu.Item>
               <Menu.Item key="8">Investment Structure</Menu.Item>
               <Menu.Item key="81">Vertical Integration</Menu.Item>
             </SubMenu>

@@ -2,7 +2,7 @@ import React from 'react';
 import HeroImage from '../components/HeroImage';
 import CommunityLogo from '../assets/images/firm-overview/community-logo.jpg';
 import GreenEarth from '../assets/images/firm-overview/green-earth.png';
-import Leaves from '../assets/images/firm-overview/leaves.png';
+import Landscape from '../assets/images/csr-landscape.jpg';
 import OverviewBackground from '../assets/images/vermont.jpg';
 import UrbanPlanningBackground from '../assets/images/urban-planning.png';
 import LocationBox from '../components/LocationBox';
@@ -21,7 +21,10 @@ class FirmOverview extends React.Component {
           middle={'About'}
           end={'Our Firm'}
         />
-      <HeroImage height={100} background={OverviewBackground}/>
+      <HeroImage
+        height={100}
+        background={OverviewBackground}
+        bottomHeader={'FIRM OVERVIEW'} />
 
         <Row className="gutter-row" id="firm-overview" gutter={45} style={{paddingTop: 30}}>
 
@@ -66,7 +69,7 @@ class FirmOverview extends React.Component {
             <br />
             <p>At Melillo Equities, we strive to achieve our vision of “Communities Redefined” by embracing a comprehensive approach to confronting these challenges, focusing on:</p>
             <br />
-            <ul>
+            <ul className="bullet-list">
               <li>Implementation of effective urban planning strategies;</li>
               <li>Collaboration with local officials at all levels of government;</li>
               <li>Integration of public infrastructure, open space and pedestrian friendly streetscapes;</li>
@@ -82,41 +85,34 @@ class FirmOverview extends React.Component {
               CSR
             </h1>
             <h2 className="blue-sub-header" style={{marginTop: 10}}>
-              Corporate Social Responsibility
+              CORPORATE SOCIAL RESPONSIBILITY
             </h2>
           </Col>
         </Row>
-        <Row className="gutter-row" gutter={30} style={{ paddingTop: 50}}>
-          <Col xs={{ span: 6 }} md={{ span: 4, offset: 4}}>
-            <img src={CommunityLogo} alt="Community Logo" class="company-fancy-icon"/>
-          </Col>
-          <Col className="paragraph" xs={24} md={12} style={{paddingTop: 25}}>
-            <h3 className="section-header">COMMUNITY INVOLVEMENT</h3>
-            <br />
-            <p>We seek to transform lives by bolstering the long-term vitality of local communities. Collaboration with local officials and urban planners allow for the creation of a master plan that balances local amenities and civic services with a variety of housing opportunities.</p>
+        <Row className="gutter-row" gutter={40}>
+          <Col className="paragraph paragraph-padding" xs={24} md={{ span: 12, offset: 6 }}>
+            <h3 className="section-header-blue">ARCHITECTURAL CONSERVATION</h3>
+            <p>We seek to protect the rich heritage of historically sensitive localities through the preservation of architecturally significant buildings that reflect elements of social, economic and political history. Such preservation efforts provide aesthetic benefits, while also bolstering community pride.</p>
           </Col>
         </Row>
-        <Row className="gutter-row" gutter={40} style={{ paddingTop: 50}}>
-          <Col xs={{ span: 6}} md={{ span: 9, offset: 4}}>
-            <img src={GreenEarth} alt="Green Earth"/>
-          </Col>
-          <Col className="paragraph firmoverview-environment" xs={24} md={7}>
-            <h3 className="section-header">ENVIRONMENTAL ACTION</h3>
-            <br />
-            <p>Our dedication to land preservation is unparalleled among industry competitors. We see it as our responsibility to more efficiently utilize developed lands as a means for accommodating population growth. Our partnership with certified 501(c)(3) land preservation trusts and local officials help ensure that New Jersey’s viewsheds and natural resources are preserved and protected for future generations to enjoy.</p>
+        <Row className="gutter-row" gutter={40}>
+          <Col className="paragraph paragraph-padding" xs={24} md={{ span: 12, offset: 6 }}>
+            <h3 className="section-header-blue">ENVIRONMENTAL ACTION</h3>
+            <p>Our dedication to land preservation is unparalleled among industry competitors. We see it as our responsibility to more efficiently utilize developed lands as a means for accommodating population growth. Our collaboration with certified 501(c)(3) land preservation trusts and local officials help protect and preserve New Jersey’s viewsheds and natural resources for future generations to enjoy.</p>
           </Col>
         </Row>
-        <Row className="gutter-row" gutter={40} style={{ paddingTop: 80}}>
-          <Col className="paragraph" xs={24} md={{ span: 12, offset: 6}}>
-            <h3 className="section-header">SUSTAINABLE GROWTH</h3>
-            <br />
-            <p>It is projected that two-thirds of the worlds population will be living in urban areas by 2050. Concentrated population growth of this magnitude will most certainly present numerous challenges, namely pollution, infrastructure and socioeconomic inequality. While advancements in technology and policy/regulation reform are exogenous to our efforts, we believe our attention should be focused on sustainability as it pertains to urban planning.</p>
+        <Row className="gutter-row" gutter={40}>
+          <Col className="paragraph paragraph-padding" xs={24} md={{ span: 12, offset: 6}}>
+            <h3 className="section-header-blue">SUSTAINABLE GROWTH</h3>
+            <p>It is projected that two-thirds of the world’s population will be living in urban areas by 2050. Concentrated population growth of this magnitude will most certainly present numerous challenges, including pollution, strains on existing infrastructure, and socioeconomic inequality. We believe urban planning will be crucial to ameliorating these consequences, and combined  with regulation reform and advancements in technology can offer the opportunity
+for long term sustainability.</p>
           </Col>
         </Row>
-        <Row>
-          <Col className="firmoverview-leaves" xs={24}>
-            <img className="img-hor" src={Leaves} alt="Leaves" />
-          </Col>
+        <Row style={{ top: -300, zIndex: -1 }}>
+          <HeroImage
+            height={150}
+            background={Landscape}
+            fadeOnScroll={true} />
         </Row>
       </div>
     );

@@ -8,6 +8,7 @@ import BernardsvilleMap from './containers/BernardsvilleMap';
 import MendhamMap from './containers/MendhamMap';
 import FarHillsMap from './containers/FarHillsMap';
 import Contact from './containers/Contact';
+import StrategyOverview from './containers/StrategyOverview';
 import FirmOverview from './containers/FirmOverview';
 import Leadership from './containers/Leadership';
 import Footer from './components/Footer';
@@ -72,6 +73,12 @@ class App extends React.Component {
                 path="/portfolio/farhills"
                 render={props => (
                   <FarHillsMap {...props}  />
+                )}
+              />
+              <Route
+                path="/strategy/strategy-overview"
+                render={props => (
+                  <StrategyOverview {...props}  />
                 )}
               />
               <Route
