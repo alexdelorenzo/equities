@@ -13,7 +13,7 @@ export const HeroImage = (props) => {
   const width = ` ${props.width}`;
   return (
     <Layout
-      className="barn-background "
+      className={props.fadeOnScroll ? "hero-background" : "barn-background" }
       style={{
       minHeight: props.height + 'vh',
       backgroundPosition: 'bottom',

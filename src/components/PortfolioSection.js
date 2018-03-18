@@ -24,6 +24,7 @@ class PortfolioSection extends React.Component {
             md={12}></Col>
           <Col className="portfolio-block portfolio-text-block" xs={24} md={12}>
             <div className="portfolio-block-outer center">
+                <h3 className="portfolio-section-header">THE TOWN OF</h3>
                 <h3 className="portfolio-callout">Peapack-Gladstone</h3>
                 <h4 className="portfolio-learn">
                   <a style={{
@@ -46,6 +47,7 @@ class PortfolioSection extends React.Component {
         <Row>
           <Col className="portfolio-block portfolio-text-block" xs={24} md={12}>
             <div className="portfolio-block-outer center">
+              <h3 className="portfolio-section-header">THE TOWN OF</h3>
                 <h3 className="portfolio-callout">Far Hills</h3>
                 <h4 className="portfolio-learn">
                   <a style={{
@@ -88,6 +90,7 @@ class PortfolioSection extends React.Component {
           md={12}></Col>
         <Col className="portfolio-block portfolio-text-block" xs={24} md={12}>
           <div className="portfolio-block-outer center">
+              <h3 className="portfolio-section-header">THE TOWN OF</h3>
               <h3 className="portfolio-callout">Bernardsville</h3>
               <h4 className="portfolio-learn">
                 <a style={{
@@ -109,6 +112,7 @@ class PortfolioSection extends React.Component {
       <Row>
       <Col className="portfolio-block portfolio-text-block" xs={24} md={12}>
         <div className="portfolio-block-outer center">
+            <h3 className="portfolio-section-header">THE TOWN OF</h3>
             <h3 className="portfolio-callout">Mendham</h3>
             <h4 className="portfolio-learn">
               <a style={{

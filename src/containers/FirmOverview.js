@@ -3,8 +3,8 @@ import HeroImage from '../components/HeroImage';
 import CommunityLogo from '../assets/images/firm-overview/community-logo.jpg';
 import GreenEarth from '../assets/images/firm-overview/green-earth.png';
 import Leaves from '../assets/images/firm-overview/leaves.png';
-import OverviewBackground from '../assets/images/firm-overview/firm-overview-hero.jpg';
-import UrbanPlanningBackground from '../assets/images/firm-overview/Urban-Planning-Image.png';
+import OverviewBackground from '../assets/images/vermont.jpg';
+import UrbanPlanningBackground from '../assets/images/urban-planning.png';
 import LocationBox from '../components/LocationBox';
 
 import { Row, Col, Anchor } from 'antd';
@@ -21,19 +21,17 @@ class FirmOverview extends React.Component {
           middle={'About'}
           end={'Our Firm'}
         />
-        <HeroImage height={80} background={OverviewBackground}/>
+      <HeroImage height={100} background={OverviewBackground}/>
 
         <Row className="gutter-row" id="firm-overview" gutter={45} style={{paddingTop: 30}}>
 
           <Col className="paragraph-emphasis" xs={24} md={{ span: 8, offset: 4 }} style={{paddingBottom: 30}}>
-            <span>MELILLO EQUITIES</span> is a vertically integrated real estate private equity firm with geographical concentration in some of New Jersey’s most desirable transit-oriented submarkets. With access to a variety of discretionary open-end and closed-end commingled funds, our clients are provided scalable investment opportunities within small cap markets.
+            <span>MELILLO EQUITIES</span> is a vertically integrated real estate private equity firm with geographical concentration in some of New Jersey’s most historically vibrant transit-oriented submarkets.
           </Col>
           <Col className="paragraph" xs={24} md={8}>
-            <p>We invest in all major real estate types, namely office, retail, residential and industrial properties as well as emerging asset classes such as affordable housing and self-storage. In addition, we target assets along the full range of the risk-return spectrum, from core to opportunistic.</p>
+            <p>With access to a variety of discretionary open-end and closed-end funds, we provide our clients scalable investment opportunities within small cap markets.</p>
             <br />
-            <p>In our continuing efforts to exceed market expectations, we strive to rethink the way in which land is used and consumed. Our investment strategy incorporates leading Urban Planning principles, which not only set us apart from our competition, but also reinforces our dedication to redefining the way in which residents cohabitate within their respective communities.</p>
-            <br />
-            <p>Here at Melillo Equities, we also stress the importance of corporate social responsibility (CSR) as a core principle when making each strategic decision. With the help of local officials, certified 501(c)(3) land preservation trusts and community groups alike, we ensure that all stakeholders are considered.</p>
+            <p>Melillo Equities invests in all major real estate classifications, including office, retail, residential and industrial properties, as well as emerging asset classes such as affordable housing and self-storage. In doing so, we target assets along the full range of the risk-return spectrum, from core to opportunistic.</p>
           </Col>
           <Col md={{ span: 4}} style={{zIndex: 9999}} className="anchor-menu">
             <Anchor
@@ -52,7 +50,6 @@ class FirmOverview extends React.Component {
             <h1 className="blue-main-header" style={{marginBottom: -5}}>
                 OUR VISION
             </h1>
-            <img src={UrbanPlanningBackground} alt="Urban Planning Background" />
           </Col>
         </Row>
         <Row className="gutter-row" gutter={45} style={{paddingTop: 20}}>
@@ -61,13 +58,22 @@ class FirmOverview extends React.Component {
           </Col>
         </Row>
         <Row className="gutter-row" gutter={45} style={{paddingTop: 30}}>
-          <Col className="paragraph" xs={24} md={{ span: 8, offset: 4 }}>
-            <p>With strict zoning policies dividing land into residential, commercial and industrial areas, we find horizontally sprawled cities struggling to cope with the negative externalities they indirectly cause, such as congestion, infrastructure issues, pollution and social disaggregation.</p>
-            <br />
-            <p>Here at Melillo Equities, we envision New Jersey’s urban centers as places that facilitate social, economic and environmental progress. We also see infrastructure, public space and aesthetic appeal as critical components in a cities ability to encourage quality of life, social development and the general well being of its residents.</p>
+          <Col className="paragraph" xs={24} md={12}>
+            <img src={UrbanPlanningBackground} alt="Urban Planning Background" />
           </Col>
           <Col className="paragraph" xs={24} md={8}>
-            <p>All can be achieved through effective urban planning strategies and collaboration/coordination with local officials at all levels of government. Melillo Equities encourages a holistic, all-inclusive approach to urban development that not only addresses current supply shortages for housing opportunities and local amenities, but also the integration of pedestrian friendly streetscapes and public infrastructure to promote social connectivity and diversity, thus making neighborhoods more cohesive, lively, and ultimately more attractive to both residents and investors alike.</p>
+            <p>With traditional zoning policies encouraging the development of single use properties, we find horizontally sprawling cities struggling to cope with the infrastructure deficiencies, congestion, and social disaggregation that result.</p>
+            <br />
+            <p>At Melillo Equities, we strive to achieve our vision of “Communities Redefined” by embracing a comprehensive approach to confronting these challenges, focusing on:</p>
+            <br />
+            <ul>
+              <li>Implementation of effective urban planning strategies;</li>
+              <li>Collaboration with local officials at all levels of government;</li>
+              <li>Integration of public infrastructure, open space and pedestrian friendly streetscapes;</li>
+              <li>Promotion of social connectivity and diversity.</li>
+            </ul>
+            <br />
+            <p>In pursuing this holistic strategy, we also recognize that dynamic innovation is most beneficial when coupled with deliberate conservation. To that end, we regard New Jersey’s urban centers as important chroniclers of our shared history in addition to being powerful facilitators of social, economic and environmental progress.</p>
           </Col>
         </Row>
         <Row style={{ paddingTop: 120}} id="corporate-responsibility">

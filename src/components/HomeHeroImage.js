@@ -3,6 +3,7 @@ import React from 'react'
 import Background from '../assets/images/home-hero-town-color.jpg'
 import {Layout, Icon} from 'antd';
 import { Parallax } from 'react-parallax';
+import { Link } from 'react-scroll';
 
 const {Content} = Layout;
 
@@ -17,7 +18,6 @@ export const HeroImage = (props) => {
         backgroundSize: 'cover',
         backgroundImage: `url(${Background})`
       }}>
-
       <Content style={{
         margin: '0 0px',
         height: 70 + 'vh'
@@ -26,22 +26,19 @@ export const HeroImage = (props) => {
           <div className="shadow-box">
             <h3 className="home-hero-intro">COMMUNITIES</h3>
             <h1 className="home-hero-title">Redefined</h1>
-            <div className="home-hero-arrow home-hero-arrow-center">
-              <span className="arrow">
-                <span className="arrow-before" style={{backgroundColor: 'white'}}>
+            <div className="home-hero-arrow home-hero-arrow-center arrow-down">
+              <Link to="portfolio" spy={true} smooth={true} duration={700}>
+                <span className="arrow">
+                  <span className="arrow-before" style={{backgroundColor: 'white'}}>
+                  </span>
+                  <span className="arrow-after" style={{borderColor: 'white'}}>
+                  </span>
                 </span>
-                <span className="arrow-after" style={{borderColor: 'white'}}>
-                </span>
-              </span>
-
-
-
+              </Link>
             </div>
-
           </div>
         </div>
       </Content>
-
     </Layout>
 
   )

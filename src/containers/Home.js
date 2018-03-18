@@ -1,11 +1,13 @@
 import React from 'react';
 import { Row, Col } from 'antd';
+import { Element } from 'react-scroll';
+
 import PortfolioSection from '../components/PortfolioSection';
 import HomeHeroImage from '../components/HomeHeroImage';
 import HeroImage from '../components/HeroImage';
 import VistionBackground from '../assets/images/vision.png'
-import FirmIntro from '../assets/images/firm-intro.jpg';
-import LeadershipIntro from '../assets/images/leadership-intro.jpg'
+import FirmIntro from '../assets/images/vermont.jpg';
+import LeadershipIntro from '../assets/images/lion.jpg'
 import StrategyBackground from '../assets/images/strategy.png'
 import CallOut from '../components/CallOut';
 import DoubleCallOut from '../components/DoubleCallOut';
@@ -20,15 +22,18 @@ class Home extends React.Component {
     return (
       <div>
           <HomeHeroImage/>
-          <PortfolioSection />
+          <Element name="portfolio">
+            <PortfolioSection />
+          </Element>
           <Row style={{ textAlign: 'center' }}>
             <HeroImage
-              smallCall={'STRATEGY OVERVIEW'}
-              largeCall={'Our Strategy'}
+              smallCall={'OUR'}
+              largeCall={'Strategy'}
               height={45}
               background={StrategyBackground}
               arrowDirection={'right'}
               textPosition={'center'}
+              fadeOnScroll={true}
             />
           </Row>
           <Row>
@@ -39,10 +44,11 @@ class Home extends React.Component {
               <HeroImage
                 smallCall={'OUR'}
                 largeCall={'Firm'}
-                height={50}
+                height={65}
                 background={FirmIntro}
                 arrowDirection={'left'}
                 width={'two-column'}
+                fadeOnScroll={true}
               />
             </Col>
             <Col
@@ -52,11 +58,12 @@ class Home extends React.Component {
               <HeroImage
                 smallCall={'OUR EXECUTIVE'}
                 largeCall={'Leadership'}
-                height={50}
+                height={65}
                 background={LeadershipIntro}
                 arrowDirection={'right'}
                 textPosition={'right'}
                 width={'two-column'}
+                fadeOnScroll={true}
               />
             </Col>
           </Row>
@@ -64,5 +71,31 @@ class Home extends React.Component {
     );
   }
 }
+
+var animateHTML = function () {
+  var elems,
+    windowHeight
+  var init = function () {
+    elems = document.getElementsByClassName('hero-background')
+    windowHeight = window.innerHeight
+    _addEventHandlers()
+  }
+  var _addEventHandlers = function () {
+    window.addEventListener('scroll', _checkPosition)
+    window.addEventListener('resize', init)
+  }
+  var _checkPosition = function () {
+    for (var i = 0; i < elems.length; i++) {
+      var posFromTop = elems[i].getBoundingClientRect().top
+      if (posFromTop - windowHeight <= 0) {
+        elems[i].className = elems[i].className.replace('hero-background', 'hero-background-color')
+      }
+    }
+  }
+  return {
+    init: init
+  }
+}
+animateHTML().init()
 
 export default Home;
