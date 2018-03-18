@@ -169,6 +169,15 @@ p {
 .arrow:hover .arrow-before {
   width: 60px;
 }
+.arrow-before-noHov {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 1px;
+    background-color: #5A5351;
+    top: 50%;
+    transition: width 0.5s ease-out;
+}
 .home-hero-arrow {
   width: 35px;
 
@@ -1172,10 +1181,6 @@ svg {
   height: 1px !important;
   z-index: 0 !important;
 }
-
-.home-hero-block {
-      margin-top: 50vh;
-  }
   .hero-intro, .home-hero-intro {
         font-size: 28px;
         letter-spacing: 9px;
@@ -1187,10 +1192,8 @@ svg {
 .ant-collapse > .ant-collapse-item {
   border-top: 1px solid #d9d9d9;
 }
-.arrow {
-  padding: 0px !important;
-}
 .ant-collapse > .ant-collapse-item > .ant-collapse-header .arrow {
+  padding: 0px !important;
   left: 0px !important;
 }
 
@@ -1203,4 +1206,23 @@ svg {
   line-height: 10vw; /* 185px; */
   opacity: 0.9;
   text-align: center;
+}
+
+.strategy-box {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+}
+.strategy-box .heading {
+  font-size: 40px;
+  line-height: 80px;
+  font-family: kepler-std-display;
+  color: #fff;
+}
+.strategy-box .sub-heading {
+  font-size: 22px;
+  line-height: 80px;
+  letter-spacing: 5px;
+  font-family: kepler-std-display;
+  color: #fff;
 }

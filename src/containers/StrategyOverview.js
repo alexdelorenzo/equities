@@ -51,8 +51,8 @@ class StrategyOverview extends React.Component {
             We have identified two market arbitrage opportunities as our value-add propositions.
           </Col>
         </Row>
-        <Row className="gutter-row" gutter={45} style={{ paddingTop: 20 }}>
-          <Col xs={24} md={{ span: 8, offset: 4 }}>
+        <Row className="gutter-row" gutter={45}>
+          <Col xs={24} md={{ span: 8, offset: 4 }} style={{ paddingTop: 20 }}>
             <Col span={6}>
               <span className="large-number">
                 1
@@ -67,7 +67,7 @@ class StrategyOverview extends React.Component {
               </Collapse>
             </Col>
           </Col>
-          <Col xs={24} md={{ span: 8 }}>
+          <Col xs={24} md={{ span: 8 }} style={{ paddingTop: 20 }}>
             <Col span={6}>
               <span className="large-number">
                 2
@@ -144,19 +144,116 @@ class StrategyOverview extends React.Component {
           </Col>
         </Row>
 
-        <Row style={{ paddingTop: 120}} id="competitive-edge">
+        <Row className="gutter-row" gutter={45} style={{ paddingTop: 120}} id="competitive-edge">
           <Col xs={24} md={{ span: 12, offset: 6}}>
             <h1 className="blue-main-header">
               COMPETITIVE EDGE
             </h1>
           </Col>
         </Row>
-        <Row style={{ paddingTop: 30}}>
+        <Row className="gutter-row" gutter={45} style={{ paddingTop: 30}}>
           <Col className="paragraph-emphasis" xs={24} md={{ span: 12, offset: 6 }}>
             <span>AS A BOUTIQUE FIRM,</span> we remain unrelenting in our efforts to unlock value for our clients. However, our capacity to consistently outperform in an ever-changing marketplace is built upon our continuous application of the following fundamental principles.
           </Col>
         </Row>
+        <Row className="gutter-row" gutter={45} style={{ paddingTop: 20}}>
+          <Col xs={24} md={{ span: 2, offset: 6 }}>
+            <span className="large-number">1</span>
+          </Col>
+          <Col className="paragraph" xs={24} md={{ span: 10 }}>
+            <h3 className="section-header-blue">STRATEGIC POSITIONING</h3>
+            <p>We purposefully target smaller, supply-constrained submarkets so as to effectively position ourselves in a manner that discourages future entrants.</p>
+          </Col>
+          <Col xs={24} md={{ span: 12, offset: 6 }} style={{ paddingTop: 30, paddingBottom: 10}}>
+            <hr style={{ border: '0.5px solid #ddd' }} />
+          </Col>
+        </Row>
+        <Row className="gutter-row" gutter={45} style={{ paddingTop: 20}}>
+          <Col xs={24} md={{ span: 2, offset: 6 }}>
+            <span className="large-number">2</span>
+          </Col>
+          <Col className="paragraph" xs={24} md={{ span: 10 }}>
+            <h3 className="section-header-blue">COLLABORATIVE PARTNERING</h3>
+            <p>We actively cultivate relationships with local officials and community leaders to provide guidance during all phases of development. These collaborative partnerships help ensure a harmonious process that engages all stakeholders.</p>
+          </Col>
+          <Col xs={24} md={{ span: 12, offset: 6 }} style={{ paddingTop: 30, paddingBottom: 10}}>
+            <hr style={{ border: '0.5px solid #ddd' }} />
+          </Col>
+        </Row>
+        <Row className="gutter-row" gutter={45} style={{ paddingTop: 20}}>
+          <Col xs={24} md={{ span: 2, offset: 6 }}>
+            <span className="large-number">3</span>
+          </Col>
+          <Col className="paragraph" xs={24} md={{ span: 10 }}>
+            <h3 className="section-header-blue">RISK MITIGATION</h3>
+            <p>Our commitment  to a holistic investment approach demands that we remain mindful of the many interrelated factors that affect long-term profitability. It is our ability to effectively identify and manage these factors that ensures our investments are firmly entrenched during all periods of market cyclicality.</p>
+          </Col>
+          <Col xs={24} md={{ span: 12, offset: 6 }} style={{ paddingTop: 30, paddingBottom: 10}}>
+            <hr style={{ border: '0.5px solid #ddd' }} />
+          </Col>
+        </Row>
+        <Row className="gutter-row" gutter={45} style={{ paddingTop: 20}}>
+          <Col xs={24} md={{ span: 2, offset: 6 }}>
+            <span className="large-number">4</span>
+          </Col>
+          <Col className="paragraph" xs={24} md={{ span: 10 }}>
+            <h3 className="section-header-blue">VERTICAL INTEGRATION</h3>
+            <p>A vertically integrated platform allows for a seamless flow of capital throughout all stages of the investment pipeline. By controlling the value chain, we provide our clients with a level of reliability and consistency that is unparalleled among our competitors.</p>
+          </Col>
+        </Row>
 
+        <Row className="gutter-row" gutter={45} style={{ paddingTop: 30}}>
+          <Col xs={24} md={{ span: 12, offset: 6 }}>
+            <div className="strategy-box" style={{ backgroundColor: '#aaa' }}>
+              <h1 className="heading">Capital</h1>
+            </div>
+            <div className="home-hero-arrow home-hero-arrow-center arrow-down" style={{ marginTop: 6, marginBottom: 7}}>
+              <span className="arrow" style={{ top: 0}}>
+                <span className="arrow-before-noHov"></span>
+                <span className="arrow-after"></span>
+              </span>
+            </div>
+            <div className="strategy-box" style={{ backgroundColor: '#1d4a63' }}>
+              <h1 className="sub-heading">TRANSACTION STRUCTURING</h1>
+            </div>
+            <div className="home-hero-arrow home-hero-arrow-center arrow-down" style={{ marginTop: 6, marginBottom: 7}}>
+              <span className="arrow" style={{ top: 0}}>
+                <span className="arrow-before-noHov"></span>
+                <span className="arrow-after"></span>
+              </span>
+            </div>
+            <div className="strategy-box" style={{ backgroundColor: '#1d4a63' }}>
+              <h1 className="sub-heading">DEVELOPMENT</h1>
+            </div>
+            <div className="home-hero-arrow home-hero-arrow-center arrow-down" style={{ marginTop: 6, marginBottom: 7}}>
+              <span className="arrow" style={{ top: 0}}>
+                <span className="arrow-before-noHov"></span>
+                <span className="arrow-after"></span>
+              </span>
+            </div>
+            <div className="strategy-box" style={{ backgroundColor: '#1d4a63' }}>
+              <h1 className="sub-heading">CONSTRUCTION OVERSIGHT</h1>
+            </div>
+            <div className="home-hero-arrow home-hero-arrow-center arrow-down" style={{ marginTop: 6, marginBottom: 7}}>
+              <span className="arrow" style={{ top: 0}}>
+                <span className="arrow-before-noHov"></span>
+                <span className="arrow-after"></span>
+              </span>
+            </div>
+            <div className="strategy-box" style={{ backgroundColor: '#1d4a63' }}>
+              <h1 className="sub-heading">PROPERTY & ASSET MANAGEMENT</h1>
+            </div>
+            <div className="home-hero-arrow home-hero-arrow-center arrow-down" style={{ marginTop: 6, marginBottom: 7}}>
+              <span className="arrow" style={{ top: 0}}>
+                <span className="arrow-before-noHov"></span>
+                <span className="arrow-after"></span>
+              </span>
+            </div>
+            <div className="strategy-box" style={{ backgroundColor: '#aaa', marginBottom: 50 }}>
+              <h1 className="heading">Stabilization</h1>
+            </div>
+          </Col>
+        </Row>
       </div>
     );
   }
