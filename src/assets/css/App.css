@@ -1,5 +1,8 @@
 p {
-  font-family: kepler-std-display!important
+  font-family: kepler-std-display !important;
+  color: #434148;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .logo {
