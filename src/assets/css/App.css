@@ -914,6 +914,9 @@ svg {
     width: 100%;
     height: auto;
   }
+  .map-info {
+    display: none;
+  }
   .mobile-heading {
     display: block;
     color: #1d4a63;
@@ -1225,4 +1228,24 @@ svg {
   letter-spacing: 5px;
   font-family: kepler-std-display;
   color: #fff;
+}
+.map-info {
+  width: 40px;
+  height: 40px;
+  background-color: #1d4a63;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  text-align: center;
+  z-index: 99999;
+}
+.map-info:hover {
+  cursor: pointer;
+}
+.map-info-icon {
+  font-size: 30px;
+  line-height: 40px;
+  font-family: kepler-std-display;
+  color: #fff;
+  font-style: italic;
 }

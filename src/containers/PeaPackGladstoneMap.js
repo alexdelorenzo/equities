@@ -16,7 +16,7 @@ class PeaPackGladstoneMap extends React.Component {
         name="Peapack"
         image={PeapackGladstoneMapLocation}
         imageAlt="Peapack Gladstone Map"
-        heading="PEAPACK-GLADSTONE"
+        heading="Peapack-Gladstone"
       />
     );
   }

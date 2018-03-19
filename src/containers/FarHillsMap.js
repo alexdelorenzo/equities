@@ -15,7 +15,7 @@ class FarHillsMap extends React.Component {
         name="FarHills"
         image={FarHillsMapLocation}
         imageAlt="Far Hills Map"
-        heading="FAR HILLS"
+        heading="Far Hills"
       />
     );
   }

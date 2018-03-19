@@ -15,7 +15,7 @@ class MendhamMap extends React.Component {
         name="Mendham"
         image={MendhamMapLocation}
         imageAlt="Mendham Map"
-        heading="MENDHAM"
+        heading="Mendham"
       />
     );
   }

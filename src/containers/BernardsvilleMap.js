@@ -16,7 +16,7 @@ class BernardsvilleMap extends React.Component {
         name="Bernardsville"
         image={BernardsvilleMapLocation}
         imageAlt="Bernardsville Map"
-        heading="BERNARDSVILLE"
+        heading="Bernardsville"
       />
     );
   }
