@@ -11,7 +11,7 @@ const { Link } = Anchor;
 class FirmOverview extends React.Component {
   render() {
     return (
-      <div>
+      <div style={{ marginBottom: -300}}>
         <LocationBox
           mainHeader={'OUR'}
           subHeader={'Firm'}

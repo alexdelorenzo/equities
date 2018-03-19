@@ -1,5 +1,5 @@
 import React from 'react';
-import PeapackGladstoneMapLocation from '../assets/images/maps/Gladstone-tax-map-2B.jpg';
+import PeapackGladstoneMapLocation from '../assets/images/maps/gladstone-tax-map.jpg';
 
 import MapPage from './MapPage';
 

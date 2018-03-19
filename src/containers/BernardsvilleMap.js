@@ -1,5 +1,5 @@
 import React from 'react';
-import BernardsvilleMapLocation from '../assets/images/maps/Bernardsville-tax-map-2.jpg';
+import BernardsvilleMapLocation from '../assets/images/maps/bernardsville-tax-map.jpg';
 
 import MapPage from './MapPage';
 

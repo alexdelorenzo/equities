@@ -1,5 +1,5 @@
 import React from 'react';
-import FarHillsMapLocation from '../assets/images/maps/Farhills-tax-map-2.jpg';
+import FarHillsMapLocation from '../assets/images/maps/farhills-tax-map.jpg';
 
 import MapPage from './MapPage';
 class FarHillsMap extends React.Component {
