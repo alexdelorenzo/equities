@@ -1,5 +1,5 @@
 import React from 'react';
-import {Tooltip, Modal, Row, Col, Icon, Badge} from 'antd';
+import {Tooltip, Modal, Row, Col, Badge} from 'antd';
 import MapPinLocation from '../../assets/images/map-pin.png'
 
 

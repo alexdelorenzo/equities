@@ -952,7 +952,7 @@ svg {
 
 }
 .location-box h3{
-  font-size: 18px;
+  font-size: 15px;
   margin-top: 17px;
   margin-bottom: 4px;
   text-align: center;
@@ -963,7 +963,7 @@ svg {
 }
 .location-box h2{
   font-size: 35px;
-  line-height: 20px;
+  line-height: 25px;
   text-align: center;
   font-family: kepler-std-display;
   color: #1d4a63;

@@ -1,6 +1,5 @@
 import React from 'react';
-import {Tooltip, Modal, Row, Col, Icon, Badge} from 'antd';
-import PeapackGladstoneMapLocation from '../assets/images/peapack-gladstone.jpg';
+import {Modal} from 'antd';
 import MapPin from '../components/portfolio/MapPin';
 
 var contentful = require('contentful')

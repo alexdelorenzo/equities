@@ -3,12 +3,6 @@ import FarHillsMapLocation from '../assets/images/maps/Farhills-tax-map-2.jpg';
 
 import MapPage from './MapPage';
 class FarHillsMap extends React.Component {
-  constructor(props) {
-    super(props);
-
-  }
-
-
   render() {
     return (
       <MapPage

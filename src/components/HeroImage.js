@@ -1,16 +1,22 @@
 import React from 'react'
 
 import {Layout} from 'antd';
+import { NavLink } from 'react-router-dom'
 
 export const HeroImage = (props) => {
+  let textPosition;
   if (props.textPosition === 'center') {
-    var textPosition = 'home-hero-arrow-center';
+    textPosition = 'home-hero-arrow-center';
   }
   else if (props.textPosition === 'right') {
-    var textPosition = 'home-hero-arrow-right';
+    textPosition = 'home-hero-arrow-right';
   }
   const arrow = `arrow-${props.arrowDirection}`;
   const width = ` ${props.width}`;
+  var url = '';
+  if (props.url) {
+    url = props.url;
+  }
   return (
     <Layout
       className={props.fadeOnScroll ? "hero-background" : "barn-background" }
@@ -34,6 +40,7 @@ export const HeroImage = (props) => {
             <a style={{
               color: 'white'
             }}>{props.linkText}
+            <NavLink to={url}>
               <div className={`home-hero-arrow ${textPosition} ${arrow}`}>
                 <span className={`arrow ${width}`}>
                   <span className="arrow-before" style={{ backgroundColor: 'white'}}>
@@ -42,6 +49,7 @@ export const HeroImage = (props) => {
                   </span>
                 </span>
               </div>
+            </NavLink>
             </a>
           </h4>
         </div>

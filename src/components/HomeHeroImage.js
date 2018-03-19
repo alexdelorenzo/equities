@@ -1,8 +1,7 @@
 import React from 'react'
 
 import Background from '../assets/images/home-hero-town-color.jpg'
-import {Layout, Icon} from 'antd';
-import { Parallax } from 'react-parallax';
+import {Layout} from 'antd';
 import { Link } from 'react-scroll';
 
 const {Content} = Layout;

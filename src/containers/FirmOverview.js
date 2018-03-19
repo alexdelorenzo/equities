@@ -1,7 +1,5 @@
 import React from 'react';
 import HeroImage from '../components/HeroImage';
-import CommunityLogo from '../assets/images/firm-overview/community-logo.jpg';
-import GreenEarth from '../assets/images/firm-overview/green-earth.png';
 import Landscape from '../assets/images/csr-landscape.jpg';
 import OverviewBackground from '../assets/images/vermont.jpg';
 import UrbanPlanningBackground from '../assets/images/urban-planning.png';

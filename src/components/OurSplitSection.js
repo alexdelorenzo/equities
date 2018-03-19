@@ -2,10 +2,6 @@ import React from 'react';
 import {Row, Col, Icon} from 'antd';
 import PeapackGladstoneMap from '../assets/images/maps/peapack-gladstone.svg';
 import LeadershipBackground from '../assets/images/leadership-hero.jpg';
-import FarHillsMap from '../assets/images/maps/far-hills.svg'
-import BernardsvilleMap from '../assets/images/maps/bernardsville.svg'
-import MendhamMap from '../assets/images/maps/mendham-01.svg'
-
 
 class OurSplitSection extends React.Component {
 

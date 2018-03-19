@@ -5,14 +5,9 @@ import { Element } from 'react-scroll';
 import PortfolioSection from '../components/PortfolioSection';
 import HomeHeroImage from '../components/HomeHeroImage';
 import HeroImage from '../components/HeroImage';
-import VistionBackground from '../assets/images/vision.png'
 import FirmIntro from '../assets/images/vermont.jpg';
 import LeadershipIntro from '../assets/images/lion.jpg'
 import StrategyBackground from '../assets/images/strategy.png'
-import CallOut from '../components/CallOut';
-import DoubleCallOut from '../components/DoubleCallOut';
-import AdditionCallOut from '../components/AdditionCallout';
-import OurSplitSection from '../components/OurSplitSection';
 
 
 class Home extends React.Component {
@@ -34,6 +29,7 @@ class Home extends React.Component {
               arrowDirection={'right'}
               textPosition={'center'}
               fadeOnScroll={true}
+              url={'/strategy/strategy-overview'}
             />
           </Row>
           <Row>
@@ -49,6 +45,7 @@ class Home extends React.Component {
                 arrowDirection={'left'}
                 width={'two-column'}
                 fadeOnScroll={true}
+                url={'/firm/firm-overview'}
               />
             </Col>
             <Col
@@ -64,6 +61,7 @@ class Home extends React.Component {
                 textPosition={'right'}
                 width={'two-column'}
                 fadeOnScroll={true}
+                url={'/leadership'}
               />
             </Col>
           </Row>

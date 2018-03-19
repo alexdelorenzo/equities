@@ -24,7 +24,7 @@ class Leadership extends React.Component {
         <Row className="gutter-row" id="firm-overview" gutter={45} style={{paddingTop: 50, paddingBottom: 50}}>
 
           <Col className="paragraph-emphasis" xs={24} md={{ span: 8, offset: 4 }} style={{paddingBottom: 30}}>
-            <img src={LeadershipPortrait} />
+            <img src={LeadershipPortrait} alt="leadership" />
           </Col>
           <Col className="paragraph" xs={24} md={8}>
             <h3 className="portfolio-callout">Anthony Melillo</h3>

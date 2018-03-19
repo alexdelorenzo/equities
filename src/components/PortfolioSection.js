@@ -1,5 +1,6 @@
 import React from 'react';
-import {Row, Col, Icon} from 'antd';
+import {Row, Col} from 'antd';
+import { NavLink } from 'react-router-dom'
 import PeapackGladstoneMap from '../assets/images/maps/Gladstone-intro.jpg'
 import FarHillsMap from '../assets/images/maps/Farhills-intro.jpg'
 import BernardsvilleMap from '../assets/images/maps/Bernardsville-intro.jpg'
@@ -30,6 +31,7 @@ class PortfolioSection extends React.Component {
                   <a style={{
                     color: '#72736e'
                   }}>
+                  <NavLink to="/portfolio/peapack-gladstone">
                     <div className="home-hero-arrow home-hero-arrow-center arrow-left">
                       <span className="arrow">
                         <span className="arrow-before">
@@ -38,6 +40,7 @@ class PortfolioSection extends React.Component {
                         </span>
                       </span>
                     </div>
+                  </NavLink>
                 </a>
 
                 </h4>
@@ -53,6 +56,7 @@ class PortfolioSection extends React.Component {
                   <a style={{
                     color: '#72736e'
                   }}>
+                  <NavLink to="/portfolio/farhills">
                     <div className="home-hero-arrow home-hero-arrow-center">
                       <span className="arrow">
                         <span className="arrow-before">
@@ -61,6 +65,7 @@ class PortfolioSection extends React.Component {
                         </span>
                       </span>
                     </div>
+                  </NavLink>
                   </a>
                 </h4>
             </div>
@@ -96,6 +101,7 @@ class PortfolioSection extends React.Component {
                 <a style={{
                   color: '#72736e'
                 }}>
+                <NavLink to="/portfolio/bernardsville">
                   <div className="home-hero-arrow home-hero-arrow-center arrow-left">
                     <span className="arrow">
                       <span className="arrow-before">
@@ -104,6 +110,7 @@ class PortfolioSection extends React.Component {
                       </span>
                     </span>
                   </div>
+                </NavLink>
                 </a>
               </h4>
           </div>
@@ -118,6 +125,7 @@ class PortfolioSection extends React.Component {
               <a style={{
                 color: '#72736e'
               }}>
+              <NavLink to="/portfolio/mendham">
                 <div className="home-hero-arrow home-hero-arrow-center">
                   <span className="arrow">
                     <span className="arrow-before">
@@ -126,6 +134,7 @@ class PortfolioSection extends React.Component {
                     </span>
                   </span>
                 </div>
+              </NavLink>
               </a>
             </h4>
         </div>

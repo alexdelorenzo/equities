@@ -52,7 +52,7 @@ class App extends React.Component {
                 )}
               />
               <Route
-                path="/portfolio/peakpack-gladstone"
+                path="/portfolio/peapack-gladstone"
                 render={props => (
                   <PeaPackGladstoneMap {...props}  />
                 )}

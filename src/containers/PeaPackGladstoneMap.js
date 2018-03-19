@@ -4,12 +4,6 @@ import PeapackGladstoneMapLocation from '../assets/images/maps/Gladstone-tax-map
 import MapPage from './MapPage';
 
 class PeaPackGladstoneMap extends React.Component {
-  constructor(props) {
-    super(props);
-
-  }
-
-
   render() {
     return (
       <MapPage

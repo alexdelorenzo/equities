@@ -139,8 +139,8 @@ FIRM
                   Bernardsville
                 </NavLink>
               </Menu.Item>
-              <Menu.Item key="/portfolio/peakpack-gladstone">
-                <NavLink to="/portfolio/peakpack-gladstone">
+              <Menu.Item key="/portfolio/peapack-gladstone">
+                <NavLink to="/portfolio/peapack-gladstone">
                   Peapack-Gladstone
                 </NavLink>
               </Menu.Item>
