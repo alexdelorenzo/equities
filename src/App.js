@@ -11,6 +11,7 @@ import Contact from './containers/Contact';
 import StrategyOverview from './containers/StrategyOverview';
 import FirmOverview from './containers/FirmOverview';
 import Leadership from './containers/Leadership';
+import InvestorLogin from './containers/InvestorLogin';
 import Footer from './components/Footer';
 import ScrollToTop from './containers/ScrollToTop';
 import TransitionGroup from "react-transition-group/TransitionGroup";
@@ -91,6 +92,12 @@ class App extends React.Component {
                 path="/leadership"
                 render={props => (
                   <Leadership {...props}  />
+                )}
+              />
+              <Route
+                path="/investor-login"
+                render={props => (
+                  <InvestorLogin {...props}  />
                 )}
               />
 

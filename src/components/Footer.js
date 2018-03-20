@@ -16,7 +16,9 @@ class CallOut extends React.Component {
             <div className="portfolio-block-outer" style={{height: 30 + '%'}}>
               <div style={{marginLeft: 150 + 'px'}}>
                 <h5 className="portfolio-callout-small left">INVESTOR</h5>
-                <h3 className="portfolio-callout left">Login</h3>
+                <Link to={'/investor-login'}>
+                  <h3 className="portfolio-callout left">Login</h3>
+                </Link>
               </div>
             </div>
           </Col>
@@ -25,7 +27,7 @@ class CallOut extends React.Component {
                 <Link to="/" >
                   <img src={MellioEquitiesLargeLogo} className="footer-logo" alt="Mellio Equities Footer Logo"/>
                 </Link>
-                <p className="footer-text">190 MAIN STREET, STE. 202, GLADSTONE, NJ 07934 1+9082349561</p> 
+                <p className="footer-text">190 MAIN STREET, STE. 202, GLADSTONE, NJ 07934 1+9082349561</p>
             </div>
           </Col>
           <Col className="portfolio-block portfolio-text-block" style={{height: 160 + 'px', borderWidth: 0 + 'px'}} xs={24} md={8}>

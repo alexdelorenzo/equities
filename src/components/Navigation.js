@@ -155,8 +155,10 @@ FIRM
                 </NavLink>
               </Menu.Item>
             </SubMenu>
-            <Menu.Item key="9">
-              <span>INVESTOR LOGIN</span>
+            <Menu.Item key="/investor-login">
+              <NavLink to="/investor-login">
+                <span>INVESTOR LOGIN</span>
+              </NavLink>
             </Menu.Item>
             <Menu.Item key="/contact" style={{  borderBottom: '1px solid #dddddd'}}>
               <NavLink to="/contact" >
