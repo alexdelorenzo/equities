@@ -104,35 +104,24 @@ class Navigation extends React.Component {
               </NavLink>
             </Menu.Item>
 
-<Menu.Item key="/firm/firm-overview" >
-<NavLink
-to="/firm/firm-overview"
-
-><span>
-
-FIRM
-
-
-</span>
-
-</NavLink>
-
-</Menu.Item>
+            <Menu.Item key="/firm">
+              <NavLink to="/firm">
+                <span>
+                  FIRM
+                </span>
+              </NavLink>
+            </Menu.Item>
 
             <Menu.Item key="/leadership">
               <NavLink to="/leadership">
                 <span>LEADERSHIP</span>
               </NavLink>
             </Menu.Item>
-            <SubMenu key="sub2" title={"STRATEGY"}>
-              <Menu.Item key="/strategy/strategy-overview">
-                <NavLink to="/strategy/strategy-overview">
-                  Strategy Overview
-                </NavLink>
-              </Menu.Item>
-              <Menu.Item key="8">Investment Structure</Menu.Item>
-              <Menu.Item key="81">Vertical Integration</Menu.Item>
-            </SubMenu>
+            <Menu.Item key="/strategy">
+              <NavLink to="/strategy">
+                <span>STRATEGY</span>
+              </NavLink>
+            </Menu.Item>
             <SubMenu key="sub1" title={"PORTFOLIO"}>
               <Menu.Item key="/portfolio/bernardsville">
                 <NavLink to="/portfolio/bernardsville">

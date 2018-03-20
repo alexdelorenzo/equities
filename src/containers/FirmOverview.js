@@ -16,7 +16,6 @@ class FirmOverview extends React.Component {
           mainHeader={'OUR'}
           subHeader={'Firm'}
           start={'Home'}
-          middle={'About'}
           end={'Our Firm'}
         />
       <HeroImage

@@ -77,13 +77,13 @@ class App extends React.Component {
                 )}
               />
               <Route
-                path="/strategy/strategy-overview"
+                path="/strategy"
                 render={props => (
                   <StrategyOverview {...props}  />
                 )}
               />
               <Route
-                path="/firm/firm-overview"
+                path="/firm"
                 render={props => (
                   <FirmOverview {...props}  />
                 )}
