@@ -58,39 +58,12 @@ p {
 }
 
 @keyframes toColorDelay {
-<<<<<<< HEAD
     0%    { -webkit-filter: grayscale(100%); filter: grayscale(100%); }
     20%   { -webkit-filter: grayscale(100%); filter: grayscale(100%);}
     40%   { -webkit-filter: grayscale(75%); filter: grayscale(75%); }
     60%   { -webkit-filter: grayscale(50%); filter: grayscale(50%); }
     80%   { -webkit-filter: grayscale(25%); filter: grayscale(25%); }
     100%  { -webkit-filter: grayscale(0%); filter: grayscale(0%); }
-=======
-  0% {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-  }
-  40% {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-  }
-  55% {
-    -webkit-filter: grayscale(75%);
-    filter: grayscale(75%);
-  }
-  70% {
-    -webkit-filter: grayscale(50%);
-    filter: grayscale(50%);
-  }
-  85% {
-    -webkit-filter: grayscale(25%);
-    filter: grayscale(25%);
-  }
-  100% {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-  }
->>>>>>> e194a8cc3035a1f4bfa78ad3eeaa7a944d039b79
 }
 @keyframes toColor {
   0% {
