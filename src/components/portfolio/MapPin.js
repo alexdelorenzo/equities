@@ -169,6 +169,9 @@ class MapPin extends React.Component {
                 </Col>
                 <Col xs={1}/>
                 <Col xs={4}>
+                  {this.props.client
+                  ?
+                  <div>
                     <b className="modal-data-title">CLIENT</b>
                     <p style={{
                         color: 'gray',
@@ -179,6 +182,13 @@ class MapPin extends React.Component {
                         <i>{this.props.client}</i>
                     </p>
                     <br />
+                  </div>
+                  :
+                  null
+                  }
+                  {this.props.architect
+                  ?
+                  <div>
                     <b className="modal-data-title">ARCHITECT</b>
                     <p style={{
                         color: 'gray',
@@ -189,6 +199,13 @@ class MapPin extends React.Component {
                         <i>{this.props.architect}</i>
                     </p>
                     <br />
+                  </div>
+                  :
+                  null
+                  }
+                  {this.props.location
+                  ?
+                  <div>
                     <b className="modal-data-title">LOCATION</b>
                     <p style={{
                         color: 'gray',
@@ -199,6 +216,10 @@ class MapPin extends React.Component {
                         <i>{this.props.location}</i>
                     </p>
                     <br />
+                  </div>
+                  :
+                  null
+                  }
                 </Col>
             </Row>
             </div>
