@@ -14,15 +14,17 @@ class PortfolioSection extends React.Component {
     return (
       <div>
         <Row>
-          <Col
-            className='portfolio-block portfolio-map'
-            style={{
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
-            backgroundImage: `url(${PeapackGladstoneMap})`
-          }}
-            xs={24}
-            md={12}></Col>
+          <NavLink to="/portfolio/peapack-gladstone">
+            <Col
+              className='portfolio-block portfolio-map'
+              style={{
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+              backgroundImage: `url(${PeapackGladstoneMap})`
+            }}
+              xs={24}
+              md={12}></Col>
+          </NavLink>
           <Col className="portfolio-block portfolio-text-block" xs={24} md={12}>
             <div className="portfolio-block-outer center">
                 <h3 className="portfolio-section-header">THE TOWN OF</h3>
@@ -70,29 +72,32 @@ class PortfolioSection extends React.Component {
                 </h4>
             </div>
           </Col>
+          <NavLink to="/portfolio/farhills">
+            <Col
+              className='portfolio-block portfolio-map'
+              style={{
+              backgroundColor: 'white',
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+              backgroundImage: `url(${FarHillsMap})`
+            }}
+              xs={24}
+              md={12}></Col>
+          </NavLink>
+        </Row>
+        <Row>
+        <NavLink to="/portfolio/bernardsville">
           <Col
             className='portfolio-block portfolio-map'
             style={{
-            backgroundColor: 'white',
+               backgroundColor: 'white',
             backgroundPosition: 'center',
             backgroundSize: 'cover',
-            backgroundImage: `url(${FarHillsMap})`
+            backgroundImage: `url(${BernardsvilleMap})`
           }}
             xs={24}
             md={12}></Col>
-
-        </Row>
-        <Row>
-        <Col
-          className='portfolio-block portfolio-map'
-          style={{
-             backgroundColor: 'white',
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-          backgroundImage: `url(${BernardsvilleMap})`
-        }}
-          xs={24}
-          md={12}></Col>
+        </NavLink>
         <Col className="portfolio-block portfolio-text-block" xs={24} md={12}>
           <div className="portfolio-block-outer center">
               <h3 className="portfolio-section-header">THE TOWN OF</h3>
@@ -139,16 +144,18 @@ class PortfolioSection extends React.Component {
             </h4>
         </div>
       </Col>
-      <Col
-        className='portfolio-block portfolio-map'
-        style={{
-        backgroundColor: 'white',
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundImage: `url(${MendhamMap})`
-      }}
-        xs={24}
-        md={12}></Col>
+      <NavLink to="/portfolio/mendham">
+        <Col
+          className='portfolio-block portfolio-map'
+          style={{
+          backgroundColor: 'white',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundImage: `url(${MendhamMap})`
+        }}
+          xs={24}
+          md={12}></Col>
+      </NavLink>
 
     </Row>
       </div>

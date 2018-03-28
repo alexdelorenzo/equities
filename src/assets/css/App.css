@@ -1,3 +1,8 @@
+@font-face {
+  font-family: proxima-nova-black;
+  src: url('../fonts/proxima-nova-black.woff2'); /* IE9 Compat Modes */
+}
+
 p {
   font-family: kepler-std-display !important;
   color: #434148;
@@ -33,22 +38,23 @@ p {
   background: #f9fafa;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+  animation: toGrey 1s forwards;
 }
-.hero-background-color {
+.hero-background:hover {
   background: #f9fafa;
-  animation: toColor 3.5s;
+  animation: toColor 1s forwards;
 }
 .hero-bottom {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 11.8vw;
+  height: 12.5vw;
   text-align: center;
 }
 .hero-bottom-header {
   color: #fff;
-  font-size: 11vw;
-  font-weight: 600;
+  font-size: 12vw;
+  font-family: proxima-nova-black, sans-serif;
 }
 
 @keyframes toColorDelay {
@@ -62,6 +68,10 @@ p {
 @keyframes toColor {
     0%    { -webkit-filter: grayscale(100%); filter: grayscale(100%); }
     100%  { -webkit-filter: grayscale(0%); filter: grayscale(0%); }
+}
+@keyframes toGrey {
+    0%    { -webkit-filter: grayscale(0%); filter: grayscale(0%); }
+    100%  { -webkit-filter: grayscale(100%); filter: grayscale(100%); }
 }
 .ant-layout-sider-children {
   height: 98%;
@@ -112,7 +122,7 @@ p {
 .hero-intro {
   font-family: kepler-std-display;
   color: white;
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: 9px;
 }
 .home-hero-intro {
@@ -214,10 +224,24 @@ p {
   margin-top: 6.5px;
   margin-bottom: 7px;
 }
+.modal-arrow-svg {
+  color: #b3b3b3;
+}
+.modal-arrow-svg:hover {
+  color: #1d4a63;
+}
 .modal-close {
   width: 35px;
   margin-top: 4px;
   margin-bottom: 2px;
+}
+.modal-close-svg {
+  color: #b3b3b3;
+  width: 25px;
+  margin-left: 5px;
+}
+.modal-close-svg:hover {
+  color: #1d4a63;
 }
 
 .hero-block {
@@ -226,7 +250,7 @@ p {
 .hero-title {
   font-family: kepler-std-display;
   font-weight: 100;
-  font-size: 32px;
+  font-size: 35px;
   color: white;
   line-height: 35px;
 }
@@ -413,7 +437,7 @@ p {
   font-family: kepler-std-display;
   color: #1d4a63;
   font-size: 35px;
-  letter-spacing: .6px;
+  letter-spacing: 0px;
   font-weight: 400;
   line-height: 1;
 }
@@ -842,6 +866,8 @@ svg {
   color: gray !important;
   font-family: kepler-std-display;
   font-weight: 100;
+  font-size: 13px;
+  line-height: 22px;
   letter-spacing: 4px;
   text-align: center;
   margin-top: 30px
@@ -1058,7 +1084,7 @@ svg {
 }
 .blue-main-header {
   color: #9fbdcd;
-  font-family: Arial, sans-serif;
+  font-family: proxima-nova-black, sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 6.5vw;
@@ -1205,7 +1231,7 @@ svg {
 
 .large-number {
   color: #9fbdcd;
-  font-family: Arial, sans-serif;
+  font-family: kepler-std-display, sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 11vw;
@@ -1236,7 +1262,7 @@ svg {
   width: 40px;
   height: 40px;
   background-color: #1d4a63;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 50px;
   text-align: center;

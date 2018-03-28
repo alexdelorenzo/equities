@@ -28,7 +28,6 @@ class Home extends React.Component {
               background={StrategyBackground}
               arrowDirection={'right'}
               textPosition={'center'}
-              fadeOnScroll={true}
               url={'/strategy/strategy-overview'}
             />
           </Row>
@@ -44,7 +43,7 @@ class Home extends React.Component {
                 background={FirmIntro}
                 arrowDirection={'left'}
                 width={'two-column'}
-                fadeOnScroll={true}
+                fadeOnHover={true}
                 url={'/firm/firm-overview'}
               />
             </Col>
@@ -60,7 +59,7 @@ class Home extends React.Component {
                 arrowDirection={'right'}
                 textPosition={'right'}
                 width={'two-column'}
-                fadeOnScroll={true}
+                fadeOnHover={true}
                 url={'/leadership'}
               />
             </Col>
@@ -69,31 +68,5 @@ class Home extends React.Component {
     );
   }
 }
-
-var animateHTML = function () {
-  var elems,
-    windowHeight
-  var init = function () {
-    elems = document.getElementsByClassName('hero-background')
-    windowHeight = window.innerHeight
-    _addEventHandlers()
-  }
-  var _addEventHandlers = function () {
-    window.addEventListener('scroll', _checkPosition)
-    window.addEventListener('resize', init)
-  }
-  var _checkPosition = function () {
-    for (var i = 0; i < elems.length; i++) {
-      var posFromTop = elems[i].getBoundingClientRect().top
-      if (posFromTop - windowHeight <= 0) {
-        elems[i].className = elems[i].className.replace('hero-background', 'hero-background-color')
-      }
-    }
-  }
-  return {
-    init: init
-  }
-}
-animateHTML().init()
 
 export default Home;

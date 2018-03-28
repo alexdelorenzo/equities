@@ -149,9 +149,11 @@ class MapPage extends React.Component {
         </div>
         </div>
         <Modal
+          closable={true}
           visible={this.state.townModal}
           footer={false}
           maskClosable={true}
+          onCancel={this.handleCancel.bind(this)}
         >
           <div
               onClick={this.handleCancel.bind(this)}
@@ -163,7 +165,7 @@ class MapPage extends React.Component {
           >
             <div className="modal-close">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                 viewBox="0 0 25 25" style={{ enableBackground: 'new 0 0 25 25', color: '#b3b3b3', width: 25, marginLeft: 5}}>
+                 viewBox="0 0 25 25" className="modal-close-svg" style={{ enableBackground: 'new 0 0 25 25' }}>
               <path d="M13.2,12.5L24.4,1.2c0.2-0.2,0.2-0.5,0-0.7c-0.2-0.2-0.5-0.2-0.7,0L12.5,11.8L1.2,0.5C1,0.4,0.7,0.4,0.5,0.5S0.4,1,0.5,1.2
                 l11.3,11.3L0.5,23.7c-0.2,0.2-0.2,0.5,0,0.7c0.1,0.1,0.2,0.1,0.3,0.1s0.2,0,0.3-0.1l11.3-11.3l11.3,11.3c0.1,0.1,0.2,0.1,0.3,0.1
                 s0.2,0,0.3-0.1c0.2-0.2,0.2-0.5,0-0.7L13.2,12.5z"/>
