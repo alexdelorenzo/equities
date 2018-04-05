@@ -164,7 +164,7 @@ class FirmOverview extends React.Component {
             xs={24}
             md={{ span: 12, offset: 6 }}
           >
-            <h3 className="section-header-blue">ENVIRONMENTAL ACTION</h3>
+            <h3 className="section-header-blue">ENVIRONMENTAL, SOCIAL, AND GOVERNANCE</h3>
             <p>
               Our dedication to land preservation is unparalleled among industry
               competitors. We see it as our responsibility to more efficiently
@@ -173,6 +173,18 @@ class FirmOverview extends React.Component {
               preservation trusts and local officials help protect and preserve
               New Jersey’s viewsheds and natural resources for future
               generations to enjoy.
+            </p>
+          </Col>
+        </Row>
+        <Row className="gutter-row" gutter={40}>
+          <Col
+            className="paragraph paragraph-padding"
+            xs={24}
+            md={{ span: 12, offset: 6 }}
+          >
+            <h3 className="section-header-blue">CORPORATE ALIGNMENT</h3>
+            <p>
+            Ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
             </p>
           </Col>
         </Row>
