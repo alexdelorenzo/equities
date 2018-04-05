@@ -32,7 +32,7 @@ p {
   background: #f9fafa;
 }
 .barn-background {
-  animation: toColorDelay 4.5s;
+  animation: toColorDelay 4s;
 }
 .hero-background {
   background: #f9fafa;
@@ -58,30 +58,12 @@ p {
 }
 
 @keyframes toColorDelay {
-  0% {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-  }
-  40% {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-  }
-  55% {
-    -webkit-filter: grayscale(75%);
-    filter: grayscale(75%);
-  }
-  70% {
-    -webkit-filter: grayscale(50%);
-    filter: grayscale(50%);
-  }
-  85% {
-    -webkit-filter: grayscale(25%);
-    filter: grayscale(25%);
-  }
-  100% {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-  }
+    0%    { -webkit-filter: grayscale(100%); filter: grayscale(100%); }
+    20%   { -webkit-filter: grayscale(100%); filter: grayscale(100%);}
+    40%   { -webkit-filter: grayscale(75%); filter: grayscale(75%); }
+    60%   { -webkit-filter: grayscale(50%); filter: grayscale(50%); }
+    80%   { -webkit-filter: grayscale(25%); filter: grayscale(25%); }
+    100%  { -webkit-filter: grayscale(0%); filter: grayscale(0%); }
 }
 @keyframes toColor {
   0% {
@@ -212,6 +194,9 @@ p {
 .arrow:hover .arrow-before {
   width: 60px;
 }
+.hero-background:hover .arrow-before {
+  width: 60px;
+}
 .arrow-before-noHov {
   content: "";
   display: block;
@@ -291,24 +276,14 @@ p {
   margin-left: 50%;
   transform: translateX(-300px);
   display: block;
-  background: radial-gradient(
-    ellipse,
-    rgba(0, 0, 0, 0.5) 30%,
-    rgba(0, 0, 0, 0) 70%
-  );
-  animation: growShadow 5s linear;
+  background: radial-gradient(ellipse, rgba(0,0,0,.5) 30%, rgba(0,0,0,0) 70%);
+  animation: growShadow 4s linear;
 }
 
 @keyframes growShadow {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0%    { opacity: 0 }
+    20%   { opacity: 0 }
+    100%  { opacity: 1 }
 }
 
 .hero-line {

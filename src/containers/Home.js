@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'antd';
 import { Element } from 'react-scroll';
+import { NavLink } from 'react-router-dom'
 
 import PortfolioSection from '../components/PortfolioSection';
 import HomeHeroImage from '../components/HomeHeroImage';
@@ -36,32 +37,36 @@ class Home extends React.Component {
               style={{ textAlign: 'left' }}
               xs={24}
               md={12}>
-              <HeroImage
-                smallCall={'OUR'}
-                largeCall={'Firm'}
-                height={65}
-                background={FirmIntro}
-                arrowDirection={'left'}
-                width={'two-column'}
-                fadeOnHover={true}
-                url={'/firm/firm-overview'}
-              />
+              <NavLink to="/firm/firm-overview">
+                <HeroImage
+                  smallCall={'OUR'}
+                  largeCall={'Firm'}
+                  height={65}
+                  background={FirmIntro}
+                  arrowDirection={'left'}
+                  width={'two-column'}
+                  fadeOnHover={true}
+                  url={'/firm/firm-overview'}
+                />
+              </NavLink>
             </Col>
             <Col
               style={{ textAlign: 'right' }}
               xs={24}
               md={12}>
-              <HeroImage
-                smallCall={'OUR EXECUTIVE'}
-                largeCall={'Leadership'}
-                height={65}
-                background={LeadershipIntro}
-                arrowDirection={'right'}
-                textPosition={'right'}
-                width={'two-column'}
-                fadeOnHover={true}
-                url={'/leadership'}
-              />
+              <NavLink to="/leadership">
+                <HeroImage
+                  smallCall={'OUR EXECUTIVE'}
+                  largeCall={'Leadership'}
+                  height={65}
+                  background={LeadershipIntro}
+                  arrowDirection={'right'}
+                  textPosition={'right'}
+                  width={'two-column'}
+                  fadeOnHover={true}
+                  url={'/leadership'}
+                />
+              </NavLink>
             </Col>
           </Row>
       </div>
