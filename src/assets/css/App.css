@@ -1312,6 +1312,10 @@ svg {
   color: #fff;
   font-style: italic;
 }
+.dropdown-content {
+  font-size: 16px;
+  line-height: 23px;
+}
 
 .login-form__input {
   width: 100%;

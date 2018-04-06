@@ -9,8 +9,8 @@ class Contact extends React.Component {
     return (
     <div>
         <LocationBox
-            mainHeader="INVESTOR"
-            subHeader="Login"
+            mainHeader="SAY HI"
+            subHeader="Contact"
             start="Home"
             end="Contact"
         />
