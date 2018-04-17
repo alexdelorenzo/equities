@@ -51,18 +51,8 @@ class Navigation extends React.Component {
 		return (
 			<div className="menu-container">
 				<NavLink to="/">
-					{!this.state.open && this.props.windowWidth < 768 ? (
-						<div
-							className="icon-square"
-							style={{
-								display: 'none'
-							}}>
-							<img
-								alt="Melillo Equities Logo"
-								src={logo}
-								className="menu-logo"
-							/>
-						</div>
+					{this.props.windowWidth < 991 ? (
+					null
 					) : (
 						<div
 							className="icon-square"
@@ -129,6 +119,25 @@ class Navigation extends React.Component {
 						selectedKeys={[window.location.pathname]}
 						defaultSelectedKeys={[this.state.urlLocation]}
 						mode="inline">
+
+
+						{this.props.windowWidth < 991 ? (
+							<Menu.Item key="icon" style={{height: '118px'}}>
+							<div
+							className="icon-square"
+							>
+							<img
+								alt="Melillo Equities Logo"
+								src={logo}
+								className="menu-logo"
+							/>
+						</div>
+							</Menu.Item>
+							) : (
+							null
+							)}
+
+			
 						<Menu.Item key="/">
 							<NavLink to="/">
 								<span>HOME</span>

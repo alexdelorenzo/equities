@@ -16,6 +16,9 @@ p {
 	border-radius: 6px;
 	margin: 16px;
 }
+.ant-layout {
+	overflow: hidden;
+}
 
 .ant-layout-sider {
 	-webkit-box-shadow: 7px 0px 21px -12px rgba(0, 0, 0, 0.38);
@@ -112,6 +115,7 @@ p {
 	height: 100px;
 	width: 100px;
 	padding: 14px;
+	transition: width 0.3s ease-out;
 	position: absolute;
 	z-index: 99999;
 	top: 50px;
@@ -579,7 +583,7 @@ li.ant-menu-item span {
 .ant-menu-vertical .ant-menu-submenu-title,
 .ant-menu-inline .ant-menu-submenu-title {
 	line-height: 42px !important;
-	height: 42px !important;
+	height: 42px ;
 	border-top: 1px solid #dddddd;
 }
 .ant-menu-sub.ant-menu-inline > .ant-menu-item,
@@ -1055,13 +1059,7 @@ svg {
 		margin-top: 0px;
 	}
 }
-@media only screen and (max-width: 768px) {
-	.home-hero-intro {
-		font-size: 22px;
-	}
-	.home-hero-title {
-		font-size: 75px;
-	}
+@media only screen and (max-width: 991px) {
 	.icon-square {
 		width: 100vw;
 		right: 0;
@@ -1073,11 +1071,23 @@ svg {
 	}
 	.menu {
 		width: 100vw !important;
-		margin-top: 60px;
+		margin-top: -60px;
 	}
 	.menu-collapsed {
 		width: 0px !important;
 	}
+	.ant-menu-root.ant-menu-vertical, .ant-menu-root.ant-menu-inline {
+		height: 100vh;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.home-hero-intro {
+		font-size: 22px;
+	}
+	.home-hero-title {
+		font-size: 75px;
+	}
+
 }
 .visible-mobile {
 	display: none;
