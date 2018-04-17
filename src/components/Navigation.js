@@ -246,11 +246,9 @@ class Navigation extends React.Component {
 							className="icon-square"
 							style={{
 								position: 'fixed',
-								width: 0,
-								right: -10,
-								height: 120,
-								border: 'none',
-								padding: 'none'
+								width: '100%',
+								right: 0,
+								height: 120
 							}}>
 							<img
 								alt="Melillo Equities Logo"
@@ -265,7 +263,9 @@ class Navigation extends React.Component {
 							style={{
 								position: 'fixed',
 								width: 0,
-								right: 0,
+								right: -10,
+								border: 'none',
+								padding: 'none',
 								height: 120
 							}}>
 							<img
@@ -297,7 +297,7 @@ class Navigation extends React.Component {
 								margin: 'auto'
 							}}
 							strokeWidth={1}
-							color="red"
+							color="white"
 							animationDuration={0.5}
 						/>
 					</a>
