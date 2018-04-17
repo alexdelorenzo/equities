@@ -4,6 +4,7 @@ import { HamburgerButton } from 'react-hamburger-button'
 import { Menu } from 'antd'
 import logo from '../assets/images/logo.svg'
 import { NavLink } from 'react-router-dom'
+import windowSize from 'react-window-size'
 var classNames = require('classnames')
 const SubMenu = Menu.SubMenu
 
@@ -50,13 +51,31 @@ class Navigation extends React.Component {
 		return (
 			<div className="menu-container">
 				<NavLink to="/">
-					<div
-						className="icon-square"
-						style={{
-							position: 'fixed'
-						}}>
-						<img alt="Melillo Equities Logo" src={logo} className="menu-logo" />
-					</div>
+					{!this.state.open && this.props.windowWidth < 768 ? (
+						<div
+							className="icon-square"
+							style={{
+								display: 'none'
+							}}>
+							<img
+								alt="Melillo Equities Logo"
+								src={logo}
+								className="menu-logo"
+							/>
+						</div>
+					) : (
+						<div
+							className="icon-square"
+							style={{
+								position: 'fixed'
+							}}>
+							<img
+								alt="Melillo Equities Logo"
+								src={logo}
+								className="menu-logo"
+							/>
+						</div>
+					)}
 				</NavLink>
 
 				<a
@@ -66,19 +85,35 @@ class Navigation extends React.Component {
 						fontFamily: 'kepler-std-display'
 					}}
 					onClick={this.handleClick.bind(this)}>
-					<HamburgerButton
-						open={this.state.open}
-						onClick={this.handleClick.bind(this)}
-						width={30}
-						height={25}
-						className="hamburger-square"
-						style={{
-							margin: 'auto'
-						}}
-						strokeWidth={1}
-						color="white"
-						animationDuration={0.5}
-					/>
+					{this.props.windowWidth > 991 ? (
+						<HamburgerButton
+							open={this.state.open}
+							onClick={this.handleClick.bind(this)}
+							width={30}
+							height={25}
+							className="hamburger-square"
+							style={{
+								margin: 'auto'
+							}}
+							strokeWidth={1}
+							color="white"
+							animationDuration={0.5}
+						/>
+					) : (
+						<HamburgerButton
+							open={this.state.open}
+							onClick={this.handleClick.bind(this)}
+							width={20}
+							height={15}
+							className="hamburger-square"
+							style={{
+								margin: 'auto'
+							}}
+							strokeWidth={1}
+							color="white"
+							animationDuration={0.5}
+						/>
+					)}
 				</a>
 
 				<div
@@ -151,4 +186,4 @@ class Navigation extends React.Component {
 	}
 }
 
-export default withRouter(Navigation)
+export default withRouter(windowSize(Navigation))

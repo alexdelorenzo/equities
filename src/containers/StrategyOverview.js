@@ -25,10 +25,10 @@ class StrategyOverview extends React.Component {
         <Row className="gutter-row" id="strategy-overview" gutter={45} style={{paddingTop: 30}}>
 
           <Col className="paragraph-emphasis" xs={24} md={{ span: 8, offset: 4 }} style={{paddingBottom: 30}}>
-            <span>MELILLO EQUITIES</span> pursues investment opportunities necessitating the development, repositioning and/or recapitalization of properties within supply-constrained submarkets.
+            <span>MELILLO EQUITIES</span> pursues investment opportunities capitalizing on the development, repositioning and/or recapitalization of properties within supply-constrained submarkets.
           </Col>
           <Col className="paragraph" xs={24} md={8}>
-            <p>Within these markets, we target a wide variety of asset classes across the full risk-return spectrum. Once invested, we achieve long term profitability through unwavering dedication to our investment thesis, which integrates leading Urban Planning principles with our comprehensive land-use plans.</p>
+            <p >Within these markets, we source a variety of asset classes across the full risk-return spectrum. Once invested, we generate returns through unwavering dedication to our investment thesis, which integrates leading Urban Planning principles with our comprehensive land-use plans.</p>
           </Col>
           <Col md={{ span: 4}} style={{zIndex: 9999}} className="anchor-menu">
             <Anchor
@@ -58,7 +58,7 @@ class StrategyOverview extends React.Component {
               <p>The existence of pricing disparities between select markets with comparable underlying characteristics.</p>
               <Collapse style={{ paddingTop: 20 }} bordered={false}>
                 <Panel header="read more">
-                  <p>Within the last decade, revitalization efforts spearheaded by real estate firms have been quite impactful; cities once constrained by inadequate parking, dated infrastructure and limited amenities are now being revitalized into thriving urban centers. This resurgence has led to increased enthusiasm for urban living, further solidifying attractive profit margins for participating firms. However, capital continues to be disproportionately allocated to larger urban centers, while smaller submarkets remain capital-stricken. This is largely due to firms’ inability to identify scalable investments, along with their reluctance to navigate the diverse sets of ordinances that govern each town.   The resulting disparity has meant that larger Metropolitan Statistical Areas (MSAs) have become oversaturated while overlooked submarkets with comparable underlying characteristics continue to provide ample investment opportunities.</p>
+                  <p className="dropdown-content">Within the last decade, revitalization efforts spearheaded by real estate firms have been quite impactful; cities once constrained by inadequate parking, dated infrastructure and limited amenities are now being revitalized into thriving urban centers. This resurgence has led to increased enthusiasm for urban living, further solidifying attractive profit margins for participating firms. However, capital continues to be disproportionately allocated to larger urban centers, while smaller submarkets remain capital-stricken. This is largely due to firms’ inability to identify scalable investments, along with their reluctance to navigate the diverse sets of ordinances that govern each town.   The resulting disparity has meant that larger Metropolitan Statistical Areas (MSAs) have become oversaturated while overlooked submarkets with comparable underlying characteristics continue to provide ample investment opportunities.</p>
                 </Panel>
               </Collapse>
             </Col>
@@ -73,7 +73,7 @@ class StrategyOverview extends React.Component {
               <p>The existence of synergies upon achieving critical mass within supply-constrained submarkets.</p>
               <Collapse style={{ paddingTop: 20 }} bordered={false}>
                 <Panel header="read more">
-                  <p>At Melillo Equities, we define critical mass as the point at which a firm achieves sufficient market share to realize the benefits derived from economies of scale and economies of scope. Despite the significant competitive advantages that such a position confers, most firms encounter two key challenges that indelibly hinder their progress. First, binding term limits force divestiture upon a fund’s maturity, which ultimately precludes systematic AUM growth. Secondly, real estate firms frequently disregard the importance of geographical concentration, amassing disconnected portfolios that account for a relatively small percentage of the overall supply within any given market. We believe that any viable roadmap for achieving critical mass begins by flouting these two common but counterproductive practices and committing to long-term, open-ended investment structures within supply-constrained submarkets.</p>
+                  <p className="dropdown-content">At Melillo Equities, we define critical mass as the point at which a firm achieves sufficient market share to realize the benefits derived from economies of scale and economies of scope. Despite the significant competitive advantages that such a position confers, most firms encounter two key challenges that indelibly hinder their progress. First, binding term limits force divestiture upon a fund’s maturity, which ultimately precludes systematic AUM growth. Secondly, real estate firms frequently disregard the importance of geographical concentration, amassing disconnected portfolios that account for a relatively small percentage of the overall supply within any given market. We believe that any viable roadmap for achieving critical mass begins by flouting these two common but counterproductive practices and committing to long-term, open-ended investment structures within supply-constrained submarkets.</p>
                 </Panel>
               </Collapse>
             </Col>
@@ -97,7 +97,7 @@ class StrategyOverview extends React.Component {
               <li>Asset Classes: Commercial, Multifamily and other Emerging Asset classes</li>
               <li>Lease Form: NN, NNN, Modified Gross</li>
               <li>Tenant: Single or Multiple Tenants</li>
-              <li>Transaction Size: Up to $7 million</li>
+              <li>Transaction Size: Up to $10 million</li>
               <li>Investment Hold Period: Perpetuity</li>
               <li>Target Returns: Core to Opportunistic</li>
             </ul>
@@ -113,7 +113,7 @@ class StrategyOverview extends React.Component {
           <Col className="paragraph" xs={24} md={8}>
             <ul>
               <li>Demographics Trends</li>
-              <li>Workforce (occupational specialization</li>
+              <li>Workforce (occupational specialization)</li>
               <li>Social Heterogeneity</li>
               <li>Transit Orientation</li>
               <li>Public Infrastructure</li>
@@ -129,10 +129,10 @@ class StrategyOverview extends React.Component {
           </Col>
           <Col className="paragraph" xs={24} md={8}>
             <ul>
-              <li>Historical Boards</li>
+              <li>Municipal Historic Boards</li>
               <li>Restrictive Zoning Ordinances</li>
               <li>Geographical Constraints (waterways, slopes, etc)</li>
-              <li>DEP jurisdiction</li>
+              <li>DEP Jurisdiction</li>
             </ul>
           </Col>
           <Col xs={24} md={{ span: 16, offset: 4 }} style={{ paddingTop: 30, paddingBottom: 10}}>
@@ -194,12 +194,12 @@ class StrategyOverview extends React.Component {
           </Col>
           <Col className="paragraph" xs={24} md={{ span: 10 }}>
             <h3 className="section-header-blue">VERTICAL INTEGRATION</h3>
-            <p>A vertically integrated platform allows for a seamless flow of capital throughout all stages of the investment pipeline. By controlling the value chain, we provide our clients with a level of reliability and consistency that is unparalleled among our competitors.</p>
+            <p>Our vertically integrated platform allows for a seamless flow of capital throughout all stages of the investment pipeline. By controlling the value chain, we provide our clients with a level of reliability and consistency that is unparalleled among our competitors.</p>
           </Col>
         </Row>
 
         <Row className="gutter-row" gutter={45} style={{ paddingTop: 30}}>
-          <Col xs={24} md={{ span: 12, offset: 6 }}>
+          <Col xs={24} md={{ span: 10, offset: 8 }}>
             <div className="strategy-box" style={{ backgroundColor: '#aaa' }}>
               <h1 className="heading">Capital</h1>
             </div>

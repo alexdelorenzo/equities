@@ -1,185 +1,173 @@
-import React from "react";
-import { Tooltip, Modal, Row, Col, Badge } from "antd";
-import MapPinLocation from "../../assets/images/map-pin.png";
+import React from 'react'
+import { Tooltip, Modal, Row, Col, Badge } from 'antd'
+import MapPinLocation from '../../assets/images/map-pin.png'
 
 class MapPin extends React.Component {
-  render() {
-    return (
-      <div>
-        <Tooltip title={this.props.address} placement="rightTop">
-          <div
-            onClick={() => this.props.openMapModal()}
-            className="map-pin-icon"
-            style={{
-              top: this.props.top + "%",
-              left: this.props.left + "%"
-            }}
-          >
-            <img
-              src={MapPinLocation}
-              alt="Map Pin"
-              style={{
-                maxWidth: 45 + "px"
-              }}
-            />
-            <p
-              style={{
-                position: "absolute",
-                color: "white",
-                fontSize: 16 + "px",
-                top: 8 + "px",
-                width: 83 + "%",
-                marginRight: 20 + "px",
-                textAlign: "center",
-                fontFamily: "serif",
-                fontWeight: 800
-              }}
-            >
-              <Badge />
-              <span
-                className="map-marker-icon ant-badge ant-badge-status ant-badge-not-a-wrapper"
-                style={{
-                  position: "absolute",
-                  right: "2px",
-                  top: "-4px"
-                }}
-              >
-                <span
-                  className="ant-badge-status-dot ant-badge-status-processing"
-                  style={{
-                    width: "30px",
-                    height: "30px",
-                    backgroundColor: "none"
-                  }}
-                />
-              </span>
-              {this.props.number}
-            </p>
-          </div>
-        </Tooltip>
-        <Modal
-          closable={true}
-          style={{
-            top: 50,
-            width: 95 + "%"
-          }}
-          visible={this.props.open}
-          onOk={this.props.closeMapModal}
-          onCancel={this.props.closeMapModal}
-          footer={false}
-          maskClosable={true}
-        >
-          <div
-            onClick={this.props.closeMapModal}
-            style={{
-              float: "right",
-              padding: 20 + "px",
-              borderLeft: "1px solid #b3b3b3",
-              cursor: "pointer"
-            }}
-          >
-            <div className="modal-close">
-              <svg
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                viewBox="0 0 25 25"
-                className="modal-close-svg"
-                style={{ enableBackground: "new 0 0 25 25" }}
-              >
-                <path
-                  d="M13.2,12.5L24.4,1.2c0.2-0.2,0.2-0.5,0-0.7c-0.2-0.2-0.5-0.2-0.7,0L12.5,11.8L1.2,0.5C1,0.4,0.7,0.4,0.5,0.5S0.4,1,0.5,1.2
+	render() {
+		return (
+			<div>
+				<Tooltip title={this.props.address} placement="rightTop">
+					<div
+						onClick={() => this.props.openMapModal()}
+						className="map-pin-icon"
+						style={{
+							top: this.props.top + '%',
+							left: this.props.left + '%'
+						}}>
+						<img
+							src={MapPinLocation}
+							alt="Map Pin"
+							style={{
+								maxWidth: 45 + 'px'
+							}}
+						/>
+						<p
+							style={{
+								position: 'absolute',
+								color: 'white',
+								fontSize: 16 + 'px',
+								top: 8 + 'px',
+								width: 83 + '%',
+								marginRight: 20 + 'px',
+								textAlign: 'center',
+								fontFamily: 'serif',
+								fontWeight: 800
+							}}>
+							<Badge />
+							<span
+								className="map-marker-icon ant-badge ant-badge-status ant-badge-not-a-wrapper"
+								style={{
+									position: 'absolute',
+									right: '2px',
+									top: '-4px'
+								}}>
+								<span
+									className="ant-badge-status-dot ant-badge-status-processing"
+									style={{
+										width: '30px',
+										height: '30px',
+										backgroundColor: 'none'
+									}}
+								/>
+							</span>
+							{this.props.number}
+						</p>
+					</div>
+				</Tooltip>
+				<Modal
+					closable={true}
+					style={{
+						top: 50,
+						width: 95 + '%'
+					}}
+					visible={this.props.open}
+					onOk={this.props.closeMapModal}
+					onCancel={this.props.closeMapModal}
+					footer={false}
+					maskClosable={true}>
+					<div
+						onClick={this.props.closeMapModal}
+						style={{
+							float: 'right',
+							padding: 20 + 'px',
+							borderLeft: '1px solid #b3b3b3',
+							cursor: 'pointer'
+						}}>
+						<div className="modal-close">
+							<svg
+								version="1.1"
+								id="Layer_1"
+								xmlns="http://www.w3.org/2000/svg"
+								x="0px"
+								y="0px"
+								viewBox="0 0 25 25"
+								className="modal-close-svg"
+								style={{ enableBackground: 'new 0 0 25 25' }}>
+								<path
+									d="M13.2,12.5L24.4,1.2c0.2-0.2,0.2-0.5,0-0.7c-0.2-0.2-0.5-0.2-0.7,0L12.5,11.8L1.2,0.5C1,0.4,0.7,0.4,0.5,0.5S0.4,1,0.5,1.2
                   l11.3,11.3L0.5,23.7c-0.2,0.2-0.2,0.5,0,0.7c0.1,0.1,0.2,0.1,0.3,0.1s0.2,0,0.3-0.1l11.3-11.3l11.3,11.3c0.1,0.1,0.2,0.1,0.3,0.1
                   s0.2,0,0.3-0.1c0.2-0.2,0.2-0.5,0-0.7L13.2,12.5z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            onClick={() => this.props.nextMapModal()}
-            style={{
-              float: "right",
-              padding: 20 + "px",
-              borderLeft: "1px solid #b3b3b3",
-              cursor: "pointer"
-            }}
-          >
-            <div className="modal-arrow">
-              <svg
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                viewBox="0 0 36 18"
-                className="modal-arrow-svg"
-                style={{ enableBackground: "new 0 0 36 18" }}
-              >
-                <path
-                  d="M27.1,0.1c-0.2-0.2-0.5-0.2-0.7,0c-0.2,0.2-0.2,0.5,0,0.7l7.8,7.7H0.5C0.2,8.5,0,8.7,0,9c0,0.3,0.2,0.5,0.5,0.5h33.6
+								/>
+							</svg>
+						</div>
+					</div>
+					<div
+						onClick={() => this.props.nextMapModal()}
+						style={{
+							float: 'right',
+							padding: 20 + 'px',
+							borderLeft: '1px solid #b3b3b3',
+							cursor: 'pointer'
+						}}>
+						<div className="modal-arrow">
+							<svg
+								version="1.1"
+								id="Layer_1"
+								xmlns="http://www.w3.org/2000/svg"
+								x="0px"
+								y="0px"
+								viewBox="0 0 36 18"
+								className="modal-arrow-svg"
+								style={{ enableBackground: 'new 0 0 36 18' }}>
+								<path
+									d="M27.1,0.1c-0.2-0.2-0.5-0.2-0.7,0c-0.2,0.2-0.2,0.5,0,0.7l7.8,7.7H0.5C0.2,8.5,0,8.7,0,9c0,0.3,0.2,0.5,0.5,0.5h33.6
                   l-7.8,7.7c-0.2,0.2-0.2,0.5,0,0.7c0.1,0.1,0.2,0.1,0.3,0.1s0.3,0,0.3-0.1L36,9L27.1,0.1z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            onClick={() => this.props.previousMapModal()}
-            style={{
-              float: "right",
-              padding: 20 + "px",
-              borderLeft: "1px solid #b3b3b3",
-              cursor: "pointer"
-            }}
-          >
-            <div className="modal-arrow arrow-left">
-              <svg
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                viewBox="0 0 36 18"
-                className="modal-arrow-svg"
-                style={{ enableBackground: "new 0 0 36 18" }}
-              >
-                <path
-                  d="M27.1,0.1c-0.2-0.2-0.5-0.2-0.7,0c-0.2,0.2-0.2,0.5,0,0.7l7.8,7.7H0.5C0.2,8.5,0,8.7,0,9c0,0.3,0.2,0.5,0.5,0.5h33.6
+								/>
+							</svg>
+						</div>
+					</div>
+					<div
+						onClick={() => this.props.previousMapModal()}
+						style={{
+							float: 'right',
+							padding: 20 + 'px',
+							borderLeft: '1px solid #b3b3b3',
+							cursor: 'pointer'
+						}}>
+						<div className="modal-arrow arrow-left">
+							<svg
+								version="1.1"
+								id="Layer_1"
+								xmlns="http://www.w3.org/2000/svg"
+								x="0px"
+								y="0px"
+								viewBox="0 0 36 18"
+								className="modal-arrow-svg"
+								style={{ enableBackground: 'new 0 0 36 18' }}>
+								<path
+									d="M27.1,0.1c-0.2-0.2-0.5-0.2-0.7,0c-0.2,0.2-0.2,0.5,0,0.7l7.8,7.7H0.5C0.2,8.5,0,8.7,0,9c0,0.3,0.2,0.5,0.5,0.5h33.6
                   l-7.8,7.7c-0.2,0.2-0.2,0.5,0,0.7c0.1,0.1,0.2,0.1,0.3,0.1s0.3,0,0.3-0.1L36,9L27.1,0.1z"
-                />
-              </svg>
-            </div>
-          </div>
-          <br />
-          <img
-            src={this.props.heroImageLocation}
-            className={"modal-photo"}
-            alt="Modal"
-          />
-          <br />
-          <h1
-            style={{
-              color: "#1d4a63",
-              textAlign: "center",
-              fontSize: 26 + "px",
-              fontFamily: "Times New Roman"
-            }}
-          >
-            {this.props.formalAddress}
-          </h1>
-          <h2
-            style={{
-              color: "gray",
-              textAlign: "center",
-              fontSize: 17 + "px",
-              fontFamily: "Times New Roman"
-            }}
-          >
-            <i>{this.props.city}</i>
-          </h2>
+								/>
+							</svg>
+						</div>
+					</div>
+					<br />
+					<img
+						src={this.props.heroImageLocation}
+						className={'modal-photo'}
+						alt="Modal"
+					/>
+					<br />
+					<h1
+						style={{
+							color: '#1d4a63',
+							textAlign: 'center',
+							fontSize: 26 + 'px',
+							fontFamily: 'kepler-std-display'
+						}}>
+						{this.props.formalAddress}
+					</h1>
+					<h2
+						style={{
+							color: 'gray',
+							textAlign: 'center',
+							fontSize: 17 + 'px',
+							fontFamily: 'kepler-std-display'
+						}}>
+						<i>{this.props.city}</i>
+					</h2>
 
-          {/* <div
+					{/* <div
             style={{
               padding: 122 + "px",
               paddingBottom: 30 + "px",
@@ -252,36 +240,34 @@ class MapPin extends React.Component {
               </Col>
             </Row>
             </div>*/}
-          <br />
-        </Modal>
-        <div className="mobile-modal">
-          <img
-            src={this.props.heroImageLocation}
-            className={"modal-photo"}
-            alt="Modal"
-          />
-          <br />
-          <h1
-            style={{
-              color: "#1d4a63",
-              textAlign: "center",
-              fontSize: 26 + "px",
-              fontFamily: "Times New Roman"
-            }}
-          >
-            {this.props.formalAddress}
-          </h1>
-          <h2
-            style={{
-              color: "gray",
-              textAlign: "center",
-              fontSize: 17 + "px",
-              fontFamily: "Times New Roman"
-            }}
-          >
-            <i>{this.props.city}</i>
-          </h2>
-          {/* <Row>
+					<br />
+				</Modal>
+				<div className="mobile-modal">
+					<img
+						src={this.props.heroImageLocation}
+						className={'modal-photo'}
+						alt="Modal"
+					/>
+					<br />
+					<h1
+						style={{
+							color: '#1d4a63',
+							textAlign: 'center',
+							fontSize: 26 + 'px',
+							fontFamily: 'kepler-std-display'
+						}}>
+						{this.props.formalAddress}
+					</h1>
+					<h2
+						style={{
+							color: 'gray',
+							textAlign: 'center',
+							fontSize: 17 + 'px',
+							fontFamily: 'kepler-std-display'
+						}}>
+						<i>{this.props.city}</i>
+					</h2>
+					{/* <Row>
             <Col xs={{span: 18, offset: 3}}>
                 <p style={{
                     color: 'gray',
@@ -310,10 +296,10 @@ class MapPin extends React.Component {
                 <br />
             </Col>
             </Row> */}
-        </div>
-      </div>
-    );
-  }
+				</div>
+			</div>
+		)
+	}
 }
 
-export default MapPin;
+export default MapPin
