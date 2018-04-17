@@ -40,6 +40,7 @@ class Home extends React.Component {
             height={45}
             background={FirmIntro}
             fadeOnHover={true}
+            centerCenter={true}
             arrowDirection={'right'}
             textPosition={'center'}
             url={'/firm/firm-overview'}

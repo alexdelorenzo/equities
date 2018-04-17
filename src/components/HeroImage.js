@@ -19,7 +19,15 @@ export const HeroImage = props => {
   return (
     <Layout
       className={props.fadeOnHover ? "hero-background" : "barn-background"}
-      style={{
+      style={  props.centerCenter ?
+        {
+          minHeight: props.height + "vh",
+          backgroundPosition: "center center",
+          backgroundSize: "cover",
+          backgroundImage: `url(${props.background})`
+        }
+
+        :{
         minHeight: props.height + "vh",
         backgroundPosition: "bottom",
         backgroundSize: "cover",
