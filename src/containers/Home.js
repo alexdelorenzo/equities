@@ -19,28 +19,34 @@ class Home extends React.Component {
 					<PortfolioSection />
 				</Element>
 				<Row style={{ textAlign: 'center' }}>
-					<HeroImage
-						smallCall={'OUR'}
-						largeCall={'Strategy'}
-						height={45}
-						background={StrategyBackground}
-						arrowDirection={'right'}
-						textPosition={'center'}
-						url={'/strategy/strategy-overview'}
-					/>
+					<NavLink to="/strategy">
+						<HeroImage
+							smallCall={'OUR'}
+							largeCall={'Strategy'}
+							height={45}
+							fadeOnHover={true}
+							background={StrategyBackground}
+							arrowDirection={'right'}
+							textPosition={'center'}
+							url={'/strategy/strategy-overview'}
+						/>
+					</NavLink>
 				</Row>
 
 				<Row style={{ textAlign: 'center' }}>
-					<HeroImage
-						smallCall={'OUR'}
-						largeCall={'Firm'}
-						height={45}
-						background={FirmIntro}
-						fadeOnHover={true}
-						arrowDirection={'right'}
-						textPosition={'center'}
-						url={'/firm/firm-overview'}
-					/>
+					<NavLink to="/firm">
+						<HeroImage
+							smallCall={'OUR'}
+							largeCall={'Firm'}
+							height={45}
+							background={FirmIntro}
+							fadeOnHover={true}
+							centerCenter={true}
+							arrowDirection={'right'}
+							textPosition={'center'}
+							url={'/firm/firm-overview'}
+						/>
+					</NavLink>
 				</Row>
 			</div>
 		)
