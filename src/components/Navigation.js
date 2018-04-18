@@ -235,10 +235,8 @@ class Navigation extends React.Component {
 							style={{
 								position: 'fixed',
 								width: '100vh',
-								right: -10,
-								height: 120,
-								border: 'none',
-								padding: 'none'
+								right: 0,
+								height: 120
 							}}>
 							<img
 								alt="Melillo Equities Logo"
@@ -253,8 +251,10 @@ class Navigation extends React.Component {
 							style={{
 								position: 'fixed',
 								width: 0,
-								right: 0,
-								height: 120
+								right: -10,
+								height: 120,
+								border: 'none',
+								padding: 'none'
 							}}>
 							<img
 								alt="Melillo Equities Logo"
@@ -285,7 +285,7 @@ class Navigation extends React.Component {
 								margin: 'auto'
 							}}
 							strokeWidth={1}
-							color="red"
+							color="white"
 							animationDuration={0.5}
 						/>
 					</a>
