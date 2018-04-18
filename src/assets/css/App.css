@@ -141,6 +141,10 @@ p {
 	position: absolute;
 	z-index: 99999;
 	top: 150px;
+	height: 100px;
+	width: 100px;
+	padding: 34px;
+	padding-top: 37px;
 }
 
 .menu-logo {
@@ -531,6 +535,22 @@ p {
 	}
 	.mobile-modal {
 		display: block;
+	}
+	.icon-square {
+		
+		height: 117px !important;
+		right: 0px !important;
+		width: 100% !important;
+	}
+	.icon-square img {
+		margin: auto;
+		margin-top: 18px;
+	}
+	.hamburger-square {
+		height: 60px;
+		width: 60px;
+		padding: 20px;
+		padding-top: 22.5px;
 	}
 }
 
