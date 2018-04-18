@@ -210,7 +210,7 @@ class StrategyOverview extends React.Component {
               </span>
             </div>
             <div className="strategy-box" style={{ backgroundColor: '#1d4a63' }}>
-              <h1 className="sub-heading">TRANSACTION STRUCTURING</h1>
+              <h1 className="sub-heading double-line">TRANSACTION STRUCTURING</h1>
             </div>
             <div className="home-hero-arrow home-hero-arrow-center arrow-down" style={{ marginTop: 6, marginBottom: 7}}>
               <span className="arrow" style={{ top: 0}}>
@@ -228,7 +228,7 @@ class StrategyOverview extends React.Component {
               </span>
             </div>
             <div className="strategy-box" style={{ backgroundColor: '#1d4a63' }}>
-              <h1 className="sub-heading">CONSTRUCTION OVERSIGHT</h1>
+              <h1 className="sub-heading double-line">CONSTRUCTION OVERSIGHT</h1>
             </div>
             <div className="home-hero-arrow home-hero-arrow-center arrow-down" style={{ marginTop: 6, marginBottom: 7}}>
               <span className="arrow" style={{ top: 0}}>
@@ -237,7 +237,7 @@ class StrategyOverview extends React.Component {
               </span>
             </div>
             <div className="strategy-box" style={{ backgroundColor: '#1d4a63' }}>
-              <h1 className="sub-heading">PROPERTY & ASSET MANAGEMENT</h1>
+              <h1 className="sub-heading double-line">PROPERTY & ASSET MANAGEMENT</h1>
             </div>
             <div className="home-hero-arrow home-hero-arrow-center arrow-down" style={{ marginTop: 6, marginBottom: 7}}>
               <span className="arrow" style={{ top: 0}}>

@@ -1064,14 +1064,7 @@ svg {
 		height: 100vh;
 	}
 }
-@media only screen and (max-width: 768px) {
-	.home-hero-intro {
-		font-size: 22px;
-	}
-	.home-hero-title {
-		font-size: 75px;
-	}
-}
+
 .visible-mobile {
 	display: none;
 }
@@ -1440,4 +1433,36 @@ svg {
 
 .ant-collapse-header {
 	font-size: 18px;
+}
+@media only screen and (max-width: 768px) {
+	.home-hero-intro {
+		font-size: 22px;
+	}
+	.home-hero-title {
+		font-size: 75px;
+	}
+	
+	.strategy-box {
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	.strategy-box .heading {
+		font-size: 32px;
+		line-height: 70px;
+		font-family: kepler-std-display;
+		color: #fff;
+	}
+	.strategy-box .sub-heading {
+		font-size: 22px;
+		line-height: 70px;
+		letter-spacing: 5px;
+		font-family: kepler-std-display;
+		color: #fff;
+	}
+}
+@media only screen and (max-width: 768px) {
+.double-line {
+	line-height: 50px !important;
+}
 }
