@@ -125,12 +125,6 @@ class Navigation extends React.Component {
 										<span>FIRM</span>
 									</NavLink>
 								</Menu.Item>
-
-								<Menu.Item key="/leadership">
-									<NavLink to="/leadership">
-										<span>LEADERSHIP</span>
-									</NavLink>
-								</Menu.Item>
 								<Menu.Item key="/strategy">
 									<NavLink to="/strategy">
 										<span>STRATEGY</span>
@@ -192,12 +186,6 @@ class Navigation extends React.Component {
 								<Menu.Item key="/firm">
 									<NavLink to="/firm">
 										<span>FIRM</span>
-									</NavLink>
-								</Menu.Item>
-
-								<Menu.Item key="/leadership">
-									<NavLink to="/leadership">
-										<span>LEADERSHIP</span>
 									</NavLink>
 								</Menu.Item>
 								<Menu.Item key="/strategy">
@@ -336,12 +324,6 @@ class Navigation extends React.Component {
 							<Menu.Item key="/firm">
 								<NavLink to="/firm">
 									<span>FIRM</span>
-								</NavLink>
-							</Menu.Item>
-
-							<Menu.Item key="/leadership">
-								<NavLink to="/leadership">
-									<span>LEADERSHIP</span>
 								</NavLink>
 							</Menu.Item>
 							<Menu.Item key="/strategy">
