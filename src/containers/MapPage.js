@@ -112,7 +112,7 @@ class MapPage extends React.Component {
 							return (
 								<MapPin
 									key={entry.fields.id}
-									number={entry.fields.number}
+									number={entry.fields.number2}
 									closeMapModal={() => this.closeMapModal(entry.fields.id)}
 									openMapModal={() => this.openMapModal(entry.fields.id)}
 									nextMapModal={() => this.nextMapModal(entry.fields.id)}
