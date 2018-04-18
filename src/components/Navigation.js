@@ -234,9 +234,10 @@ class Navigation extends React.Component {
 							className="icon-square"
 							style={{
 								position: 'fixed',
-								width: '100vh',
+								width: '100vw',
 								right: 0,
-								height: 120
+								height: 120,
+								textAlign: 'center'
 							}}>
 							<img
 								alt="Melillo Equities Logo"
