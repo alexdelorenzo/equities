@@ -33,8 +33,6 @@ p {
 
 .barn-background {
 	background: #f9fafa;
-}
-.barn-background {
 	animation: toColorDelay 4s;
 }
 .hero-background {
@@ -335,7 +333,6 @@ p {
 }
 
 .menu-container {
-	position: fixed;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	z-index: 99999;
