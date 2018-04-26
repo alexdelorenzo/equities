@@ -164,7 +164,7 @@ class MapPage extends React.Component {
 							</svg>
 						</div>
 					</div>
-					<div className="paragraph" style={{ padding: '80px 10vw 80px 10vw' }}>
+					<div className="paragraph" style={{ padding: '80px 5vw 80px 5vw' }}>
 						<div style={{ textAlign: 'center', paddingBottom: 40 }}>
 							<h3 className="portfolio-section-header">THE TOWN OF</h3>
 							<h3 className="portfolio-callout">{this.props.heading}</h3>

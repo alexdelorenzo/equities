@@ -35,7 +35,7 @@ class FarHillsMap extends React.Component {
         population={"927"}
         distanceToNYC={"42 Miles"}
         publicSchool={
-          "Mendham Borough Schools and West Morris Mendham High School"
+          "Somerset Hills Regional School District"
         }
         area={"4.88 sq. mi."}
         publicTransportation={"Nj Transit's Far Hills Station"}

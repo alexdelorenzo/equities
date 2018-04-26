@@ -16,7 +16,7 @@ class CallOut extends React.Component {
 						md={8}>
 						<div className="portfolio-block-outer">
 							<div className="footer-left">
-								<h5 className="portfolio-callout-small left">INVESTOR</h5>
+								<br />
 								<Link to={'/investor-login'}>
 									<h3 className="portfolio-callout left">Login</h3>
 								</Link>
@@ -34,7 +34,7 @@ class CallOut extends React.Component {
 							</Link>
 							<p className="footer-text">
 								190 MAIN STREET, STE. 202,<br className="visible-mobile" />{' '}
-								GLADSTONE, NJ 07934<br className="visible-mobile" />
+								GLADSTONE, NJ <br className="visible-mobile" />
 								1+9082349561
 							</p>
 						</div>
@@ -42,7 +42,7 @@ class CallOut extends React.Component {
 					<Col className="portfolio-block portfolio-text-block" xs={24} md={8}>
 						<div className="portfolio-block-outer">
 							<div className="footer-right">
-								<h5 className="portfolio-callout-small right">SAY HI</h5>
+							<br />							
 								<Link to={'/contact'}>
 									<h3 className="portfolio-callout right">Contact</h3>
 								</Link>

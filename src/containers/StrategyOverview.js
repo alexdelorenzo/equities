@@ -2,7 +2,7 @@ import React from 'react';
 import HeroImage from '../components/HeroImage';
 import StrategyBackground from '../assets/images/strategy-background.jpg';
 import LocationBox from '../components/LocationBox';
-
+import InViewMonitor from 'react-inview-monitor';
 import { Row, Col, Anchor, Collapse } from 'antd';
 const Panel = Collapse.Panel;
 const { Link } = Anchor;
@@ -200,56 +200,87 @@ class StrategyOverview extends React.Component {
 
         <Row className="gutter-row" gutter={45} style={{ paddingTop: 30}}>
           <Col xs={24} md={{ span: 10, offset: 8 }}>
+          <InViewMonitor
+          classNameNotInView='vis-hidden'
+          classNameInView='animated fadeInUp' // fadeInLeft, or fadeInRight
+        >
             <div className="strategy-box" style={{ backgroundColor: '#aaa' }}>
               <h1 className="heading">Capital</h1>
             </div>
+            </InViewMonitor>
             <div className="home-hero-arrow home-hero-arrow-center arrow-down" style={{ marginTop: 6, marginBottom: 7}}>
               <span className="arrow" style={{ top: 0}}>
                 <span className="arrow-before-noHov"></span>
                 <span className="arrow-after"></span>
               </span>
             </div>
+              <InViewMonitor
+          classNameNotInView='vis-hidden'
+          classNameInView='animated fadeInUp' // fadeInLeft, or fadeInRight
+        >
             <div className="strategy-box" style={{ backgroundColor: '#1d4a63' }}>
               <h1 className="sub-heading double-line">TRANSACTION STRUCTURING</h1>
             </div>
+            </InViewMonitor>
             <div className="home-hero-arrow home-hero-arrow-center arrow-down" style={{ marginTop: 6, marginBottom: 7}}>
               <span className="arrow" style={{ top: 0}}>
                 <span className="arrow-before-noHov"></span>
                 <span className="arrow-after"></span>
               </span>
             </div>
+              <InViewMonitor
+          classNameNotInView='vis-hidden'
+          classNameInView='animated fadeInUp' // fadeInLeft, or fadeInRight
+        >
             <div className="strategy-box" style={{ backgroundColor: '#1d4a63' }}>
               <h1 className="sub-heading">DEVELOPMENT</h1>
             </div>
+            </InViewMonitor>
             <div className="home-hero-arrow home-hero-arrow-center arrow-down" style={{ marginTop: 6, marginBottom: 7}}>
               <span className="arrow" style={{ top: 0}}>
                 <span className="arrow-before-noHov"></span>
                 <span className="arrow-after"></span>
               </span>
             </div>
+              <InViewMonitor
+          classNameNotInView='vis-hidden'
+          classNameInView='animated fadeInUp' // fadeInLeft, or fadeInRight
+        >
             <div className="strategy-box" style={{ backgroundColor: '#1d4a63' }}>
               <h1 className="sub-heading double-line">CONSTRUCTION OVERSIGHT</h1>
             </div>
+            </InViewMonitor>
             <div className="home-hero-arrow home-hero-arrow-center arrow-down" style={{ marginTop: 6, marginBottom: 7}}>
               <span className="arrow" style={{ top: 0}}>
                 <span className="arrow-before-noHov"></span>
                 <span className="arrow-after"></span>
               </span>
             </div>
+              <InViewMonitor
+          classNameNotInView='vis-hidden'
+          classNameInView='animated fadeInUp' // fadeInLeft, or fadeInRight
+        >
             <div className="strategy-box" style={{ backgroundColor: '#1d4a63' }}>
               <h1 className="sub-heading double-line">PROPERTY & ASSET MANAGEMENT</h1>
             </div>
+            </InViewMonitor>
             <div className="home-hero-arrow home-hero-arrow-center arrow-down" style={{ marginTop: 6, marginBottom: 7}}>
               <span className="arrow" style={{ top: 0}}>
                 <span className="arrow-before-noHov"></span>
                 <span className="arrow-after"></span>
               </span>
             </div>
+              <InViewMonitor
+          classNameNotInView='vis-hidden'
+          classNameInView='animated fadeInUp' // fadeInLeft, or fadeInRight
+        >
             <div className="strategy-box" style={{ backgroundColor: '#aaa', marginBottom: 50 }}>
               <h1 className="heading">Stabilization</h1>
             </div>
+            </InViewMonitor>
           </Col>
         </Row>
+    
       </div>
     );
   }

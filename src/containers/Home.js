@@ -15,6 +15,21 @@ class Home extends React.Component {
 		return (
 			<div>
 				<HomeHeroImage />
+				<Row style={{ textAlign: 'center' }}>
+					<NavLink to="/firm">
+						<HeroImage
+							smallCall={'OUR'}
+							largeCall={'Firm'}
+							height={45}
+							background={FirmIntro}
+							fadeOnHover={true}
+							centerCenter={true}
+							arrowDirection={'right'}
+							textPosition={'center'}
+							url={'/firm/firm-overview'}
+						/>
+					</NavLink>
+				</Row>
 				<Element name="portfolio">
 					<PortfolioSection />
 				</Element>
@@ -33,21 +48,7 @@ class Home extends React.Component {
 					</NavLink>
 				</Row>
 
-				<Row style={{ textAlign: 'center' }}>
-					<NavLink to="/firm">
-						<HeroImage
-							smallCall={'OUR'}
-							largeCall={'Firm'}
-							height={45}
-							background={FirmIntro}
-							fadeOnHover={true}
-							centerCenter={true}
-							arrowDirection={'right'}
-							textPosition={'center'}
-							url={'/firm/firm-overview'}
-						/>
-					</NavLink>
-				</Row>
+				
 			</div>
 		)
 	}

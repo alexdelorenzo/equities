@@ -39,10 +39,10 @@ class PeaPackGladstoneMap extends React.Component {
         townContent={this.townContent}
         population={"2599"}
         distanceToNYC={"45 Miles"}
-        publicSchool={"medianHouseholdIncome"}
+        publicSchool={"Somerset Hills Regional School District"}
         area={"5.85 sq. mi."}
         publicTransportation={
-          "NJ Transit’s Gladstone Station, NJ Transit’s Peapack station"
+          "NJ Transit’s Gladstone Station, NJ Transit’s Peapack Station"
         }
         interstateAccess={"n/a"}
         homeOwnerOccupiedHousingUnits={"76.9%"}
