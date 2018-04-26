@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroImage from '../components/HeroImage';
-import StrategyBackground from '../assets/images/strategy-background.jpg';
+import StrategyBackground from '../assets/images/strategy-new.jpg';
 import LocationBox from '../components/LocationBox';
 import InViewMonitor from 'react-inview-monitor';
 import { Row, Col, Anchor, Collapse } from 'antd';
