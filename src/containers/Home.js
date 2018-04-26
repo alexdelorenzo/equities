@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom'
 import PortfolioSection from '../components/PortfolioSection'
 import HomeHeroImage from '../components/HomeHeroImage'
 import HeroImage from '../components/HeroImage'
-import FirmIntro from '../assets/images/vermont.jpg'
+import FirmIntro from '../assets/images/our-firm.png'
 import LeadershipIntro from '../assets/images/lion.jpg'
 import StrategyBackground from '../assets/images/strategy.png'
 

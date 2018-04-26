@@ -1,7 +1,7 @@
 import React from 'react'
 import HeroImage from '../components/HeroImage'
 import Landscape from '../assets/images/csr-landscape.jpg'
-import OverviewBackground from '../assets/images/vermont.jpg'
+import OverviewBackground from '../assets/images/vemont.jpg'
 import UrbanPlanningBackground from '../assets/images/urban-planning.png'
 import LocationBox from '../components/LocationBox'
 
