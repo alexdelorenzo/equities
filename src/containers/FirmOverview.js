@@ -231,7 +231,7 @@ class FirmOverview extends React.Component {
 						<h3 className="section-header-blue">CORPORATE ALIGNMENT</h3>
 						<p>
 							We provide our clients with total investment continuity, linking
-							our investment directive with the overall vision. To do so, each
+							our investment directive with the overall vision. Each
 							capital investment is governed independently with a series of
 							internal procedures and controls allowing for client and
 							management to function harmoniously.
