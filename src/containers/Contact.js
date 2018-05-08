@@ -9,7 +9,7 @@ class Contact extends React.Component {
     return (
     <div>
         <LocationBox
-            mainHeader="SAY HI"
+            mainHeader=""
             subHeader="Contact"
             start="Home"
             end="Contact"
