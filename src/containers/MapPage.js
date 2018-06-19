@@ -87,7 +87,44 @@ class MapPage extends React.Component {
 	handleCancel() {
 		this.setState({ townModal: false })
 	}
+	returnMapPins() {
+		var imagePhotos = []
+		return this.state.entries.map(entry => {
+			
+			if (entry.fields.imageCarasoul) {
+				var imageCarasoul = entry.fields.imageCarasoul 
+			} else {
+				var imageCarasoul = []
+			}
 
+			return (
+				<MapPin
+					key={entry.fields.id}
+					number={entry.fields.number2}
+					closeMapModal={() => this.closeMapModal(entry.fields.id)}
+					openMapModal={() => this.openMapModal(entry.fields.id)}
+					nextMapModal={() => this.nextMapModal(entry.fields.id)}
+					previousMapModal={() =>
+						this.previousMapModal(entry.fields.id)
+					}
+					address={entry.fields.addressName}
+					top={entry.fields.top}
+					left={entry.fields.left}
+					open={this.state.openDict[entry.fields.id]}
+					formalAddress={entry.fields.addressName}
+					city={entry.fields.city}
+					description={entry.fields.description}
+					heroImageLocation={
+						entry.fields.heroImage.fields.file.url + '?fl=progressive'
+					}
+					imageCarasoul={imageCarasoul}
+					location={entry.fields.locationName}
+					architect={entry.fields.architect}
+					client={entry.fields.client}
+				/>
+			)
+		})
+	}
 	render() {
 		return (
 			<div>
@@ -108,33 +145,7 @@ class MapPage extends React.Component {
 							{this.props.heading.toUpperCase()}
 						</h1>
 
-						{this.state.entries.map(entry => {
-							return (
-								<MapPin
-									key={entry.fields.id}
-									number={entry.fields.number2}
-									closeMapModal={() => this.closeMapModal(entry.fields.id)}
-									openMapModal={() => this.openMapModal(entry.fields.id)}
-									nextMapModal={() => this.nextMapModal(entry.fields.id)}
-									previousMapModal={() =>
-										this.previousMapModal(entry.fields.id)
-									}
-									address={entry.fields.addressName}
-									top={entry.fields.top}
-									left={entry.fields.left}
-									open={this.state.openDict[entry.fields.id]}
-									formalAddress={entry.fields.addressName}
-									city={entry.fields.city}
-									description={entry.fields.description}
-									heroImageLocation={
-										entry.fields.heroImage.fields.file.url + '?fl=progressive'
-									}
-									location={entry.fields.locationName}
-									architect={entry.fields.architect}
-									client={entry.fields.client}
-								/>
-							)
-						})}
+						{this.returnMapPins()}
 					</div>
 				</div>
 				<Modal

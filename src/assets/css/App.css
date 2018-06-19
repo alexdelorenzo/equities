@@ -4983,3 +4983,13 @@ svg {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
+
+.slick-list {
+  width: 100% !important;
+}
+.slick-list img {
+  margin-top: 0px !important;
+}
+.slick-initialized {
+  margin-top: 54px !important;
+}

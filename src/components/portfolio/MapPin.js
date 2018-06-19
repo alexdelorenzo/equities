@@ -1,8 +1,24 @@
 import React from 'react'
-import { Tooltip, Modal, Row, Col, Badge } from 'antd'
+import { Tooltip, Modal, Row, Col, Badge, Carousel } from 'antd'
 import MapPinLocation from '../../assets/images/map-pin.png'
 
 class MapPin extends React.Component {
+
+	returnImages() {
+	var images = this.props.imageCarasoul.map(image => {
+
+			return (
+				<img
+				src={image.fields.file.url + "?fl=progressive"}
+				className={'modal-photo'}
+				alt="Modal"
+			/>
+			)
+		})
+
+		return images
+	
+	}
 	render() {
 		return (
 			<div>
@@ -142,11 +158,14 @@ class MapPin extends React.Component {
 						</div>
 					</div>
 					<br />
-					<img
-						src={this.props.heroImageLocation}
-						className={'modal-photo'}
-						alt="Modal"
-					/>
+
+					<Carousel autoplay>
+			
+		{this.returnImages()}
+
+				</Carousel>
+
+		
 					<br />
 					<h1
 						style={{
@@ -243,11 +262,13 @@ class MapPin extends React.Component {
 					<br />
 				</Modal>
 				<div className="mobile-modal">
-					<img
-						src={this.props.heroImageLocation}
-						className={'modal-photo'}
-						alt="Modal"
-					/>
+			
+				<Carousel autoplay>
+			
+				{this.returnImages()}
+		
+						</Carousel>
+		
 					<br />
 					<h1
 						style={{
