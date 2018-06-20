@@ -99,7 +99,7 @@ class FirmOverview extends React.Component {
 						<br />
 						<p>
 							At Melillo Equities, we strive to achieve our vision of
-							“Communities Redefined” by embracing a comprehensive approach to
+							"Urbanism Redefined” by embracing a comprehensive approach to
 							confronting these challenges, focusing on:
 						</p>
 						<br />
@@ -232,7 +232,7 @@ class FirmOverview extends React.Component {
 						<p>
 							We provide our clients with total investment continuity, linking
 							our investment directive with the overall vision. Each
-							capital investment is governed independently with a series of
+							capital investment is governed independently through a series of
 							internal procedures and controls allowing for client and
 							management to function harmoniously.
 						</p>

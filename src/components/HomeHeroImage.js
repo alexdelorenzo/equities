@@ -23,7 +23,7 @@ export const HeroImage = props => {
 				}}>
 				<div className="home-hero-block">
 					<div className="shadow-box">
-						<h3 className="home-hero-intro">COMMUNITIES</h3>
+						<h3 className="home-hero-intro">URBANISM</h3>
 						<h1 className="home-hero-title">Redefined</h1>
 						<div className="home-hero-arrow home-hero-arrow-center arrow-down">
 							<Link to="portfolio" spy={true} smooth={true} duration={700}>
