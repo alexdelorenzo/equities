@@ -526,7 +526,27 @@ p {
 	display: none;
 }
 
+  
+.investment-fund-label {
+    
+  position: absolute;
+  bottom: 113px;
+  background: #1e4963;
+  padding: 5px 13px;
+  font-family: kepler-std-display;
+  color: white;
+  font-size: 11px;
+  font-style:  italic;
+
+}
+
+
 @media screen and (max-width: 991px) {
+
+    
+  .investment-fund-label {
+   display: none; 
+  }
 	.map-pin-icon {
 		display: none;
 	}
@@ -4992,4 +5012,6 @@ svg {
 }
 .slick-initialized {
   margin-top: 54px !important;
+
 }
+

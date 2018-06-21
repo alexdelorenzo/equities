@@ -142,11 +142,26 @@ class MapPin extends React.Component {
 						</div>
 					</div>
 					<br />
-					<img
-						src={this.props.heroImageLocation}
-						className={'modal-photo'}
-						alt="Modal"
-					/>
+					{this.props.investmentFund ?
+						<div>
+							<div className="investment-fund-label">
+								<b>{this.props.investmentFund}</b>
+								</div>
+								<img
+								src={this.props.heroImageLocation}
+								className={'modal-photo'}
+								alt="Modal"
+								/>
+								</div>
+								
+								:		
+								<img
+								src={this.props.heroImageLocation}
+								className={'modal-photo'}
+								alt="Modal"
+								/>
+
+					}
 					<br />
 					<h1
 						style={{

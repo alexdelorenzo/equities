@@ -117,6 +117,7 @@ class MapPage extends React.Component {
 					heroImageLocation={
 						entry.fields.heroImage.fields.file.url + '?fl=progressive'
 					}
+					investmentFund={entry.fields.investmentFund}
 					imageCarasoul={imageCarasoul}
 					location={entry.fields.locationName}
 					architect={entry.fields.architect}
