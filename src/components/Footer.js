@@ -35,7 +35,7 @@ class CallOut extends React.Component {
 							<p className="footer-text">
 								190 MAIN STREET, STE. 202,<br className="visible-mobile" />{' '}
 								GLADSTONE, NJ <br className="visible-mobile" />
-								1+9082349561
+								1+908 234 9561
 							</p>
 						</div>
 					</Col>

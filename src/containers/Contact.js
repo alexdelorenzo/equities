@@ -42,7 +42,7 @@ class Contact extends React.Component {
                         CALL
                     </h3>
                     <h4 className="contact-sub-info">
-                        1 + 908 234 9561
+                        1+908 234 9561
                     </h4>
                     <br />
                     <h3 className='contact-sub-header'>
