@@ -145,7 +145,7 @@ class MapPin extends React.Component {
 					{this.props.investmentFund ?
 						<div>
 							<div className="investment-fund-label">
-								<b>{this.props.investmentFund}</b>
+								<p style={{color: '#fff'}}>{this.props.investmentFund}</p>
 								</div>
 								<img
 								src={this.props.heroImageLocation}
