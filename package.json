@@ -5,7 +5,7 @@
   "dependencies": {
     "animated": "^0.2.0",
     "antd": "^2.13.4",
-    "classnames": "^2.2.5",
+    "classnames": "^2.2.6",
     "contentful": "^5.0.5",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
@@ -16,6 +16,7 @@
     "react-imageloader": "^2.1.0",
     "react-inview-monitor": "^2.2.0",
     "react-parallax": "^1.4.4",
+    "react-responsive-carousel": "^3.1.41",
     "react-router": "4.0.0",
     "react-router-dom": "^4.1.1",
     "react-scripts": "1.0.14",
