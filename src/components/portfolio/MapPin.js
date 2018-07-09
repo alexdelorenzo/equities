@@ -4,6 +4,13 @@ import MapPinLocation from "../../assets/images/map-pin.png";
 var Carousel = require("react-responsive-carousel").Carousel;
 
 class MapPin extends React.Component {
+  if240(number) {
+    if (number === '240') {
+      return 'leftTop'
+    } else {
+      return 'rightTop'
+    }
+  }
   renderHeroOrImageCarasoul() {
     if (this.props.imageCarasoul) {
       if (this.props.investmentFund) {
@@ -67,7 +74,7 @@ class MapPin extends React.Component {
   render() {
     return (
       <div>
-        <Tooltip title={this.props.address} placement="rightTop">
+        <Tooltip title={this.props.address} placement={this.if240(this.props.number)}>
           <div
             onClick={() => this.props.openMapModal()}
             className="map-pin-icon"
