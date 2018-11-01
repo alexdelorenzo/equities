@@ -168,60 +168,7 @@ class MapPin extends React.Component {
               </svg>
             </div>
           </div>
-          <div
-            onClick={() => this.props.nextMapModal()}
-            style={{
-              float: "right",
-              padding: 20 + "px",
-              borderLeft: "1px solid #b3b3b3",
-              cursor: "pointer"
-            }}
-          >
-            <div className="modal-arrow">
-              <svg
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                viewBox="0 0 36 18"
-                className="modal-arrow-svg"
-                style={{ enableBackground: "new 0 0 36 18" }}
-              >
-                <path
-                  d="M27.1,0.1c-0.2-0.2-0.5-0.2-0.7,0c-0.2,0.2-0.2,0.5,0,0.7l7.8,7.7H0.5C0.2,8.5,0,8.7,0,9c0,0.3,0.2,0.5,0.5,0.5h33.6
-                  l-7.8,7.7c-0.2,0.2-0.2,0.5,0,0.7c0.1,0.1,0.2,0.1,0.3,0.1s0.3,0,0.3-0.1L36,9L27.1,0.1z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            onClick={() => this.props.previousMapModal()}
-            style={{
-              float: "right",
-              padding: 20 + "px",
-              borderLeft: "1px solid #b3b3b3",
-              cursor: "pointer"
-            }}
-          >
-            <div className="modal-arrow arrow-left">
-              <svg
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                viewBox="0 0 36 18"
-                className="modal-arrow-svg"
-                style={{ enableBackground: "new 0 0 36 18" }}
-              >
-                <path
-                  d="M27.1,0.1c-0.2-0.2-0.5-0.2-0.7,0c-0.2,0.2-0.2,0.5,0,0.7l7.8,7.7H0.5C0.2,8.5,0,8.7,0,9c0,0.3,0.2,0.5,0.5,0.5h33.6
-                  l-7.8,7.7c-0.2,0.2-0.2,0.5,0,0.7c0.1,0.1,0.2,0.1,0.3,0.1s0.3,0,0.3-0.1L36,9L27.1,0.1z"
-                />
-              </svg>
-            </div>
-          </div>
+
           <br />
           {this.renderHeroOrImageCarasoul()}
           <br />
