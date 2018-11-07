@@ -21,26 +21,18 @@ class MapPin extends React.Component {
                 {this.props.investmentFund}
               </p>
             </div>
-            <Carousel showArrows={true} autoPlay={true}>
+            <Carousel showThumbs={true}>
               {this.props.imageCarasoul.map(image => {
-                return (
-                  <div>
-                    <img src={image} />
-                  </div>
-                );
+                return <img src={image} />;
               })}
             </Carousel>
           </div>
         );
       } else {
         return (
-          <Carousel showArrows={true} autoPlay={true}>
+          <Carousel showThumbs={true}>
             {this.props.imageCarasoul.map(image => {
-              return (
-                <div>
-                  <img src={image} />
-                </div>
-              );
+              return <img src={image} />;
             })}
           </Carousel>
         );
