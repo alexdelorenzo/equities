@@ -1,5 +1,5 @@
 import React from "react";
-import FarHillsMapLocation from "../assets/images/maps/farhills-tax-map.jpg";
+import FarHillsMapLocation from "../assets/images/maps/farhils.jpg";
 
 import MapPage from "./MapPage";
 class FarHillsMap extends React.Component {
@@ -34,9 +34,7 @@ class FarHillsMap extends React.Component {
         townContent={this.townContent}
         population={"927"}
         distanceToNYC={"42 Miles"}
-        publicSchool={
-          "Somerset Hills Regional School District"
-        }
+        publicSchool={"Somerset Hills Regional School District"}
         area={"4.88 sq. mi."}
         publicTransportation={"Nj Transit's Far Hills Station"}
         interstateAccess={"n/a"}
