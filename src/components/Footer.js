@@ -17,7 +17,7 @@ class CallOut extends React.Component {
 						<div className="portfolio-block-outer">
 							<div className="footer-left">
 								<br />
-								<Link to={'/investor-login'}>
+								<Link to={'/login'} target='_blank'>
 									<h3 className="portfolio-callout left">Login</h3>
 								</Link>
 							</div>

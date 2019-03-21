@@ -95,7 +95,7 @@ class App extends React.Component {
                 )}
               />
               <Route
-                path="/investor-login"
+                path="/login"
                 render={props => (
                   <InvestorLogin {...props}  />
                 )}
